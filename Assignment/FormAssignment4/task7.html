@@ -1,61 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InputFormTask7</title>
 </head>
-<body>
-    <fieldset>
-            <legend>Personal Particular</legend>
-            
-            <br>
-            <label for="name">Name:</label>
-            <input type="text" id="name">
-            <br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password">
-            <br><br>
-            Gender:
-            <input type="radio">
-            <label for="male">Male</label>
 
-            <input type="radio">
-            <label for="female">Female</label>
-            <br><br>
-            Age:
-            <select id="number">
-                <option value="">< 1 year old</option>
-                <option value=""">< 1 year old</option>
+<body>
+    <h3 align="center">User Input Form with Fieldsets for Personal Details and Preferences</h3>
+    <hr />
+    <h3 align="center">Description:-</h3>
+    <p>
+        This webpage demonstrates an HTML form divided into multiple sections using fieldsets and legends. It collects
+        personal information such as name, password, gender, and age, along with programming language preferences and
+        additional instructions. The form showcases the use of input fields, radio buttons, checkboxes, dropdown menus,
+        and textarea, along with send and clear buttons for user interaction.
+    </p>
+    <hr />
+    <br />
+    <fieldset>
+        <legend>Personal Particular</legend>
+
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <br><br>
+        Gender:
+        <input type="radio">
+        <label for="male">Male</label>
+
+        <input type="radio">
+        <label for="female">Female</label>
+        <br><br>
+        Age:
+        <select id="number">
+            <option value="">
+                < 1 year old</option>
+            <option value=""">< 1 year old</option>
                 <option value="">< 1 year old</option>
                 <option value="">< 1 year old</option>
             </select>
         </fieldset>
         <fieldset>
             <legend>Languages</legend>
-            <input type="checkbox" id="java">
-            <label for="java">Java</label>
+            <input type=" checkbox" id="java">
+                <label for="java">Java</label>
 
-            <input type="checkbox" id="C/C++">
-            <label for="C/C++">C/C++</label>
+                <input type="checkbox" id="C/C++">
+                <label for="C/C++">C/C++</label>
 
-            <input type="checkbox" id="C#">
-            <label for="C#">C#</label>
-        </fieldset>
-        <fieldset>
-            <legend>Instruction</legend>
-            <textarea name="message" rows="5" cols="30" placeholder="Enter your Instruction here..."></textarea>
-        </fieldset>
-        <button type="button">SEND</button>
-        <button type="button">CLEAR</button>
-        <hr />
+                <input type="checkbox" id="C#">
+                <label for="C#">C#</label>
+    </fieldset>
+    <fieldset>
+        <legend>Instruction</legend>
+        <textarea name="message" rows="5" cols="30" placeholder="Enter your Instruction here..."></textarea>
+    </fieldset>
+    <button type="button">SEND</button>
+    <button type="button">CLEAR</button>
+    <hr />
     <br />
     <br />
     <button type="submit">
-      <a href="../index.html"><b>Back to Home</b></a>
+        <a href="../index.html"><b>Back to Home</b></a>
     </button>
     <button type="submit">
-      <a href="../FormAssignment4/subIndex.html"><b>Back to Category</b></a>
+        <a href="../FormAssignment4/subIndex.html"><b>Back to Category</b></a>
     </button>
 </body>
+
 </html>
