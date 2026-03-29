@@ -1,24 +1,32 @@
-body{
+body
+{
    background-color:cornsilk;
 }
-h2{
+h2
+{
    color: darkorange;
 }
-table{
+table
+{
    background-color: aqua;
 }
-button{
+button
+{
    background-color: chartreuse;
 }
-.raj{
+.raj
+{
    color: green;
 }
-h1{
+h1
+{
    color: darksalmon;
 }
-#course{
+#course
+{
    color: crimson;
 }
-p{
+p
+{
    color: crimson;
 }

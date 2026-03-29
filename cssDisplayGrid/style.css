@@ -1,0 +1,23 @@
+#outerDiv
+{
+    height: 600px;
+    width: 600px;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    justify-items: center;  
+    align-items: center;
+    background-color:bisque;
+    /*justify-content: ;    --> Not working */
+    /* column-gap: 15px; */
+}
+.innerDiv
+{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+    /* background-color:cornflowerblue; */
+}
