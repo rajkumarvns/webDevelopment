@@ -2,75 +2,118 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InputFormTask7</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input Form Task 7</title>
 </head>
 
 <body>
-    <h3 align="center">User Input Form with Fieldsets for Personal Details and Preferences</h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
-    <p>
-        This webpage demonstrates an HTML form divided into multiple sections using fieldsets and legends. It collects
-        personal information such as name, password, gender, and age, along with programming language preferences and
-        additional instructions. The form showcases the use of input fields, radio buttons, checkboxes, dropdown menus,
-        and textarea, along with send and clear buttons for user interaction.
-    </p>
-    <hr />
-    <br />
+
+  <!-- Title -->
+  <h3 align="center">
+    User Input Form with Fieldsets for Personal Details and Preferences
+  </h3>
+  <hr />
+
+  <!-- Description -->
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage demonstrates an HTML form divided into multiple sections using
+    fieldsets and legends. It collects personal information such as name,
+    password, gender, and age, along with programming language preferences and
+    additional instructions.
+  </p>
+  <hr />
+  <br />
+
+  <!-- Form -->
+  <form>
+
+    <!-- Personal Details -->
     <fieldset>
-        <legend>Personal Particular</legend>
+      <legend>Personal Particular</legend>
 
-        <br>
-        <label for="name">Name:</label>
-        <input type="text" id="name">
-        <br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password">
-        <br><br>
-        Gender:
-        <input type="radio">
-        <label for="male">Male</label>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <br /><br />
 
-        <input type="radio">
-        <label for="female">Female</label>
-        <br><br>
-        Age:
-        <select id="number">
-            <option value="">
-                < 1 year old</option>
-            <option value=""">< 1 year old</option>
-                <option value="">< 1 year old</option>
-                <option value="">< 1 year old</option>
-            </select>
-        </fieldset>
-        <fieldset>
-            <legend>Languages</legend>
-            <input type=" checkbox" id="java">
-                <label for="java">Java</label>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br /><br />
 
-                <input type="checkbox" id="C/C++">
-                <label for="C/C++">C/C++</label>
+      <p><strong>Gender:</strong></p>
 
-                <input type="checkbox" id="C#">
-                <label for="C#">C#</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+      <br /><br />
+
+      <!-- Age -->
+      <label for="age">Age:</label>
+      <select id="age" name="age">
+        <option value="">-- Select Age --</option>
+        <option value="below1">&lt; 1 year</option>
+        <option value="1-5">1 - 5 years</option>
+        <option value="6-10">6 - 10 years</option>
+        <option value="above10">Above 10 years</option>
+      </select>
+
     </fieldset>
+
+    <br />
+
+    <!-- Languages -->
     <fieldset>
-        <legend>Instruction</legend>
-        <textarea name="message" rows="5" cols="30" placeholder="Enter your Instruction here..."></textarea>
+      <legend>Languages</legend>
+
+      <input type="checkbox" id="java" name="language" value="java" />
+      <label for="java">Java</label>
+
+      <input type="checkbox" id="cpp" name="language" value="cpp" />
+      <label for="cpp">C/C++</label>
+
+      <input type="checkbox" id="csharp" name="language" value="csharp" />
+      <label for="csharp">C#</label>
+
     </fieldset>
-    <button type="button">SEND</button>
-    <button type="button">CLEAR</button>
-    <hr />
+
     <br />
+
+    <!-- Instruction -->
+    <fieldset>
+      <legend>Instruction</legend>
+
+      <textarea
+        id="instruction"
+        name="instruction"
+        rows="5"
+        cols="30"
+        placeholder="Enter your instruction here..."
+      ></textarea>
+
+    </fieldset>
+
     <br />
-    <button type="submit">
-        <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-        <a href="../FormAssignment4/subIndex.html"><b>Back to Category</b></a>
-    </button>
+
+    <!-- Buttons -->
+    <button type="submit">SEND</button>
+    <button type="reset">CLEAR</button>
+
+  </form>
+
+  <hr />
+  <br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../FormAssignment4/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
 </body>
-
 </html>

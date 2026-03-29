@@ -1,112 +1,148 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registation Form Dance Club</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form Dance Club</title>
+</head>
 
-  <body>
-    <h3 align="center">Dance Club Registration Form Using HTML Table</h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
-    <p>
-      This webpage presents a registration form for a dance club designed using
-      an HTML table layout. It collects user details such as name, IC number,
-      address, gender, dance preferences, competition level, nationality, and
-      password. The form demonstrates the use of various input elements
-      including text fields, radio buttons, checkboxes, dropdown menus, and
-      textarea, along with register and cancel buttons for user interaction.
-    </p>
-    <hr />
-    <br />
-    <h3>Registation Form : Dance Club</h3>
-    <form>
-      <table border="1">
-        <tr>
-          <th>Name:</th>
-          <td>
-            <label for="name"></label>
-            <input type="text" id="name" />
-          </td>
-        </tr>
-        <tr>
-          <th>IC No:</th>
-          <td>
-            <input type="text" id="name" />- <input type="text" id="name" />-
-            <input type="text" id="name" />
-          </td>
-        </tr>
-        <tr>
-          <th>Address:</th>
-          <td>
-            <textarea name="address" rows="5" cols="69"></textarea>
-          </td>
-        </tr>
-        <tr>
-          <th>Gender:</th>
-          <td>
-            <input type="radio" />
-            <label for="male">Male</label>
-            <input type="radio" />
-            <label for="female">Female</label>
-          </td>
-        </tr>
-        <tr>
-          <th>Dance_Type:</th>
-          <td>
-            <input type="checkbox" />
-            <label for="zapin">Zapin</label>
-            <input type="checkbox" />
-            <label for="joget">Joget</label>
+<body>
 
-            <input type="checkbox" />
-            <label for="inang">Inang</label>
-            <input type="checkbox" />
-            <label for="Lion Dance">Lion Dance</label>
-          </td>
-        </tr>
-        <tr>
-          <th>Competiton:</th>
-          <td>
-            <input
-              type="text"
-              value="State Level National Level State International Level"
-            />
-          </td>
-        </tr>
-        <tr>
-          <th>Nationality:</th>
-          <td>
-            <select name="Nationality">
-              <option value="Nationality">-please select</option>
-              <option value="Nationality">Indian</option>
-              <option value="Nationality">US</option>
-              <option value="Nationality">Russian</option>
-              <option value="Nationality">Japani</option>
-              <option value="Nationality">Nepali</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <th>Password:</th>
-          <td>
-            <input type="password" />
-          </td>
-        </tr>
-      </table>
-      <button type="button">Register Me</button>
-      <button type="button">Cancel</button>
-    </form>
+  <!-- Title -->
+  <h3 align="center">Dance Club Registration Form Using HTML Table</h3>
+  <hr />
+
+  <!-- Description -->
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage presents a registration form for a dance club designed using
+    an HTML table layout. It collects user details such as name, IC number,
+    address, gender, dance preferences, competition level, nationality, and password.
+  </p>
+  <hr />
+
+  <!-- Form -->
+  <h3>Registration Form : Dance Club</h3>
+
+  <form>
+    <table border="1" cellpadding="8">
+
+      <!-- Name -->
+      <tr>
+        <th><label for="name">Name:</label></th>
+        <td>
+          <input type="text" id="name" name="name" required />
+        </td>
+      </tr>
+
+      <!-- IC Number -->
+      <tr>
+        <th>IC No:</th>
+        <td>
+          <input type="text" name="ic1" size="4" required /> -
+          <input type="text" name="ic2" size="4" required /> -
+          <input type="text" name="ic3" size="4" required />
+        </td>
+      </tr>
+
+      <!-- Address -->
+      <tr>
+        <th><label for="address">Address:</label></th>
+        <td>
+          <textarea id="address" name="address" rows="4" cols="40"></textarea>
+        </td>
+      </tr>
+
+      <!-- Gender -->
+      <tr>
+        <th>Gender:</th>
+        <td>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </td>
+      </tr>
+
+      <!-- Dance Type -->
+      <tr>
+        <th>Dance Type:</th>
+        <td>
+          <input type="checkbox" id="zapin" name="dance" value="zapin" />
+          <label for="zapin">Zapin</label>
+
+          <input type="checkbox" id="joget" name="dance" value="joget" />
+          <label for="joget">Joget</label>
+
+          <input type="checkbox" id="inang" name="dance" value="inang" />
+          <label for="inang">Inang</label>
+
+          <input type="checkbox" id="lion" name="dance" value="lion" />
+          <label for="lion">Lion Dance</label>
+        </td>
+      </tr>
+
+      <!-- Competition -->
+      <tr>
+        <th>Competition Level:</th>
+        <td>
+          <input type="radio" id="state" name="competition" value="state" />
+          <label for="state">State Level</label>
+
+          <input type="radio" id="national" name="competition" value="national" />
+          <label for="national">National Level</label>
+
+          <input type="radio" id="international" name="competition" value="international" />
+          <label for="international">International Level</label>
+        </td>
+      </tr>
+
+      <!-- Nationality -->
+      <tr>
+        <th><label for="nationality">Nationality:</label></th>
+        <td>
+          <select id="nationality" name="nationality">
+            <option value="">-- Please Select --</option>
+            <option value="indian">Indian</option>
+            <option value="us">US</option>
+            <option value="russian">Russian</option>
+            <option value="japanese">Japanese</option>
+            <option value="nepali">Nepali</option>
+          </select>
+        </td>
+      </tr>
+
+      <!-- Password -->
+      <tr>
+        <th><label for="password">Password:</label></th>
+        <td>
+          <input type="password" id="password" name="password" required />
+        </td>
+      </tr>
+
+    </table>
+
     <br />
-    <hr />
-    <br />
-    <br />
-    <button type="submit">
-      <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-      <a href="../FormAssignment4/subIndex.html"><b>Back to Category</b></a>
-    </button>
-  </body>
+
+    <!-- Buttons -->
+    <button type="submit">Register Me</button>
+    <button type="reset">Cancel</button>
+
+  </form>
+
+  <br />
+  <hr />
+  <br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../FormAssignment4/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
+</body>
 </html>

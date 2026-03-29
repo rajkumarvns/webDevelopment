@@ -1,42 +1,54 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTMLFormTask1</title>
-  </head>
-  <body>
-    <h3 align="center">Simple HTML Login Form</h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
-    <p>
-      This webpage demonstrates a basic HTML form with input fields for username
-      and password. It showcases how to collect user credentials using text and
-      password input types, along with a submit button and navigation options
-      for easy page access.
-    </p>
-    <hr />
-    <br />
-    <form>
-      <p>HTML Forms</p>
-      <label for="Username">Username:</label><br />
-      <input type="text" id="Username" />
-      <br /><br />
-      <label for="password">Password:</label>
-      <br />
-      <input type="password" id="password" />
-      <br />
-      <br />
-      <input type="submit" value="submit" />
-    </form><br>
-    <hr />
-    <br />
-    <br />
-    <button type="submit">
-      <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-      <a href="../FormAssignment4/subIndex.html"><b>Back to Category</b></a>
-    </button>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Form Task 1</title>
+</head>
+
+<body>
+
+  <!-- Title -->
+  <h3 align="center">Simple HTML Login Form</h3>
+  <hr />
+
+  <!-- Description -->
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage demonstrates a basic HTML form with input fields for username
+    and password. It showcases how to collect user credentials using text and
+    password input types, along with a submit button and navigation options
+    for easy page access.
+  </p>
+  <hr />
+
+  <!-- Form -->
+  <form>
+    <h4>HTML Form</h4>
+
+    <label for="username">Username:</label><br />
+    <input type="text" id="username" name="username" required />
+    <br /><br />
+
+    <label for="password">Password:</label><br />
+    <input type="password" id="password" name="password" required />
+    <br /><br />
+
+    <input type="submit" value="Submit" />
+  </form>
+
+  <br />
+  <hr />
+  <br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../FormAssignment4/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
+</body>
 </html>

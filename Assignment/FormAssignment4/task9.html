@@ -1,97 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PizzaOrderFormTask9</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza Order Form</title>
 </head>
 
 <body>
-    <h3 align="center">Online Pizza Order Form</h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
-    <p>
-        This webpage provides an HTML-based pizza ordering form that collects customer details such as name, email,
-        contact number, and delivery date. It allows users to select pizza size, choose different flavors with
-        quantities, and enter payment details like credit card number and PIN. The form also includes a section for
-        additional notes, demonstrating the use of various input elements such as radio buttons, checkboxes, dropdown
-        menus, and textarea for a complete ordering experience.
-    </p>
-    <hr />
-    <br />
-    <form>
-        <fieldset>
-            <b>
-                <h3>Pizza Order Form</h3>
-                <label for="firstname">First Name:</label>
-                <input type="text">
-                <br><br>
-                <label for="lastname">Last Name:</label>
-                <input type="text"><br><br>
-                <label for="email Address">Email Address:</label>
-                <input type="email">
-                <br><br>
-                <label for="number">Contact Number:</label>
-                <input type="number">
-                <br><br>
-                <label for="name">Preferred Delivery Date:</label>
-                <input type="date">
-                <br><br>
-                Size:
-                <br><br>
-                <input type="radio" id="small" name="size">
-                <label for="small">Small</label>
-                <input type="radio" id="medium" name="size">
-                <label for="medium">Medium</label>
-                <input type="radio" id="large" name="size">
-                <label for="large">Large</label>
-                <br><br>
-                Flavor:
-                <br><br>
-                <input type="checkbox" name="size">
-                <label for="Hawaniian">Hawaniian(Php 150.00)</label>
-                <select name="number" id="101">
-                    <option value="number">1</option>
-                </select>
-                <br>
-                <input type="checkbox" name="size">
-                <label for="Pepperoni">Pepperoni(Php 140.00)</label>
-                <select name="number" id="101">
-                    <option value="number">1</option>
-                </select>
-                <br>
-                <input type="checkbox" name="size">
-                <label for="large">Vegetable(Php 130.00)</label>
-                <select name="number" id="101">
-                    <option value="number">1</option>
-                </select>
-                <br><br>
-                <label for="cardnum">Credit Card Number:</label>
-                <input type="number">
-                <br><br>
-                <label for="cardnum">PIN:</label>
-                <input type="password">
-                <br><br>
-                Additional Note:
-                <textarea name="message" id="note" rows="4">
 
-        </textarea>
-                <br>
-                <br><button type="button">Submit Order</button>
-        </fieldset>
-        </b>
+  <!-- Title -->
+  <h3 align="center">Online Pizza Order Form</h3>
+  <hr />
 
-    </form>
-    <hr />
-    <br />
-    <br />
-    <button type="submit">
-        <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-        <a href="../FormAssignment4/subIndex.html"><b>Back to Category</b></a>
-    </button>
+  <!-- Description -->
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage provides an HTML-based pizza ordering form that collects customer
+    details such as name, email, contact number, and delivery date. It allows users
+    to select pizza size, choose flavors with quantities, and enter payment details.
+  </p>
+  <hr />
+  <br />
+
+  <!-- Form -->
+  <form>
+    <fieldset>
+      <legend><strong>Pizza Order Form</strong></legend>
+
+      <!-- Name -->
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname" required />
+      <br /><br />
+
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname" required />
+      <br /><br />
+
+      <!-- Email -->
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+
+      <!-- Contact -->
+      <label for="phone">Contact Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+      <br /><br />
+
+      <!-- Delivery Date -->
+      <label for="date">Preferred Delivery Date:</label>
+      <input type="date" id="date" name="delivery_date" />
+      <br /><br />
+
+      <!-- Size -->
+      <p><strong>Size:</strong></p>
+
+      <input type="radio" id="small" name="size" value="small" />
+      <label for="small">Small</label>
+
+      <input type="radio" id="medium" name="size" value="medium" />
+      <label for="medium">Medium</label>
+
+      <input type="radio" id="large" name="size" value="large" />
+      <label for="large">Large</label>
+
+      <br /><br />
+
+      <!-- Flavors -->
+      <p><strong>Flavor (Select & Quantity):</strong></p>
+
+      <!-- Hawaiian -->
+      <input type="checkbox" id="hawaiian" name="flavor" value="hawaiian" />
+      <label for="hawaiian">Hawaiian (Php 150.00)</label>
+      <select name="qty_hawaiian">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <br />
+
+      <!-- Pepperoni -->
+      <input type="checkbox" id="pepperoni" name="flavor" value="pepperoni" />
+      <label for="pepperoni">Pepperoni (Php 140.00)</label>
+      <select name="qty_pepperoni">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <br />
+
+      <!-- Vegetable -->
+      <input type="checkbox" id="vegetable" name="flavor" value="vegetable" />
+      <label for="vegetable">Vegetable (Php 130.00)</label>
+      <select name="qty_vegetable">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+
+      <br /><br />
+
+      <!-- Payment -->
+      <label for="card">Credit Card Number:</label>
+      <input type="text" id="card" name="card" maxlength="16" />
+      <br /><br />
+
+      <label for="pin">PIN:</label>
+      <input type="password" id="pin" name="pin" maxlength="4" />
+      <br /><br />
+
+      <!-- Notes -->
+      <label for="note">Additional Note:</label><br />
+      <textarea id="note" name="note" rows="4" cols="30"></textarea>
+
+      <br /><br />
+
+      <!-- Button -->
+      <button type="submit">Submit Order</button>
+      <button type="reset">Cancel</button>
+
+    </fieldset>
+  </form>
+
+  <hr />
+  <br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../FormAssignment4/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
 </body>
-
 </html>

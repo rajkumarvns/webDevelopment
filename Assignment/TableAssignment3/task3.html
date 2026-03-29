@@ -1,26 +1,31 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task3</title>
-  </head>
-  <body>
-    <h3 align="center">
-      Quarterly Sales Report Table Using Rowspan and Colspan
-    </h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
-    <p>
-      This webpage displays a structured sales report using an HTML table with
-      both rowspan and colspan attributes. It organizes data by categories such
-      as electronics and clothing across different months in two quarters,
-      demonstrating advanced table formatting techniques along with navigation
-      buttons for easy access.
-    </p>
-    <hr />
-    <br />
-    <table border="1">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 3</title>
+</head>
+
+<body>
+
+  <h3 align="center">
+    Quarterly Sales Report Table Using Rowspan and Colspan
+  </h3>
+  <hr />
+
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage displays a structured sales report using an HTML table with
+    both rowspan and colspan attributes.
+  </p>
+
+  <hr />
+  <br />
+
+  <!-- Table -->
+  <table border="1" cellspacing="0" cellpadding="8" align="center">
+
+    <thead>
       <tr>
         <th rowspan="2">Category</th>
         <th colspan="2">Q1</th>
@@ -32,6 +37,9 @@
         <th>March</th>
         <th>April</th>
       </tr>
+    </thead>
+
+    <tbody>
       <tr>
         <td>Electronics</td>
         <td>$1000</td>
@@ -39,6 +47,7 @@
         <td>$2000</td>
         <td>$2500</td>
       </tr>
+
       <tr>
         <td>Clothing</td>
         <td>$2000</td>
@@ -46,15 +55,22 @@
         <td>$3000</td>
         <td>$3500</td>
       </tr>
-    </table><br>
-    <hr />
-    <br />
-    <br />
-    <button type="submit">
-      <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-      <a href="../TableAssignment3/subIndex.html"><b>Back to Category</b></a>
-    </button>
-  </body>
+    </tbody>
+
+  </table>
+
+  <br />
+  <hr />
+  <br /><br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../TableAssignment3/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
+</body>
 </html>

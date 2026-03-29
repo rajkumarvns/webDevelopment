@@ -1,69 +1,81 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task9</title>
-  </head>
-  <body>
-    <h3 align="center">Ian’s Weekly Timetable Using Advanced HTML Table</h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
-    <p>
-      This webpage displays Ian’s weekly timetable using an HTML table with
-      extensive use of colspan and rowspan attributes. It organizes activities
-      across morning, afternoon, and evening sessions, including meetings,
-      lectures, research, and free time. The layout demonstrates complex table
-      structuring techniques along with navigation buttons for easy access.
-    </p>
-    <hr />
-    <br />
-    <p>lan's TimeTable</p>
-    <table border="1">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 9</title>
+</head>
+
+<body>
+
+  <h3 align="center">Ian’s Weekly Timetable Using Advanced HTML Table</h3>
+  <hr />
+
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage displays Ian’s weekly timetable using an HTML table with
+    extensive use of colspan and rowspan attributes.
+  </p>
+
+  <hr />
+  <br />
+
+  <p align="center"><b>Ian's Timetable</b></p>
+
+  <table border="1" cellspacing="0" cellpadding="8" align="center">
+
+    <thead>
       <tr>
-        <td></td>
-        <td></td>
-        <td colspan="3">Morning</td>
-        <td>lunch</td>
-        <td colspan="4">Afternoon</td>
-        <td colspan="3">Evening</td>
+        <th></th>
+        <th></th>
+        <th colspan="3">Morning</th>
+        <th>Lunch</th>
+        <th colspan="4">Afternoon</th>
+        <th colspan="3">Evening</th>
       </tr>
+
       <tr>
-        <td></td>
-        <td></td>
-        <td>9-<br />am<br /></td>
-        <td>10-<br />11<br />am</td>
-        <td>11-<br />12<br />am</td>
-        <td>1-2<br />pm</td>
-        <td>2-<br />3<br />pm</td>
-        <td>3-<br />4<br />pm</td>
-        <td>4-<br />5<br />pm</td>
-        <td>5-6pm</td>
-        <td>6-<br />7<br />pm</td>
-        <td>7-<br />8<br />pm</td>
-        <td>8-9<br />pm</td>
+        <th></th>
+        <th></th>
+        <th>9-10 AM</th>
+        <th>10-11 AM</th>
+        <th>11-12 PM</th>
+        <th>1-2 PM</th>
+        <th>2-3 PM</th>
+        <th>3-4 PM</th>
+        <th>4-5 PM</th>
+        <th>5-6 PM</th>
+        <th>6-7 PM</th>
+        <th>7-8 PM</th>
+        <th>8-9 PM</th>
       </tr>
+    </thead>
+
+    <tbody>
+
       <tr>
-        <td>Works</td>
+        <td>Work</td>
         <td>Monday</td>
-        <td colspan="3">Development<br />Meeting</td>
+        <td colspan="3">Development Meeting</td>
         <td></td>
-        <td colspan="3">Client<br />Meeting</td>
-        <td>commute</td>
+        <td colspan="3">Client Meeting</td>
+        <td>Commute</td>
         <td colspan="3">Free</td>
       </tr>
+
       <tr>
         <td rowspan="2">Lecture</td>
         <td>Wednesday</td>
         <td colspan="3">CSS205</td>
         <td></td>
-        <td colspan="7">in Office</td>
+        <td colspan="7">In Office</td>
       </tr>
+
       <tr>
         <td>Thursday</td>
         <td colspan="3">MAM200</td>
         <td></td>
-        <td colspan="3">Tutorials<br />for<br />MAMO200</td>
+        <td colspan="3">Tutorials for MAM200</td>
         <td colspan="4">Free</td>
       </tr>
 
@@ -74,16 +86,23 @@
         <td></td>
         <td colspan="7">Research</td>
       </tr>
-    </table><br>
-    <br />
-    <hr />
-    <br />
-    <br />
-    <button type="submit">
-      <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-      <a href="../TableAssignment3/subIndex.html"><b>Back to Category</b></a>
-    </button>
-  </body>
+
+    </tbody>
+
+  </table>
+
+  <br />
+  <hr />
+  <br /><br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../TableAssignment3/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
+</body>
 </html>

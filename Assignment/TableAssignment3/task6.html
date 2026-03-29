@@ -1,36 +1,49 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task6</title>
-  </head>
-  <body>
-    <h3 align="center">Weekly School Time Table Using HTML Table</h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
-    <p>
-      This webpage presents a structured weekly timetable using an HTML table.
-      It organizes subjects across different days and periods, incorporating
-      features like rowspan and colspan to represent lunch breaks, lab sessions,
-      and activities such as sports and seminars. Navigation buttons are
-      included for easy access to other pages.
-    </p>
-    <hr />
-    <br />
-    <table border="1" cellpsacing="0">
-      TIME TABLE
-      <th>Day/Period</th>
-      <th>I<br />9:30-10:20</th>
-      <th>II<br />10:20-11:10</th>
-      <th>III<br />11:10-12:00</th>
-      <th rowspan="7">
-        12:00-12;40 <br /><br /><br />L <br />U <br />N <br />C <br />H
-      </th>
-      <th>IV<br />12:40-1:30</th>
-      <th>V<br />1:30-2:20</th>
-      <th>VI<br />2:20-3:10</th>
-      <th>VII<br />3:10-4:00</th>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 6</title>
+</head>
+
+<body>
+
+  <h3 align="center">Weekly School Time Table Using HTML Table</h3>
+  <hr />
+
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage presents a structured weekly timetable using an HTML table.
+  </p>
+
+  <hr />
+  <br />
+
+  <h3 align="center">TIME TABLE</h3>
+
+  <!-- Table -->
+  <table border="1" cellspacing="0" cellpadding="8" align="center">
+
+    <thead>
+      <tr>
+        <th>Day/Period</th>
+        <th>I<br />9:30-10:20</th>
+        <th>II<br />10:20-11:10</th>
+        <th>III<br />11:10-12:00</th>
+
+        <th rowspan="7">
+          12:00-12:40<br /><br />
+          L<br />U<br />N<br />C<br />H
+        </th>
+
+        <th>IV<br />12:40-1:30</th>
+        <th>V<br />1:30-2:20</th>
+        <th>VI<br />2:20-3:10</th>
+        <th>VII<br />3:10-4:00</th>
+      </tr>
+    </thead>
+
+    <tbody>
       <tr>
         <td>Monday</td>
         <td>Eng</td>
@@ -48,6 +61,7 @@
         <td>Mat</td>
         <td>SPORTS</td>
       </tr>
+
       <tr>
         <td>Wednesday</td>
         <td>Mat</td>
@@ -56,6 +70,7 @@
         <td>Che</td>
         <td colspan="3">LIBRARY</td>
       </tr>
+
       <tr>
         <td>Thursday</td>
         <td>Phy</td>
@@ -64,6 +79,7 @@
         <td colspan="3">LAB</td>
         <td>Mat</td>
       </tr>
+
       <tr>
         <td>Friday</td>
         <td colspan="3">LAB</td>
@@ -72,6 +88,7 @@
         <td>Eng</td>
         <td>Phy</td>
       </tr>
+
       <tr>
         <td>Saturday</td>
         <td>Eng</td>
@@ -80,16 +97,22 @@
         <td colspan="3">SEMINAR</td>
         <td>SPORTS</td>
       </tr>
-    </table>
-    <br />
-    <hr />
-    <br />
-    <br />
-    <button type="submit">
-      <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-      <a href="../TableAssignment3/subIndex.html"><b>Back to Category</b></a>
-    </button>
-  </body>
+    </tbody>
+
+  </table>
+
+  <br />
+  <hr />
+  <br /><br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../TableAssignment3/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
+</body>
 </html>

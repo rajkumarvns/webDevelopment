@@ -1,77 +1,82 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TextFormatting</title>
-    <link rel="stylesheet" href="../style.css">
-  </head>
-  <body>
-    <fieldset align="center">
-      <legend align="center"><b>TextFormatting</b></legend>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Formatting</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
 
-      <h2>Task Description</h2>
-      <p>
-        This HTML page displays a Text Formatting task list using a table with
-        links to three tasks (Task1, Task2, Task3). It also includes a
-        navigation button to return to the home page. At the bottom, a footer
-        section presents personal details such as profile image, name, contact
-        number, email, and links to GitHub, LinkedIn, and WhatsApp for easy
-        communication.
-      </p>
+<body>
 
-      <table border="3" cellspacing="0" align="center" width="35%"cellpadding=5>
-        <tr>
-          <td>1</td>
-          <td>Task1</td>
-          <td>
-            <a href="./task1.html">Open</a>
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Task2</td>
-          <td>
-            <a href="./task2.html">Open</a>
-          </td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Task3</td>
-          <td>
-            <a href="./task3.html">Open</a>
-          </td>
-        </tr>
-      </table>
-      <br />
-      <button type="submit">
-        <a href="../index.html"><b>Back to Home</b></a>
-      </button>
-    </fieldset>
-    <footer>
-      <br /><br />
-      <form>
-        <table align="center">
-          <tr align="center">
-            <td>
-              <img src="../../Raj_Img_New.jpeg" width="200" />
-            </td>
-            <td></td>
-            <td></td>
-            <td>
-              <h3>Raj Kumar Gupta</h3>
-              <a href="tel:+916387566379">Contact me</a> <br />
-              <a href="mailto:rajkumar966601@gmail.com">Email</a><br />
-              <a href="https://github.com/rajkumarvns">GitHub</a><br />
-              <a
-                href="https://www.linkedin.com/in/raj-kumar-gupta-990093305/?skipRedirect=true"
-                >LinkedIn</a
-              ><br />
-              <a href="https://wa.me//638756379">WhatsApp Me</a><br />
-            </td>
-          </tr>
-        </table>
-      </form>
-    </footer>
-  </body>
+  <fieldset align="center">
+    <legend><b>Text Formatting</b></legend>
+
+    <h2>Task Description</h2>
+    <p>
+      This HTML page displays a Text Formatting task list using a table with
+      links to three tasks (Task1, Task2, Task3). It also includes a
+      navigation button to return to the home page. At the bottom, a footer
+      section presents personal details such as profile image, name, contact
+      number, email, and links to GitHub, LinkedIn, and WhatsApp.
+    </p>
+
+    <!-- Table -->
+    <table border="3" cellspacing="0" cellpadding="5" align="center" width="35%">
+      <tr>
+        <td>1</td>
+        <td>Task1</td>
+        <td><a href="./task1.html">Open</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Task2</td>
+        <td><a href="./task2.html">Open</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Task3</td>
+        <td><a href="./task3.html">Open</a></td>
+      </tr>
+    </table>
+
+    <br>
+
+    <!-- Back Button -->
+    <a href="../index.html">
+      <button type="button"><b>Back to Home</b></button>
+    </a>
+
+  </fieldset>
+
+  <!-- Footer -->
+  <footer>
+    <br><br>
+
+    <table align="center">
+      <tr align="center">
+
+        <!-- Image -->
+        <td>
+          <img src="../../Raj_Img_New.jpeg" alt="Profile Image" width="200">
+        </td>
+
+        <!-- Details -->
+        <td>
+          <h3>Raj Kumar Gupta</h3>
+
+          <a href="tel:+916387566379">Contact Me</a><br>
+          <a href="mailto:rajkumar966601@gmail.com">Email</a><br>
+          <a href="https://github.com/rajkumarvns" target="_blank">GitHub</a><br>
+          <a href="https://www.linkedin.com/in/raj-kumar-gupta-990093305/" target="_blank">LinkedIn</a><br>
+          <a href="https://wa.me/916387566379" target="_blank">WhatsApp Me</a><br>
+
+        </td>
+
+      </tr>
+    </table>
+
+  </footer>
+
+</body>
 </html>

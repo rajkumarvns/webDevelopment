@@ -1,35 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task10</title>
-  </head>
-  <body>
-    <h3 align="center">
-      Complex HTML Table Layout with Multiple Rowspan and Colspan
-    </h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
-    <p>
-      This webpage demonstrates an advanced HTML table structure using extensive
-      combinations of rowspan and colspan. It showcases how complex grid layouts
-      can be created by merging cells across rows and columns, helping to
-      understand intricate table design techniques along with navigation buttons
-      for easy access.
-    </p>
-    <hr />
-    <br />
-    <table border="1" cellspacing="0">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 10</title>
+</head>
+
+<body>
+
+  <h3 align="center">
+    Complex HTML Table Layout with Multiple Rowspan and Colspan
+  </h3>
+  <hr />
+
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage demonstrates an advanced HTML table structure using extensive
+    combinations of rowspan and colspan.
+  </p>
+
+  <hr />
+  <br />
+
+  <table border="1" cellspacing="0" cellpadding="8" align="center">
+    
+    <caption><b>Advanced Table Layout</b></caption>
+
+    <tbody>
+
       <tr>
         <td>1</td>
         <td colspan="2">2</td>
         <td rowspan="2">3</td>
         <td colspan="2" rowspan="2">4</td>
       </tr>
+
       <tr>
         <td colspan="3">5</td>
       </tr>
+
       <tr>
         <td>6</td>
         <td>7</td>
@@ -37,11 +46,13 @@
         <td colspan="2">9</td>
         <td>10</td>
       </tr>
+
       <tr>
         <td colspan="2">11</td>
         <td colspan="3">12</td>
         <td rowspan="7">13</td>
       </tr>
+
       <tr>
         <td rowspan="3">14</td>
         <td>15</td>
@@ -49,37 +60,49 @@
         <td>17</td>
         <td>18</td>
       </tr>
+
       <tr>
         <td colspan="4">19</td>
       </tr>
+
       <tr>
         <td colspan="2">20</td>
         <td colspan="2">21</td>
       </tr>
+
       <tr>
         <td colspan="5">22</td>
       </tr>
+
       <tr>
         <td rowspan="2">23</td>
         <td colspan="2">24</td>
         <td>25</td>
         <td>26</td>
       </tr>
+
       <tr>
         <td>27</td>
         <td colspan="2">28</td>
         <td>29</td>
       </tr>
-    </table>
-    <br />
-    <hr />
-    <br />
-    <br />
-    <button type="submit">
-      <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-      <a href="../TableAssignment3/subIndex.html"><b>Back to Category</b></a>
-    </button>
-  </body>
+
+    </tbody>
+
+  </table>
+
+  <br />
+  <hr />
+  <br /><br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../TableAssignment3/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
+</body>
 </html>

@@ -1,52 +1,69 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task8</title>
-  </head>
-  <body>
-    <h3 align="center">Creative HTML Table Layout with Merged Cells</h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
-    <p>
-      This webpage demonstrates a creatively structured HTML table using rowspan
-      and colspan attributes to form a sentence-like layout. It highlights how
-      table cells can be merged across rows and columns to present content in a
-      visually unique and organized manner, along with navigation buttons for
-      easy access.
-    </p>
-    <hr />
-    <br />
-    <table border="1">
-      <th>Quick</th>
-      <th colspan="2">brown fox</th>
-      <th>jumps</th>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 8</title>
+</head>
 
+<body>
+
+  <h3 align="center">Creative HTML Table Layout with Merged Cells</h3>
+  <hr />
+
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage demonstrates a creatively structured HTML table using rowspan
+    and colspan attributes to form a sentence-like layout.
+  </p>
+
+  <hr />
+  <br />
+
+  <!-- Table -->
+  <table border="1" cellspacing="0" cellpadding="8" align="center">
+
+    <thead>
       <tr>
-        <td rowspan="3">over the</td>
+        <th>Quick</th>
+        <th colspan="2">Brown Fox</th>
+        <th>Jumps</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td rowspan="3">Over the</td>
         <td>lazy</td>
         <td>dog</td>
         <td>and</td>
       </tr>
+
       <tr>
         <td>then</td>
         <td>it</td>
-        <td>fall</td>
+        <td>fell</td>
       </tr>
+
       <tr>
         <td colspan="3">prey to a lion</td>
       </tr>
-    </table>
-    <br />
-    <hr />
-    <br />
-    <br />
-    <button type="submit">
-      <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-      <a href="../TableAssignment3/subIndex.html"><b>Back to Category</b></a>
-    </button>
-  </body>
+    </tbody>
+
+  </table>
+
+  <br />
+  <hr />
+  <br /><br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../TableAssignment3/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
+</body>
 </html>

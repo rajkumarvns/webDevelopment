@@ -1,53 +1,61 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task5</title>
-  </head>
-  <body>
-    <h3 align="center">Course List and Weekly Schedule Table</h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
-    <p>
-      This webpage displays a list of courses for Fall 2013 along with a
-      detailed weekly timetable using an HTML table. It organizes course
-      schedules across different days of the week, demonstrating the use of
-      lists and tables together for structured data presentation, along with
-      navigation buttons for easy access.
-    </p>
-    <hr />
-    <br />
-    <p><u>List of Courses for Fall 2013:</u></p>
-    <ul>
-      <li>MDSE 4040: Visual Merchandising</li>
-      <li>MDSE 3350: Historic & Contemporary Styles of Apparel</li>
-      <li>MKTG 3720: Internet Marketing</li>
-      <li>DRTL 2080: Digital-Authoring & Publishing Tools</li>
-      <li>JOUR 3040: Internet Marketing concepts & Strategy</li>
-    </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 5</title>
+</head>
 
-    <table border="1" cellspacing="0">
-      <th>Name of Course</th>
-      <th>Monday</th>
-      <th>Tuesday</th>
-      <th>Wednesday</th>
-      <th>Thursday</th>
-      <th>Friday</th>
+<body>
+
+  <h3 align="center">Course List and Weekly Schedule Table</h3>
+  <hr />
+
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage displays a list of courses along with a weekly timetable
+    using an HTML table.
+  </p>
+
+  <hr />
+  <br />
+
+  <!-- Course List -->
+  <p><u>List of Courses for Fall 2013:</u></p>
+  <ul>
+    <li>MDSE 4040: Visual Merchandising</li>
+    <li>MDSE 3350: Historic & Contemporary Styles of Apparel</li>
+    <li>MKTG 3720: Internet Marketing</li>
+    <li>DRTL 2080: Digital Authoring & Publishing Tools</li>
+    <li>JOUR 3040: Internet Marketing Concepts & Strategy</li>
+  </ul>
+
+  <br />
+
+  <!-- Table -->
+  <table border="1" cellspacing="0" cellpadding="8" align="center">
+
+    <thead>
+      <tr>
+        <th>Name of Course</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+    </thead>
+
+    <tbody>
       <tr>
         <td>MDSE 4040</td>
         <td></td>
-        <td>
-          9:30 AM to <br />
-          10:50 AM
-        </td>
+        <td>9:30 AM to <br />10:50 AM</td>
         <td></td>
-        <td>
-          9:30 AM to<br />
-          10:50 AM
-        </td>
+        <td>9:30 AM to <br />10:50 AM</td>
         <td></td>
       </tr>
+
       <tr>
         <td>MDSE 3350</td>
         <td></td>
@@ -56,6 +64,7 @@
         <td>11:00 AM to <br />12:20 PM</td>
         <td></td>
       </tr>
+
       <tr>
         <td>MKTG 3720</td>
         <td></td>
@@ -64,6 +73,7 @@
         <td></td>
         <td></td>
       </tr>
+
       <tr>
         <td>DRTL 2080</td>
         <td></td>
@@ -72,6 +82,7 @@
         <td></td>
         <td></td>
       </tr>
+
       <tr>
         <td>JOUR 3040</td>
         <td></td>
@@ -80,16 +91,22 @@
         <td></td>
         <td></td>
       </tr>
-    </table>
-    <br />
-    <hr />
-    <br />
-    <br />
-    <button type="submit">
-      <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-      <a href="../TableAssignment3/subIndex.html"><b>Back to Category</b></a>
-    </button>
-  </body>
+    </tbody>
+
+  </table>
+
+  <br />
+  <hr />
+  <br /><br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../TableAssignment3/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
+</body>
 </html>

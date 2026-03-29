@@ -1,76 +1,99 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task6</title>
-  </head>
-  <body>
-    <h3 align="center">Complex Nested Lists and Text Formatting in HTML</h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
-    <p>
-      This webpage demonstrates advanced usage of nested ordered and unordered
-      lists in HTML, showcasing multiple levels of hierarchy and different list
-      styles. It also includes examples of superscript and subscript text
-      formatting, along with simple course labels and navigation buttons for
-      easy access to other pages.
-    </p><hr>
-    <ol>
-      <li>
-        List Item1
-        <ol type="A">
-          <li>Nested item 1.1</li>
-          <li>Nested item 1.2</li>
-        </ol>
-      </li>
-      <li>
-        List Item2
-        <ol type="i">
-          <li>Nested item 2.1</li>
-          <li>
-            Nested item 2.2
-            <ul type="Square">
-              <li>Nested item 2.2.1</li>
-              <li>
-                Nested item 2.2.2
-                <ul type="Circle">
-                  <li>Nested item 2.2.2.1</li>
-                  <li>Nested item 2.2.2.2</li>
-                </ul>
-              </li>
-              <li>Nested item 2.2.3</li>
-            </ul>
-          </li>
-          <li>Nested item 2.3</li>
-        </ol>
-      </li>
-      <li>
-        List Item3
-        <ul type="Disc">
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-        </ul>
-      </li>
-    </ol>
-    COMP 376
-    <ul>
-      Introduction to Game Programming
-    </ul>
-    Soen287
-    <ul>
-      Web Programming
-    </ul>
-    <p>This is a<sup>5</sup>test<sub>9</sub>for Assignment 1.</p>
-    <hr />
-    <br />
-    <br />
-    <button type="submit">
-      <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-      <a href="../ListAssignment2/subIndex.html"><b>Back to Category</b></a>
-    </button>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 6</title>
+</head>
+
+<body>
+
+  <h3 align="center">Complex Nested Lists and Text Formatting in HTML</h3>
+  <hr />
+
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage demonstrates advanced usage of nested ordered and unordered
+    lists in HTML, along with superscript and subscript formatting.
+  </p>
+
+  <hr />
+
+  <!-- Main List -->
+  <ol>
+
+    <li>
+      List Item 1
+      <ol type="A">
+        <li>Nested item 1.1</li>
+        <li>Nested item 1.2</li>
+      </ol>
+    </li>
+
+    <li>
+      List Item 2
+      <ol type="i">
+        <li>Nested item 2.1</li>
+
+        <li>
+          Nested item 2.2
+          <ul type="square">
+            <li>Nested item 2.2.1</li>
+
+            <li>
+              Nested item 2.2.2
+              <ul type="circle">
+                <li>Nested item 2.2.2.1</li>
+                <li>Nested item 2.2.2.2</li>
+              </ul>
+            </li>
+
+            <li>Nested item 2.2.3</li>
+          </ul>
+        </li>
+
+        <li>Nested item 2.3</li>
+      </ol>
+    </li>
+
+    <li>
+      List Item 3
+      <ul type="disc">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </li>
+
+  </ol>
+
+  <!-- Courses Section -->
+  <h3>Courses</h3>
+
+  <p><b>COMP 376</b></p>
+  <ul>
+    <li>Introduction to Game Programming</li>
+  </ul>
+
+  <p><b>SOEN 287</b></p>
+  <ul>
+    <li>Web Programming</li>
+  </ul>
+
+  <!-- Superscript & Subscript -->
+  <p>This is a<sup>5</sup> test<sub>9</sub> for Assignment 1.</p>
+
+  <hr />
+  <br /><br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../ListAssignment2/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
+</body>
 </html>

@@ -1,123 +1,172 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTMLFormTask10</title>
-  </head>
-  <body>
-    <h3 align="center">Professional Registration and Information Form</h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Form Task 10</title>
+</head>
+
+<body>
+
+  <!-- Title -->
+  <h3 align="center">Professional Registration and Information Form</h3>
+  <hr />
+
+  <!-- Description -->
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage presents a comprehensive registration form designed to collect
+    personal, contact, and professional details from users.
+  </p>
+  <hr />
+  <br />
+
+  <!-- Form -->
+  <form>
+
+    <h2>Registration Form</h2>
+
     <p>
-      This webpage presents a comprehensive registration form designed to
-      collect personal, contact, and professional details from users. It
-      includes fields for address, communication information, company details,
-      desired region, and professional designations. The form demonstrates the
-      use of various HTML input elements such as text fields, number inputs,
-      dropdown menus, and multiple checkboxes, along with informational text
-      ensuring user data confidentiality.
+      Of course, all submitted information is kept in the strictest confidence.<br />
+      You always retain control of your information with D.W. Simpson & Co.<br />
+      <strong>Our services are always at no cost to you.</strong>
     </p>
-    <hr />
+
+    <!-- Personal Info -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
+    <br /><br />
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" />
+    <br /><br />
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" />
+
+    <label for="state">State/Province:</label>
+    <input type="text" id="state" name="state" />
+    <br /><br />
+
+    <label for="zip">Zip Code:</label>
+    <input type="text" id="zip" name="zip" />
+    <br /><br />
+
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="country" />
+    <br /><br />
+
+    <!-- Contact -->
+    <label for="phone_home">Phone (H):</label>
+    <input type="tel" id="phone_home" name="phone_home" />
+
+    <label for="fax">Fax:</label>
+    <input type="text" id="fax" name="fax" />
+    <br /><br />
+
+    <label for="phone_work">Phone (W):</label>
+    <input type="tel" id="phone_work" name="phone_work" />
+    (if able to speak freely)
+    <br /><br />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+    <br /><br />
+
+    <!-- Company -->
+    <label for="company">Company Name:</label>
+    <input type="text" id="company" name="company" />
+    (Optional)
+    <br /><br />
+
+    <!-- Region -->
+    <label for="region">Desired Region:</label>
+    <select id="region" name="region">
+      <option value="">-- Select --</option>
+      <option value="north">North</option>
+      <option value="south">South</option>
+      <option value="east">East</option>
+      <option value="west">West</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="other_region">Other:</label>
+    <input type="text" id="other_region" name="other_region" />
+    <br /><br />
+
+    <!-- Professional Designations -->
+    <p><strong>Professional designations earned:</strong></p>
+
+    <input type="checkbox" id="college" name="designation" value="college" />
+    <label for="college">College Student</label>
+
+    <input type="checkbox" id="actuarial" name="designation" value="actuarial" />
+    <label for="actuarial">Actuarial Student</label>
+
+    <input type="checkbox" id="acas" name="designation" value="acas" />
+    <label for="acas">ACAS</label>
+
+    <input type="checkbox" id="fcas" name="designation" value="fcas" />
+    <label for="fcas">FCAS</label>
+
+    <input type="checkbox" id="asa" name="designation" value="asa" />
+    <label for="asa">ASA</label>
+
     <br />
-    <form>
-      <h2>Registation Form</h2>
-      <span
-        >Of course, all submitted information is kept in the strictest
-        confidence. <br />
-        You always retain control of your information with D.W.Simpson & Co.
-        <br /><b>Our services are always at no cost to you.</b></span
-      >
-      <br />
-      <label for="name">Name:</label>
-      <input type="text" />
-      <br /><br />
-      <label for="address">Address:</label>
-      <input type="text" />
-      <br /><br />
-      <label for="city">City:</label>
-      <input type="text" />
 
-      <label for="state">State/Province:</label>
-      <input type="text" />
-      <br /><br />
-      <label for="zip">Zip Code:</label>
-      <input type="number" />
-      <br /><br />
-      <label for="country">Country:</label>
-      <input type="text" />
-      <br /><br />
-      <label for="phone">Phone(H):</label>
-      <input type="number" />
+    <input type="checkbox" id="fsa" name="designation" value="fsa" />
+    <label for="fsa">FSA</label>
 
-      <label for="fax">Fax:</label>
-      <input type="text" />
-      <br /><br />
-      <label for="phone">Phone(W):</label>
-      <input type="text" /> (if able to speak freely)
+    <input type="checkbox" id="ea" name="designation" value="ea" />
+    <label for="ea">EA</label>
 
-      <br /><br />
-      <label for="email">Email:</label>
-      <input type="email" />
-      <br /><br />
-      <label for="company name">Company Name:</label>
-      <input type="number" /> (Optional) <br /><br />
-      <label for="region">Desired Region:</label>
-      <input type="text" />
-      <select name="region" id="other">
-        <option value="DesiredRegion">Other</option>
-        <option value="DesiredRegion">one</option>
-        <option value="DesiredRegion">two</option>
-        <option value="DesiredRegion">three</option>
-      </select>
+    <input type="checkbox" id="cfa" name="designation" value="cfa" />
+    <label for="cfa">CFA</label>
 
-      <label for="other">Other:</label>
-      <input type="text" />
-      <br /><br />
-      <caption>
-        Professional designations earned:
-      </caption>
-      <br />
-      <input type="checkbox" /><span>College Student</span>
-      <input type="checkbox" /><span>Actuarial Student</span>
-      <input type="checkbox" /><span>ACAS</span> <input type="checkbox" /><span
-        >FCAS</span
-      >
-      <input type="checkbox" /><span>ASA</span><br />
+    <input type="checkbox" id="mba" name="designation" value="mba" />
+    <label for="mba">MBA</label>
 
-      <input type="checkbox" /><span>FSA</span> <input type="checkbox" /><span
-        >EA</span
-      >
-      <input type="checkbox" /><span>CFA</span> <input type="checkbox" /><span
-        >MBA</span
-      >
-      <input type="checkbox" /><span>MAAA</span> <input type="checkbox" /><span
-        >FLA</span
-      >
-      <input type="checkbox" /><span>FCLA</span>
-      <br />
+    <input type="checkbox" id="maaa" name="designation" value="maaa" />
+    <label for="maaa">MAAA</label>
 
-      <input type="checkbox" /><span>FLAA</span> <input type="checkbox" /><span
-        >Financial Engineer</span
-      >
-      <input type="checkbox" /><span>M.S.</span> <input type="checkbox" /><span
-        >Ph.D.</span
-      >
-      <input type="checkbox" /><span>Data Mining</span>
-      <input type="checkbox" /><span>Quant</span>
-      <br />
-      <span>other Designations:</span>
-      <input type="text" />
-    </form>
     <br />
-    <hr />
-    <br />
-    <br />
-    <button type="submit">
-      <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-      <a href="../FormAssignment4/subIndex.html"><b>Back to Category</b></a>
-    </button>
-  </body>
+
+    <input type="checkbox" id="phd" name="designation" value="phd" />
+    <label for="phd">Ph.D.</label>
+
+    <input type="checkbox" id="ms" name="designation" value="ms" />
+    <label for="ms">M.S.</label>
+
+    <input type="checkbox" id="data" name="designation" value="data" />
+    <label for="data">Data Mining</label>
+
+    <input type="checkbox" id="quant" name="designation" value="quant" />
+    <label for="quant">Quant</label>
+
+    <br /><br />
+
+    <label for="other_designation">Other Designations:</label>
+    <input type="text" id="other_designation" name="other_designation" />
+    <br /><br />
+
+    <!-- Buttons -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+  </form>
+
+  <br />
+  <hr />
+  <br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../FormAssignment4/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
+</body>
 </html>

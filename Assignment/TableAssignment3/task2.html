@@ -1,28 +1,45 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task2</title>
-  </head>
-  <body>
-    <h3 align="center">HTML Table with Colspan and Nested Table</h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
-    <p>
-      This webpage demonstrates the use of advanced table features in HTML,
-      including column spanning (colspan) and nested tables. It presents
-      categorized data based on gender and location, showcasing how complex
-      table structures can be created within a single layout. Navigation buttons
-      are also included for easy access to other pages.
-    </p><hr><br>
-    <table border="1" cellspacing="0">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 2</title>
+</head>
+
+<body>
+
+  <h3 align="center">HTML Table with Colspan and Nested Table</h3>
+  <hr />
+
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage demonstrates the use of advanced table features in HTML,
+    including column spanning (colspan) and nested tables.
+  </p>
+
+  <hr />
+  <br />
+
+  <!-- Main Table -->
+  <table border="1" cellspacing="0" cellpadding="8" align="center">
+
+    <thead>
       <tr>
         <th colspan="2">CI</th>
         <th>All Genders</th>
-        <th>
-          By Genders
-          <table border="1">
+        <th>By Genders</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>Rural</th>
+        <td>652148</td>
+        <td>4215389</td>
+
+        <!-- Nested Table -->
+        <td>
+          <table border="1" cellspacing="0" cellpadding="5">
             <tr>
               <th>Males</th>
               <th>Females</th>
@@ -32,23 +49,24 @@
               <td>4512358</td>
             </tr>
           </table>
-        </th>
+        </td>
       </tr>
-      <tr>
-        <th>Rural</th>
-        <td>652148</td>
-        <td>4215389</td>
-        <td>4152348</td>
-      </tr>
-    </table><br>
-    <hr />
-    <br />
-    <br />
-    <button type="submit">
-      <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-      <a href="../TableAssignment3/subIndex.html"><b>Back to Category</b></a>
-    </button>
-  </body>
+    </tbody>
+
+  </table>
+
+  <br />
+  <hr />
+  <br /><br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../TableAssignment3/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
+</body>
 </html>

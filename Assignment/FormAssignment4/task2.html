@@ -1,93 +1,86 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTMLFormTask2</title>
-  </head>
-  <body>
-    <h3 align="center">Personal Details Form with Required Fields</h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
-    <p>
-      This webpage presents an HTML form designed to collect personal
-      information such as name, address, contact details, and email. It
-      highlights required fields using asterisks and demonstrates the use of
-      various input t
-    </p>
-    <hr />
-    <br />
-    <form>
-      <p>Please enter your personal details:</p>
-      <label for="firstname"
-        ><u><b>F</b></u
-        >irst name:*</label
-      >
-      <input type="text" id="firstname" />
-      <br /><br />
-      <label for="lastname"
-        ><u><b>L</b></u
-        >ast name:*</label
-      >
-      <input type="text" id="lastname" />
-      <br /><br />
-      <label for="streetAddress"
-        >Street <u><b>a</b></u
-        >ddress:</label
-      >
-      <input type="text" id="streetAddress" />
-      <br /><br />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Form Task 2</title>
+</head>
 
-      <label for="town/city"
-        ><u><b>T</b></u
-        >own/city:</label
-      >
-      <input type="text" id="town/city" />
-      <br /><br />
+<body>
 
-      <label for="postcode/zip"
-        >Post<u><b>c</b></u
-        >ode/zip:</label
-      >
-      <input type="text" id="postcode/zip" />
-      <br /><br />
+  <!-- Title -->
+  <h3 align="center">Personal Details Form with Required Fields</h3>
+  <hr />
 
-      <label for="telephone"
-        >Tele<u><b>p</b></u
-        >hone:</label
-      >
-      <input type="text" id="telephone" />
-      <br /><br />
+  <!-- Description -->
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage presents an HTML form designed to collect personal
+    information such as name, address, contact details, and email.
+    It highlights required fields and demonstrates the use of
+    various input types.
+  </p>
+  <hr />
 
-      <label for="mobile"
-        ><u><b>M</b></u
-        >obile:</label
-      >
-      <input type="text" id="mobile" />
-      <br /><br />
+  <!-- Form -->
+  <form>
+    <h4>Please enter your personal details:</h4>
 
-      <label for="email"
-        ><u><b>E</b></u
-        >mail address:*</label
-      >
-      <input type="email" id="email" />
-      <br /><br />
-      Fields marked * are required.
-      <br /><br />
+    <!-- First Name -->
+    <label for="firstname"><strong>First Name: *</strong></label><br />
+    <input type="text" id="firstname" name="firstname" required />
+    <br /><br />
 
-      <button type="submit">
-        <u><b>S</b></u
-        >ubmit
-      </button>
-    </form><br>
-    <hr />
-    <br />
-    <br />
-    <button type="submit">
-      <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-      <a href="../FormAssignment4/subIndex.html"><b>Back to Category</b></a>
-    </button>
-  </body>
+    <!-- Last Name -->
+    <label for="lastname"><strong>Last Name: *</strong></label><br />
+    <input type="text" id="lastname" name="lastname" required />
+    <br /><br />
+
+    <!-- Address -->
+    <label for="street"><strong>Street Address:</strong></label><br />
+    <input type="text" id="street" name="street" />
+    <br /><br />
+
+    <label for="city"><strong>Town/City:</strong></label><br />
+    <input type="text" id="city" name="city" />
+    <br /><br />
+
+    <label for="postcode"><strong>Postcode/Zip:</strong></label><br />
+    <input type="text" id="postcode" name="postcode" />
+    <br /><br />
+
+    <!-- Contact -->
+    <label for="telephone"><strong>Telephone:</strong></label><br />
+    <input type="tel" id="telephone" name="telephone" />
+    <br /><br />
+
+    <label for="mobile"><strong>Mobile:</strong></label><br />
+    <input type="tel" id="mobile" name="mobile" />
+    <br /><br />
+
+    <!-- Email -->
+    <label for="email"><strong>Email Address: *</strong></label><br />
+    <input type="email" id="email" name="email" required />
+    <br /><br />
+
+    <p><em>* Fields marked are required.</em></p>
+
+    <!-- Submit -->
+    <button type="submit">Submit</button>
+  </form>
+
+  <br />
+  <hr />
+  <br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../FormAssignment4/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
+</body>
 </html>

@@ -1,24 +1,30 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task7</title>
-  </head>
-  <body>
-    <h3 align="center">HTML Tables with Rowspan and Colspan Examples</h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
-    <p>
-      This webpage demonstrates multiple HTML table layouts using rowspan and
-      colspan attributes. It showcases how cells can be merged across rows and
-      columns to create complex table structures, providing a clear
-      understanding of advanced table formatting techniques along with
-      navigation buttons for easy access.
-    </p>
-    <hr />
-    <br />
-    <table border="1" cellspacing="0">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 7</title>
+</head>
+
+<body>
+
+  <h3 align="center">HTML Tables with Rowspan and Colspan Examples</h3>
+  <hr />
+
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage demonstrates multiple HTML table layouts using rowspan and
+    colspan attributes.
+  </p>
+
+  <hr />
+  <br />
+
+  <!-- Table 1 -->
+  <h4 align="center">Example 1</h4>
+
+  <table border="1" cellspacing="0" cellpadding="8" align="center">
+    <tbody>
       <tr>
         <td colspan="2">A</td>
         <td rowspan="3">B</td>
@@ -30,9 +36,16 @@
       <tr>
         <td>E</td>
       </tr>
-    </table>
-    <br />
-    <table border="1" cellspacing="0">
+    </tbody>
+  </table>
+
+  <br /><br />
+
+  <!-- Table 2 -->
+  <h4 align="center">Example 2</h4>
+
+  <table border="1" cellspacing="0" cellpadding="8" align="center">
+    <tbody>
       <tr>
         <td rowspan="3">1</td>
         <td>2</td>
@@ -46,16 +59,21 @@
         <td>6</td>
         <td>7</td>
       </tr>
-    </table><br>
-    <br />
-    <hr />
-    <br />
-    <br />
-    <button type="submit">
-      <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-      <a href="../TableAssignment3/subIndex.html"><b>Back to Category</b></a>
-    </button>
-  </body>
+    </tbody>
+  </table>
+
+  <br />
+  <hr />
+  <br /><br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../TableAssignment3/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
+</body>
 </html>

@@ -1,66 +1,93 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PersonalDetailsFieldsetTask5</title>
-  </head>
-  <body>
-    <h3 align="center">Personal Details Form Using Fieldset and Legend</h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
-    <p>
-      This webpage demonstrates an HTML form structured using the fieldset and
-      legend elements to group personal information fields. It collects details
-      such as salutation, name, gender, email, date of birth, and address,
-      showcasing organized form design along with a submit button and navigation
-      options.
-    </p>
-    <hr />
-    <br />
-    <form>
-      <fieldset>
-        <legend>PersonalDetails</legend>
-        Salutation
-        <br />
-        <select id="None">
-          <option value="None">--None--</option>
-          <option value="Mr.">Mr.</option>
-          <option value="Ms.">Ms.</option>
-          <option value="Dr.">Dr.</option>
-        </select>
-        <br />
-        First name: <input type="text" /> <br /><br />
-        Last name: <input type="text" /> <br /><br />
-        Gender:
-        <input type="radio" />
-        <label for="male" name="male">Male</label>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Details Fieldset Task 5</title>
+</head>
 
-        <input type="radio" />
-        <label for="female" name="male">Female</label>
-        <br /><br />
-        Email: <input type="email" />
-        <br />
-        <br />
-        <label for="birthdate">Date of Birth:</label>
-        <input type="date" id="birthdate" />
-        <br /><br />
-        <label for="Address">Address:</label>
-        <br />
-        <textarea id="message"></textarea>
-        <br /><br />
-        <button type="button">Submit</button>
-      </fieldset>
-    </form>
-    <br />
-    <hr />
-    <br />
-    <br />
-    <button type="submit">
-      <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-      <a href="../FormAssignment4/subIndex.html"><b>Back to Category</b></a>
-    </button>
-  </body>
+<body>
+
+  <!-- Title -->
+  <h3 align="center">Personal Details Form Using Fieldset and Legend</h3>
+  <hr />
+
+  <!-- Description -->
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage demonstrates an HTML form structured using the fieldset and
+    legend elements to group personal information fields. It collects details
+    such as salutation, name, gender, email, date of birth, and address.
+  </p>
+  <hr />
+
+  <!-- Form -->
+  <form>
+    <fieldset>
+      <legend>Personal Details</legend>
+
+      <!-- Salutation -->
+      <label for="salutation">Salutation:</label><br />
+      <select id="salutation" name="salutation">
+        <option value="">--None--</option>
+        <option value="mr">Mr.</option>
+        <option value="ms">Ms.</option>
+        <option value="dr">Dr.</option>
+      </select>
+      <br /><br />
+
+      <!-- Name -->
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname" required />
+      <br /><br />
+
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname" required />
+      <br /><br />
+
+      <!-- Gender -->
+      <p><strong>Gender:</strong></p>
+
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+      <br /><br />
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+
+      <!-- DOB -->
+      <label for="birthdate">Date of Birth:</label>
+      <input type="date" id="birthdate" name="birthdate" />
+      <br /><br />
+
+      <!-- Address -->
+      <label for="address">Address:</label><br />
+      <textarea id="address" name="address" rows="4" cols="30"></textarea>
+      <br /><br />
+
+      <!-- Button -->
+      <button type="submit">Submit</button>
+
+    </fieldset>
+  </form>
+
+  <br />
+  <hr />
+  <br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../FormAssignment4/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
+</body>
 </html>

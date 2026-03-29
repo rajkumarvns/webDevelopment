@@ -1,76 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FarewellPartySurveyFormTask8</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farewell Party Survey Form</title>
 </head>
+
 <body>
-     <h3 align="center">Farewell Party Survey Form</h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
-    <p>
-       This webpage features a survey form designed to collect feedback for a farewell party. It gathers user information such as name, email, and age, along with responses about attendance, participant type, and preferences regarding the program. The form includes various input elements like text fields, radio buttons, checkboxes, dropdown menus, and a textarea for comments or suggestions, along with submit and reset options for user interaction.
-    </p>
-    <hr />
-    <br />
-    <form>
-        <fieldset>
-           <b><caption>Farewell Party Survey Form</caption></b> 
-            <br><br>
-            <label for="name">Name </label>
-            <input type="text" id="name" placeholder="Enter your name">
-            <br><br>
 
+  <!-- Title -->
+  <h3 align="center">Farewell Party Survey Form</h3>
+  <hr />
 
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email">
+  <!-- Description -->
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage features a survey form designed to collect feedback for a farewell party.
+    It gathers user information such as name, email, and age, along with responses about
+    attendance, participant type, and preferences.
+  </p>
+  <hr />
+  <br />
 
-            <br><br>
-            <label for="age">Age</label>
-            <input type="number" id="age" placeholder="Enter your age">
+  <!-- Form -->
+  <form>
+    <fieldset>
+      <legend><strong>Farewell Party Survey Form</strong></legend>
 
-            <br><br>
-            <caption>Which option best describes you?</caption>
-            <select name="Student">
-                <option value="Student">Student</option>
-                <option value="Engineering Student">Engineering Student</option>
-                <option value="Pharmacy Student">Pharmacy Student</option>
-                <option value="Low Student">Low Student</option>
-            </select>
-            <br><br>
+      <!-- Name -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+      <br /><br />
 
-        <caption>Will you attend the party?</caption>
-            <input type="radio" name="yes" id="attendParty"><span>Yes</span>
-            <input type="radio" name="yes" id="attendParty"><span>No</span>
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      <br /><br />
 
-            <caption>What did you like about the program?</caption>
-            <br>
-            <input type="checkbox" name="yes"><span>Training</span> <br>
-            <input type="checkbox" name="yes"><span>The learning sessions from  Industry Experts</span><br>
-            <input type="checkbox" name="yes"><span>Community Meetups</span> <br>
-            <input type="checkbox" name="yes"><span>Brown Bag Sessions</span><br>
-            <input type="checkbox" name="yes"><span>Switching to Hybrid Mode</span><br>
-            <input type="checkbox" name="yes"><span>Food, Office etc.</checkbox</span><br>
+      <!-- Age -->
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" placeholder="Enter your age" />
+      <br /><br />
 
-            <br>
-            Any comments or suggestions 
-            <textarea name="message">
+      <!-- Role -->
+      <label for="role">Which option best describes you?</label>
+      <select id="role" name="role">
+        <option value="">-- Select --</option>
+        <option value="student">Student</option>
+        <option value="engineering">Engineering Student</option>
+        <option value="pharmacy">Pharmacy Student</option>
+        <option value="law">Law Student</option>
+      </select>
+      <br /><br />
 
-            </textarea>
-            <br>
-            <button type="reset">Reset</button>
-            <button type="submit">Submit</button>
-        </fieldset>
-    </form>
-    <hr />
-    <br />
-    <br />
-    <button type="submit">
-      <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-      <a href="../FormAssignment4/subIndex.html"><b>Back to Category</b></a>
-    </button>
+      <!-- Attendance -->
+      <p><strong>Will you attend the party?</strong></p>
+
+      <input type="radio" id="yes" name="attendance" value="yes" />
+      <label for="yes">Yes</label>
+
+      <input type="radio" id="no" name="attendance" value="no" />
+      <label for="no">No</label>
+
+      <br /><br />
+
+      <!-- Preferences -->
+      <p><strong>What did you like about the program?</strong></p>
+
+      <input type="checkbox" id="training" name="likes" value="training" />
+      <label for="training">Training</label><br />
+
+      <input type="checkbox" id="sessions" name="likes" value="sessions" />
+      <label for="sessions">Learning sessions from Industry Experts</label><br />
+
+      <input type="checkbox" id="meetups" name="likes" value="meetups" />
+      <label for="meetups">Community Meetups</label><br />
+
+      <input type="checkbox" id="brown" name="likes" value="brown" />
+      <label for="brown">Brown Bag Sessions</label><br />
+
+      <input type="checkbox" id="hybrid" name="likes" value="hybrid" />
+      <label for="hybrid">Switching to Hybrid Mode</label><br />
+
+      <input type="checkbox" id="food" name="likes" value="food" />
+      <label for="food">Food, Office etc.</label>
+
+      <br /><br />
+
+      <!-- Comments -->
+      <label for="comments">Any comments or suggestions:</label><br />
+      <textarea
+        id="comments"
+        name="comments"
+        rows="4"
+        cols="30"
+        placeholder="Enter your comments..."
+      ></textarea>
+
+      <br /><br />
+
+      <!-- Buttons -->
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+
+    </fieldset>
+  </form>
+
+  <hr />
+  <br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../FormAssignment4/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
 </body>
 </html>

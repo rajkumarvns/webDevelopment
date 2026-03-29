@@ -1,24 +1,29 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task4</title>
-  </head>
-  <body>
-    <h3 align="center">Student Information Table with Rowspan and Colspan</h3>
-    <hr />
-    <h3 align="center">Description:-</h3>
-    <p>
-      This webpage presents a structured table of student information using
-      HTML, demonstrating the use of rowspan and colspan attributes. It includes
-      details such as student ID, name, department, and roll number, organized
-      in a clear tabular format along with navigation buttons for easy access to
-      other pages.
-    </p>
-    <hr />
-    <br />
-    <table border="1">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 4</title>
+</head>
+
+<body>
+
+  <h3 align="center">Student Information Table with Rowspan and Colspan</h3>
+  <hr />
+
+  <h3 align="center">Description:</h3>
+  <p>
+    This webpage presents a structured table of student information using
+    HTML, demonstrating the use of rowspan and colspan attributes.
+  </p>
+
+  <hr />
+  <br />
+
+  <!-- Table -->
+  <table border="1" cellspacing="0" cellpadding="8" align="center">
+
+    <thead>
       <tr>
         <th rowspan="2">Heading</th>
         <th>Students</th>
@@ -30,6 +35,9 @@
         <th>Department</th>
         <th>Roll Number</th>
       </tr>
+    </thead>
+
+    <tbody>
       <tr>
         <td rowspan="4">Student List</td>
         <td>1</td>
@@ -37,33 +45,43 @@
         <td>Computer Science</td>
         <td>12345</td>
       </tr>
+
       <tr>
         <td>2</td>
         <td>Williams</td>
         <td>Electronics</td>
         <td>23456</td>
       </tr>
+
       <tr>
         <td>3</td>
         <td>Harry</td>
         <td>Electrical</td>
         <td>34567</td>
       </tr>
+
       <tr>
         <td>4</td>
         <td>Rick</td>
         <td>Civil</td>
         <td>45678</td>
       </tr>
-    </table><br>
-    <hr />
-    <br />
-    <br />
-    <button type="submit">
-      <a href="../index.html"><b>Back to Home</b></a>
-    </button>
-    <button type="submit">
-      <a href="../TableAssignment3/subIndex.html"><b>Back to Category</b></a>
-    </button>
-  </body>
+    </tbody>
+
+  </table>
+
+  <br />
+  <hr />
+  <br /><br />
+
+  <!-- Navigation -->
+  <a href="../index.html">
+    <button type="button"><b>Back to Home</b></button>
+  </a>
+
+  <a href="../TableAssignment3/subIndex.html">
+    <button type="button"><b>Back to Category</b></button>
+  </a>
+
+</body>
 </html>
