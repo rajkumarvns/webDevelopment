@@ -101,12 +101,12 @@ input {
 }
 
 .register h2 span {
-  border-bottom: 5px solid #153fb1;
+  border-bottom: 5px solid #4070f4;
 }
 
 button {
   padding: 15px 0 15px;
-  background-color: #153fb1;
+  background-color: #4070f4;
   border: none;
   border-radius: 10px;
   color: white;
