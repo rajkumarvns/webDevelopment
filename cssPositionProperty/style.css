@@ -37,6 +37,12 @@ header {
     .contact {
         display: flex;
         gap: 20px;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
 
         button {
             padding: 10px;
@@ -46,6 +52,8 @@ header {
             background-color: #125785;
             box-shadow: 5px 5px 1px 0 #5cbeff;
         }
+
+
     }
 }
 
