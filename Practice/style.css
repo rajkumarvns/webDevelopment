@@ -9,12 +9,12 @@
   display: flex;
   justify-content: space-evenly;
   align-items: end;
-  padding: 52px;
+  padding: 40px;
   background-color: #4070f3;
 }
 
 .login {
-  width: 330px;
+  width: 310px;
   height: 400px;
   border-radius: 10px;
   background-color: white;
@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
 }
 
 .login-heading span {
@@ -85,7 +86,7 @@ input {
 }
 
 .register {
-  width: 400px;
+  width: 450px;
   height: 550px;
   border-radius: 10px;
   background-color: white;
@@ -93,7 +94,6 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  box-shadow: 4px 4px 2px black;
 }
 
 .register h2 {
@@ -105,7 +105,7 @@ input {
   border-bottom: 5px solid #4070f4;
 }
 
-button{
+button {
   padding: 15px 0 15px;
   background-color: #4070f4;
   border: none;
@@ -114,8 +114,6 @@ button{
   font-size: medium;
   font-weight: 550;
 }
-
-
 
 .login-to-signup {
   display: flex;
@@ -135,6 +133,5 @@ a {
 
 a{
   text-decoration: none;
-  color: #1147ddd8;
+  color: #4070f3;
 }
-
