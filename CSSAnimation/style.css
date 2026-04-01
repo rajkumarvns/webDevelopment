@@ -1,0 +1,33 @@
+#div1{
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    color: aqua;
+    overflow: hidden;
+    text-wrap-mode:nowrap ;
+    transition: width 3s linear 1s, color 2s linear 1s ;
+   
+
+}
+#div1:hover{
+    width: 380px;
+    color: blue;
+    /* transition: width 5s linear 2s; */
+    /* transition: width 5s ease 2s;
+    transition: width 5s ease-in 2s; */
+    /* transition: width 5s ease-in 2s; */
+    /* transition: width 3s linear 1s; */
+}
+#div2{
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    margin: auto;
+    color: rebeccapurple;
+     transition: transform 1s linear ;
+     /* transition: transform 1s linear ; */
+}
+#div2:hover{
+    transform: rotateX(270deg);
+    /* transform: rotateZ(90deg); */
+}

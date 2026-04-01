@@ -1,0 +1,16 @@
+#div1{
+    width: 40px;
+    height: 20px;
+    border: 1px solid black;
+    color: aqua;
+    overflow: hidden;
+    text-wrap-mode:nowrap ;
+    transition: transform 3s linear 2s;
+}
+
+#div1:hover{
+    /* height: 50px; */
+    width: 110px;
+    color:red;
+    /* transition: width 5s linear 2s; */
+}
