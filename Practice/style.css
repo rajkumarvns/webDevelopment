@@ -113,6 +113,12 @@ button {
   color: white;
   font-size: medium;
   font-weight: 550;
+  box-shadow: 3px 3px 5px 4px rgb(23, 40, 129);
+  
+}
+button:active{
+  transform: translate(3px , 3px);
+  box-shadow: none;
 }
 
 .login-to-signup {
