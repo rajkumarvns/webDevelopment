@@ -1,0 +1,40 @@
+:root{
+    --main-color:red;
+    --sub-color:skyblue;
+    --text-color:green;
+}
+h1{
+    color:var(--main-color);
+    /* color: red; */
+}
+h3{
+    color:var(--sub-color)
+    /* color: skyblue; */
+}
+p{
+    color:var(--text-color)
+    /* color: green; */
+}
+th{
+    color: var(--main-color);
+    /* color: red; */
+}
+td{
+    color: var(--text-color);
+    /* color: green; */
+}
+button{
+    border: 2px solid black;
+    color: var(--main-color);
+
+}
+#b2{
+     border: 2px solid black;
+    color: var(--sub-color);
+}
+table{
+    border-collapse: collapse;
+}
+th,td{
+    border: 2px solid pink;
+}
