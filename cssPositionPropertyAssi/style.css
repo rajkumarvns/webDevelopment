@@ -13,9 +13,9 @@ header {
     cursor: pointer;
     gap: 100px;
     margin: 0 30px;
-    position: sticky;
+    /* position: sticky;
     top: 0;
-    z-index: 99;
+    z-index: 99; */
 
     .head {
         display: flex;
@@ -93,6 +93,7 @@ footer{
     gap: 10px;
     border-radius: 20px;
     background-color: rgba(214, 242, 254, .5);
+
 }
 .item {
     display: flex;
@@ -237,4 +238,98 @@ span{
     width: 140px;
     height: 48px;
     
+}
+@media screen and (max-width: 1200px) {
+    #demoForm {
+        margin: 20px 10%;
+    }
+
+    header {
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .navLinks {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #demoForm {
+        margin: 20px 5%;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        gap: 30px;
+        height: auto;
+        padding: 30px 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item div {
+        width: 100%;
+    }
+
+    #btn {
+        justify-content: center;
+    }
+
+    #btn #button {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 576px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #demoForm {
+        width: 95%;
+        padding: 10px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #year {
+        width: 100%;
+    }
+
+    .item-course div {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .fonts {
+        justify-content: center;
+    }
 }
