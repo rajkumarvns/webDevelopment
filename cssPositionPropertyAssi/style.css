@@ -291,7 +291,7 @@ footer {
     gap: 15px;
     font-size: 15px;
 }
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     form {
         margin: 30px 10%;
         padding: 0 20px;
@@ -319,7 +319,7 @@ footer {
         width: 100%;
     }
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     form {
         margin: 20px 10px;
         padding: 0 15px;
@@ -330,7 +330,7 @@ footer {
     }
 
     input, select {
-        width: 100%;
+        width: 90%;
         font-size: 14px;
     }
 
@@ -338,13 +338,13 @@ footer {
         width: 100%;
     }
 }
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     footer .footerDiv1 {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .interest {
         width: 100%;
         gap: 14px;
