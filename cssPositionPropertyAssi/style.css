@@ -291,10 +291,18 @@ footer {
     gap: 15px;
     font-size: 15px;
 }
+.otherLinks{
+        display: grid;
+        justify-content: left;
+    }
 @media screen and (max-width: 992px) {
     form {
         margin: 30px 10%;
         padding: 0 20px;
+    }
+    .otherLinks{
+        display: grid;
+        justify-content: left;
     }
 
     .form-item {
@@ -318,6 +326,8 @@ footer {
     .information {
         width: 100%;
     }
+
+    
 }
 @media screen and (max-width: 600px) {
     form {
@@ -336,6 +346,10 @@ footer {
 
     .submit button {
         width: 100%;
+    }
+    .otherLinks{
+        display: grid;
+        justify-content: center;
     }
 }
 @media screen and (max-width: 992px) {
