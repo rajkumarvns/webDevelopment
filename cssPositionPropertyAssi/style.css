@@ -234,8 +234,8 @@ input {
     width: 200px;
     height: 40px;
     border-radius: 40px;
-    /* position: fixed; */
-} */
+     position: fixed; */
+
 span{
     align-items: center;
     justify-content: space-around;
