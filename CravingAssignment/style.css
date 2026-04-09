@@ -1,0 +1,40 @@
+#navBar{
+    height: 65px;
+
+    background-color:#c2410c;
+    padding: 4px 48px;
+}
+.login{
+    
+    padding: 4px 12px;
+    background-color: #c2410c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+/* Register button styling */
+.register-btn {
+  background-color:  white;
+   color: #c2410c;
+  
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: white; /* Bootstrap primary blue */
+ background-color: #c2410c;
+  border: 1px solid #ccc;
+  color: white;
+}
+.login{
+
+}
+.login:hover{
+    border: 1px solid whitesmoke;
+    background-color: white; /* Bootstrap primary blue */
+    background-color: #c2410c;
+}
+/* .slider{
+    width: 100%;
+    height: 50px;
+} */
