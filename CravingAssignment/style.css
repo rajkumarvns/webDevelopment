@@ -26,9 +26,9 @@
   border: 1px solid #ccc;
   color: white;
 }
-.login{
+/* .login{
 
-}
+} */
 .login:hover{
     border: 1px solid whitesmoke;
     background-color: white; /* Bootstrap primary blue */
