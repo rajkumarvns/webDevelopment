@@ -1,40 +1,123 @@
-#navBar{
-    height: 65px;
+:root {
+  --color-primary:          #c2410c;  /* Brand orange-red */
+  --color-primary-content:  #ffffff;  /* Text on primary background */
+  --color-secondary:        #6b7280;  /* Muted gray text */
+  --color-neutral:          #3f3f46;  /* Dark sections (footer, bars) */
+  --color-neutral-content:  #f4f4f5;  /* Text on dark backgrounds */
+  --color-base-100:         #fff8f1;  /* Warm white page background */
+  --color-base-200:         #f5ede5;  /* Slightly darker warm white */
+  --color-base-300:         #e7d9c9;  /* Borders and dividers */
+  --color-base-content:     #2d1b10;  /* Default dark text */
+  --color-error:            #ef4444;  /* Red for error states */
+  --color-success:          #22c55e;  /* Green for success states */
+}
 
-    background-color:#c2410c;
-    padding: 4px 48px;
+/* Navbar */
+#navBar {
+  height: 65px;
+  background-color: var(--color-primary);
+  padding: 4px 48px;
 }
-.login{
-    
-    padding: 4px 12px;
-    background-color: #c2410c;
-    border: none;
-    border-radius: 5px;
-    color: white;
+
+/* Logo */
+.logo-img {
+  width: 86px;
+  height: 55px;
 }
-/* Register button styling */
-.register-btn {
-  background-color:  white;
-   color: #c2410c;
-  
+
+/* Login button */
+.login {
+  padding: 6px 14px;
+  background-color: var(--color-primary);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: var(--color-primary-content);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.register-btn:hover {
-  background-color: white; /* Bootstrap primary blue */
- background-color: #c2410c;
-  border: 1px solid #ccc;
-  color: white;
+.login:hover {
+  color: var(--color-primary-content);
+  border: 1px solid var(--color-neutral-content);
 }
-/* .login{
 
-} */
-.login:hover{
-    border: 1px solid whitesmoke;
-    background-color: white; /* Bootstrap primary blue */
-    background-color: #c2410c;
+/* Register */
+.register {
+  background-color: var(--color-primary-content);
+  color: var(--color-primary);
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-/* .slider{
-    width: 100%;
-    height: 50px;
-} */
+
+.register:hover {
+  background-color: var(--color-primary);
+  color: var(--color-primary-content);
+  border: 1px solid var(--color-primary-content);
+}
+
+.carousel-img {
+  height: 100vh;       
+  object-fit: cover;  
+}
+
+.dull-img {
+  filter: brightness(60%);
+}
+
+/* Center caption vertically */
+.carousel-caption {
+  top: 0;
+  bottom: 0;
+}
+
+/* Responsive text */
+.carousel-caption h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+}
+
+/* Buttons inside carousel caption */
+.carousel-caption .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+.carousel-caption .btn-primary {
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-primary-content);
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Container: 80% width, centered */
+.search-bar-container {
+  width: 80%;
+  margin: 0 auto; /* centers it */
+  background-color: var(--color-primary-content);
+  border-radius: 8px;
+  padding: 0 12px;
+}
+
+/* Inner box */
+.search-inner {
+  width: 100%;
+    display: flex;
+    align-items: center;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+/* Input styling */
+.search-inner input {
+  flex: 1;
+  font-size: 1rem;
+  background: transparent;
+  outline: none;
+}
+.form-control::placeholder {
+  color: var(--color-primary);
+  opacity: 0.5;
+}
