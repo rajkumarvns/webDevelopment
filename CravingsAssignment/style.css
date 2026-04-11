@@ -10,6 +10,7 @@
   --color-base-content:     #2d1b10;  /* Default dark text */
   --color-error:            #ef4444;  /* Red for error states */
   --color-success:          #22c55e;  /* Green for success states */
+  --color-pink:            #D9468f;
 }
 
 /* Navbar */
@@ -121,7 +122,105 @@
   color: var(--color-primary);
   opacity: 0.5;
 }
-.bground{
-  background: linear-gradient(135deg, rgba(194, 65, 12, 1) 0%, rgba(194, 65, 12, 0.8) 100%);
+section{
+  background: linear-gradient(180deg,var(--color-primary), var(--color-primary-content));
 }
+button{
+  background-color: var(--color-base-300);
+  border-radius: 3px;
+  border: none;
+}
+a{
+  background-color: var(--color-primary);
+  color: var(--color-primary-content);
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+span{
+  background-color: var(--color-primary);
+  color: var(--color-primary-content);
+  border: none;
+  padding: 5px 10px;
+  margin-top: 4px;
+}
+.section1 {
+ background: linear-gradient(var(--color-base-100));
+}
+
+.section2 {
+  background: linear-gradient(var(--color-primary-content));
+}
+
+.card {
+  /* background-color: var(--color-neutral-content); */
+  background-color: var(--color-base-100);
+ } 
+ .card-title1{
+  color:var(--color-primary);
+}
+.coloring{
+  color:var(--color-pink);
+}
+
+.circle-avatar {
+  background-color: var(--color-primary);
+  color: var(--color-primary-content);
+  font-weight: bold;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.circle-avatar1{
+  background-color: var(--color-pink);
+  color: var(--color-primary-content);
+  font-weight: bold;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  
+}
+
+.card {
+  min-height: auto;   
+  padding: 1rem;
+  border: none;     
+}
+.mycard:hover {
+  transform: scale(1.05); /* scale slightly on both axes */
+  z-index: 10; /* bring card above others */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* stronger shadow when hovered */
+}
+
+.card-body {
+  padding: 1rem;      
+}
+
+@media (max-width: 576px) {
+  .circle-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
+
 
