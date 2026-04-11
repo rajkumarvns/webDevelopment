@@ -19,7 +19,7 @@
       class="sticky-top d-flex justify-content-between align-items-center"
     >
       <!-- Logo -->
-      <div class="logoDiv ms-3">
+      <div class="logoDiv ms-1">
         <img src="./images/logo.png" alt="Logo" class="logo-img" />
       </div>
 
@@ -28,7 +28,7 @@
         <a href="#" class="login text-decoration-none">Login</a>
         <a
           href="#"
-          class="register text-decoration-none me-2 py-1 px-3 text-center"
+          class="register text-decoration-none  py-1 px-3 text-center"
           >Register</a
         >
       </div>
@@ -71,7 +71,7 @@
       </div>
 
       <!-- Slides -->
-      <div id="wallpaper" class="carousel-inner">
+      <div id="wallpaper" class="carousel-inner ">
         <!-- Slide 1 -->
         <div class="carousel-item active" data-bs-interval="5000">
           <img
@@ -274,61 +274,56 @@
       </button>
     </div>
     <!-- Featured Restaurants Section -->
-    <section id="imagecard" class="py-5 bg-dark">
+    <section id="imagecard" class="py-4 bg-dark">
       <div class="container w-75">
-        <h3 class="text-white mb-2">Featured Restaurants</h3>
-        <p class="text-white opacity-75 mb-4">3 restaurants available</p>
+        <h2 class="text-white mb-2 ms-3">Featured Restaurants</h2>
+        <p class="text-white opacity-75 ms-3">3 restaurants available</p>
 
-        <div class="row g-4 border">
-          <!-- Card 1 -->
-          <div class="col-md-4 py-5 border my-5">
+        <div id="yellowbtn" class="row px-2">
+          <!-- card 1 -->
+          <div class="col-md-4">
             <div class="card shadow-lg border-0 position-relative rounded-4">
               <img
                 src="./images/topViewRestr.avif"
                 class="card-img-top rounded-top-4"
-                alt="Under The Mango Tree"
-                style="height: 225px; object-fit: cover"
+                alt="Raj Darbar"
+                style="height: 210px; object-fit: cover"
               />
               <span
-                class="position-absolute top-0 end-0 badge bg-warning text-dark rounded-pill m-3"
+                class="position-absolute top-0 end-0 badge py-2 px-3 fs-6 fw-medium rounded-pill m-3"
               >
                 ★ 3.6
               </span>
               <div class="card-body">
-                <h5 class="">Under The Mango Tree</h5>
-                <p class="">
+                <h5 class="card-title">Under The Mango Tree</h5>
+                <p class="small">
                   Enjoy the thrill of grill and barbecue at Under The Mango Tree
                   restaurant at Jehan Numa Palace, Bhopal. Head here now!
                 </p>
 
                 <div class="d-flex gap-2 flex-wrap mb-3">
-                  <button class="btn btn-sm btn-outline-secondary">
-                    Indian
-                  </button>
-                  <button class="btn btn-sm btn-outline-secondary">
-                    Chinese
-                  </button>
-                  <button class="btn btn-sm btn-outline-secondary">
-                    Italian
-                  </button>
+                  <button class="border-0 rounded-1">Indian</button>
+                  <button class="border-0 rounded-1">Chineese</button>
+                  <button class="border-0 rounded-1">Italian</button>
                 </div>
-
-                <a href="#" class="btn btn-primary w-100">Explore Menu</a>
+                <div id="line" class="border-top my-3"></div>
+                <a href="#" class="btn btn-primary w-100 border-0"
+                  >Explore Menu</a
+                >
               </div>
             </div>
           </div>
-
           <!-- Card 2 -->
-          <div class="col-md-4 py-5 ">
-            <div id="" class="card h-100 shadow-lg border-0 position-relative rounded-4">
+          <div class="col-md-4">
+            <div class="card shadow-lg border-0 position-relative rounded-4">
               <img
                 src="./images/restraimg.webp"
-                class="card-img-top rounded-top-4 "
+                class="card-img-top rounded-top-4"
                 alt="Raj Darbar"
-                style="height: 225px; object-fit: cover"
+                style="height: 210px; object-fit: cover"
               />
               <span
-                class="position-absolute top-0 end-0 badge bg-warning text-dark rounded-pill m-3"
+                class="position-absolute top-0 end-0 badge py-2 px-3 fs-6 fw-medium rounded-pill m-3"
               >
                 ★ 4.8
               </span>
@@ -341,56 +336,47 @@
                 </p>
 
                 <div class="d-flex gap-2 flex-wrap mb-3">
-                  <button class="btn btn-sm btn-outline-secondary">
-                    Indian
-                  </button>
-                  <button class="btn btn-sm btn-outline-secondary">
-                    Chinese
-                  </button>
-                  <button class="btn btn-sm btn-outline-secondary">
-                    Italian
-                  </button>
+                  <button class="border-0 rounded-1">Indian</button>
+                  <button class="border-0 rounded-1">Chineese</button>
+                  <button class="border-0 rounded-1">Italian</button>
                 </div>
-                <div id="line" class="border-bottom mb-4"></div>
-                <a href="#" class="btn btn-primary w-100">Explore Menu</a>
+                <div id="line" class="border-top my-3"></div>
+                <a href="#" class="btn btn-primary w-100 border-0"
+                  >Explore Menu</a
+                >
               </div>
             </div>
           </div>
 
           <!-- Card 3 -->
-          <div class="col-md-4 py-5">
-            <div class="card h-100 shadow-lg border-0 position-relative">
+          <div class="col-md-4">
+            <div class="card shadow-lg border-0 position-relative rounded-4">
               <img
                 src="./images/seatingplaceImg.webp"
-                class="card-img-top"
+                class="card-img-top rounded-top-4"
                 alt="Countryside Culture"
-                style="height: 250px; object-fit: cover"
+                style="height: 210px; object-fit: cover"
               />
               <span
-                class="position-absolute top-0 end-0 badge bg-warning text-dark rounded-pill m-3"
+                class="position-absolute top-0 end-0 badge py-2 px-3 fs-6 fw-medium rounded-pill m-3"
               >
                 ★ 4.1
               </span>
               <div class="card-body">
                 <h5 class="card-title">Countryside Culture</h5>
-                <p class="card-text">
+                <p class="small">
                   A hidden gem away from the city, offering lush green meadows
                   and peaceful walking paths for relaxation.
                 </p>
 
                 <div class="d-flex gap-2 flex-wrap mb-3">
-                  <button class="btn btn-sm btn-outline-secondary">
-                    Indian
-                  </button>
-                  <button class="btn btn-sm btn-outline-secondary">
-                    Chinese
-                  </button>
-                  <button class="btn btn-sm btn-outline-secondary">
-                    Italian
-                  </button>
+                  <button class="border-0 rounded-1">Indian</button>
+                  <button class="border-0 rounded-1">Chineese</button>
                 </div>
-
-                <a href="#" class="btn btn-primary w-100">Explore Menu</a>
+                <div id="line" class="border-top my-3"></div>
+                <a href="#" class="btn btn-primary w-100 border-0"
+                  >Explore Menu</a
+                >
               </div>
             </div>
           </div>
@@ -399,7 +385,7 @@
     </section>
     <!-- visiters section 1 -->
     <section class="section1">
-      <div class="container p-5 rounded-4">
+      <div class="container py-5 rounded-4 w-75">
         <h2 class="text-center mb-3 fs-2 fw-bolder">Cravings by the Numbers</h2>
         <p class="text-center mb-5 fs-5">
           See why millions trust us for their daily food delivery needs
@@ -408,7 +394,7 @@
         <div class="row g-4 justify-content-center border-0">
           <!-- Card 1 -->
           <div class="col-md-3">
-            <div class="card text-center shadow-sm h-100 bg-white">
+            <div class="card text-center shadow-sm h-100 bg-white border-0">
               <div class="card-body">
                 <h3 class="card-title1 fs-1 fw-bolder mt-5">2.5M+</h3>
                 <h5 class="card-subtitle mb-2">Successful Deliveries</h5>
@@ -422,7 +408,7 @@
 
           <!-- Card 2 -->
           <div class="col-md-3">
-            <div class="card text-center shadow-sm h-100 bg-white">
+            <div class="card text-center shadow-sm h-100 bg-white border-0">
               <div class="card-body">
                 <h3 class="coloring fs-1 fw-bolder mt-5">500K+</h3>
                 <h5 class="card-subtitle mb-2">Happy Customers</h5>
@@ -436,7 +422,7 @@
 
           <!-- Card 3 -->
           <div class="col-md-3">
-            <div class="card text-center shadow-sm h-100 bg-white">
+            <div class="card text-center shadow-sm h-100 bg-white border-0">
               <div class="card-body">
                 <h3
                   class="card-title1 fs-1 fw-bolder d-flex justify-content-center mt-5"
@@ -454,7 +440,7 @@
 
           <!-- Card 4 -->
           <div class="col-md-3">
-            <div class="card text-center shadow-sm h-100 bg-white py-5">
+            <div class="card text-center shadow-sm h-100 bg-white py-5 border-0">
               <div class="card-body">
                 <h3 class="coloring fs-1 fw-bolder">1K+</h3>
                 <h5 class="card-subtitle mb-2">Active Delivery Partners</h5>
@@ -469,7 +455,7 @@
       </div>
       <!-- section 2 -->
       <section class="section2">
-        <div class="container py-5">
+        <div class="container py-5 w-75 ">
           <h2 class="text-center mb-3 fs-2 fw-bolder">
             What Our Customers Say
           </h2>
@@ -477,10 +463,10 @@
             Real feedback from real food lovers
           </p>
 
-          <div class="row g-4 justify-content-center">
+          <div id="startRating" class="row g-4 justify-content-center">
             <!-- Testimonial 1 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card shadow-sm h-100 p-3 rounded-4">
+            <div class="col-12 col-md-6 col-lg-4 ">
+              <div class="card shadow-sm h-100 p-3 rounded-4 border-0">
                 <div class="card-body text-start">
                   <p class="text-warning fs-3 mb-2">★★★★★</p>
                   <h5 class="card-title">Amazing Service!</h5>
@@ -501,7 +487,7 @@
 
             <!-- Testimonial 2 -->
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="card shadow-sm h-100 p-3 rounded-4">
+              <div class="card shadow-sm h-100 p-3 rounded-4 border-0">
                 <div class="card-body text-start">
                   <p class="text-warning fs-3 mb-2">★★★★★</p>
                   <h5 class="card-title">Best App Ever!</h5>
@@ -522,7 +508,7 @@
 
             <!-- Testimonial 3 -->
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="card shadow-sm h-100 p-3 rounded-4">
+              <div class="card shadow-sm h-100 p-3 rounded-4 border-0">
                 <div class="card-body text-start">
                   <p class="text-warning fs-3 mb-2">★★★★★</p>
                   <h5 class="card-title">Excellent Choices</h5>
@@ -565,7 +551,7 @@
           <div class="col-md-3 text-center text-md-start">
             <img src="./images/circleLogo.png" alt="Logo" class="footer-logo" />
           </div>
-          <div class="col-md-9 ">
+          <div class="col-md-9">
             <p class="footer-tagline mt-2">
               --- Your favorite food delivery platform connecting customers with
               restaurants and riders. ---
