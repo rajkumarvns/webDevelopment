@@ -121,3 +121,7 @@
   color: var(--color-primary);
   opacity: 0.5;
 }
+.bground{
+  background: linear-gradient(135deg, rgba(194, 65, 12, 1) 0%, rgba(194, 65, 12, 0.8) 100%);
+}
+
