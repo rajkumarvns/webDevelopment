@@ -274,17 +274,20 @@ section {
 }
 .wallpaper {
   height: 90vh;
-  width: 100%;         /* full width */
-  /* object-fit: cover;   crop proportionally */
+  width: 100%;      
+  /* object-fit: cover; */
 }
 .wallpaper {
-  height: 100vh;       /* full viewport height */
+  height: 100vh;    
   width: 100%;
-  object-fit: cover;   /* crop proportionally */
+  object-fit: cover; 
 }
 
 .hero-section {
-  position: relative;  /* allow overlay positioning */
+  position: relative;
+  height: 90vh;
+  width: 100%;
+
 }
 
 .overlay {
@@ -295,10 +298,76 @@ transform: translateX(-50%);
   /* transform: translate(-50%, -50%); */
   max-width: 400px;
   width: 90%;
-  background: var(--color-neutral-content); /* semi-transparent for readability */
+  background: var(--color-neutral-content); 
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
+.hero-section {
+  position: relative;
+}
+
+.forms {
+  position: absolute;
+  top: 13%;        /* top side */
+  left: 8%;       /* left side */
+  max-width: 445px;
+  width: 90%;
+  background: var(--color-neutral-content); /* translucent white for readability */
+  padding: 1.8rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.custom-input::placeholder {
+  color: var(--color-base-content) !important;
+}
+.regis{
+  /* height: auto; */
+  background-color: var(--color-primary);
+  color: var(--color-neutral-content);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.regis:hover{
+  background-color: var(--color-primary);
+  color: var(--color-neutral-content);
+}
+
+.regi{
+  text-decoration: none;
+  color:var(--color-primary);
+}
+.regi:hover{
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+#wb{
+  color: var(--color-primary);
+  font-weight: bold;
+}
+#clr{
+  color: var(--color-primary);
+}
+#togglePassword:hover {
+  color: var(--color-primary);
+}
+.hero-section {
+  position: relative;
+}
+.formss {
+  position: absolute;
+  top: 13%;       /* top side */
+  right: 5%;       /* left side */
+
+  width: 90%;
+  background: var(--color-neutral-content); /* translucent white for readability */
+  border-radius: 8px;
+  margin-right: 8%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+
 
 
