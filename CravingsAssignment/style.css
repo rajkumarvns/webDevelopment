@@ -72,6 +72,7 @@
 /* Center caption vertically */
 .carousel-caption {
   top: 0;
+
   bottom: 0;
 }
 
@@ -271,3 +272,33 @@ section {
 .footer-link:hover {
   color: var(--color-primary-content);
 }
+.wallpaper {
+  height: 90vh;
+  width: 100%;         /* full width */
+  /* object-fit: cover;   crop proportionally */
+}
+.wallpaper {
+  height: 100vh;       /* full viewport height */
+  width: 100%;
+  object-fit: cover;   /* crop proportionally */
+}
+
+.hero-section {
+  position: relative;  /* allow overlay positioning */
+}
+
+.overlay {
+  position: absolute;
+  top: 20%; 
+transform: translateX(-50%);
+  left: 21%;
+  /* transform: translate(-50%, -50%); */
+  max-width: 400px;
+  width: 90%;
+  background: var(--color-neutral-content); /* semi-transparent for readability */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
