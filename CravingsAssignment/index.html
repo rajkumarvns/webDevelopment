@@ -15,26 +15,27 @@
   <body>
     <!-- Header -->
     <header
-      id="navBar"
-      class="sticky-top d-flex justify-content-between align-items-center"
+      id="navbar"
+      class="sticky-top d-flex justify-content-between align-items-center flex-wrap container-fluid px-5 py-1"
     >
       <!-- Logo -->
       <div class="logoDiv ms-1">
-        <a href="index.html"><img src="./images/logo.png" alt="Logo" class="logo-img" /></a>
+        <a href="index.html">
+          <img src="./images/logo.png" alt="Logo" class="logo-img img-fluid" />
+        </a>
       </div>
 
       <!-- Buttons aligned right -->
-      <div class="d-flex gap-2 align-items-center">
+      <div class="d-flex gap-2 align-items-center mt-2 mt-md-0">
         <a href="login.html" class="login text-decoration-none">Login</a>
         <a
           href="register.html"
-          class="register text-decoration-none  py-1 px-3 text-center"
-          >Register</a
+          class="register text-decoration-none py-1 px-3 text-center"
         >
+          Register
+        </a>
       </div>
     </header>
-
-    <!-- Carousel -->
     <div
       id="carouselExampleDark"
       class="carousel carousel-dark slide"
@@ -71,7 +72,7 @@
       </div>
 
       <!-- Slides -->
-      <div id="wallpaper" class="carousel-inner ">
+      <div id="wallpaper" class="carousel-inner">
         <!-- Slide 1 -->
         <div class="carousel-item active" data-bs-interval="5000">
           <img
@@ -80,7 +81,7 @@
             alt="image 1"
           />
           <div
-            class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center h-100 text-white"
+            class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center h-100 text-white pb-5"
           >
             <h1>Your Favorite Food,<br />Delivered Fast</h1>
             <p>
@@ -273,119 +274,220 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
     <!-- Featured Restaurants Section -->
     <section id="imagecard" class="py-4 bg-dark">
-      <div class="container w-75">
-        <h2 class="text-white mb-2 ms-3">Featured Restaurants</h2>
-        <p class="text-white opacity-75 ms-3">3 restaurants available</p>
+  <div class="container px-3">
+    
+    <!-- Heading -->
+    <div class="text-center text-md-start">
+      <h2 class="text-white mb-2">Featured Restaurants</h2>
+      <p class="text-white opacity-75">6 restaurants available</p>
+    </div>
 
-        <div id="yellowbtn" class="row px-2">
-          <!-- card 1 -->
-          <div class="col-md-4">
-            <div class="card shadow-lg border-0 position-relative rounded-4">
-              <img
-                src="./images/topViewRestr.avif"
-                class="card-img-top rounded-top-4"
-                alt="Raj Darbar"
-                style="height: 210px; object-fit: cover"
-              />
-              <span
-                class="position-absolute top-0 end-0 badge py-2 px-3 fs-6 fw-medium rounded-pill m-3"
-              >
-                ★ 3.6
-              </span>
-              <div class="card-body">
-                <h5 class="card-title">Under The Mango Tree</h5>
-                <p class="small">
-                  Enjoy the thrill of grill and barbecue at Under The Mango Tree
-                  restaurant at Jehan Numa Palace, Bhopal. Head here now!
-                </p>
+    <!-- Cards -->
+    <div id="yellowbtn" class="row g-4 mt-2">
 
-                <div class="d-flex gap-2 flex-wrap mb-3">
-                  <button class="border-0 rounded-1">Indian</button>
-                  <button class="border-0 rounded-1">Chineese</button>
-                  <button class="border-0 rounded-1">Italian</button>
-                </div>
-                <div id="line" class="border-top my-3"></div>
-                <a href="#" class="btn btn-primary w-100 border-0"
-                  >Explore Menu</a
-                >
-              </div>
+      <!-- Card 1 -->
+      <div class="col-12 col-sm-6 col-lg-4 d-flex">
+        <div class="card shadow-lg border-0 position-relative rounded-4 h-100 w-100">
+          
+          <img src="./images/topViewRestr.avif"
+               class="card-img-top rounded-top-4 img-fluid"
+               alt="Raj Darbar" />
+
+          <span class="position-absolute top-0 end-0 badge py-2 px-3 fs-6 fw-medium rounded-pill m-3">
+            ★ 3.6
+          </span>
+
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Under The Mango Tree</h5>
+            <p class="small flex-grow-1">
+              Enjoy the thrill of grill and barbecue at Under The Mango Tree restaurant at Jehan Numa Palace, Bhopal.
+            </p>
+
+            <div class="d-flex gap-2 flex-wrap mb-3">
+              <button class="border-0 rounded-1">Indian</button>
+              <button class="border-0 rounded-1">Chineese</button>
+              <button class="border-0 rounded-1">Italian</button>
             </div>
-          </div>
-          <!-- Card 2 -->
-          <div class="col-md-4">
-            <div class="card shadow-lg border-0 position-relative rounded-4">
-              <img
-                src="./images/restraimg.webp"
-                class="card-img-top rounded-top-4"
-                alt="Raj Darbar"
-                style="height: 210px; object-fit: cover"
-              />
-              <span
-                class="position-absolute top-0 end-0 badge py-2 px-3 fs-6 fw-medium rounded-pill m-3"
-              >
-                ★ 4.8
-              </span>
-              <div class="card-body">
-                <h5 class="card-title">Raj Darbar</h5>
-                <p class="small">
-                  Raj Darbar is a one-of-a-kind Indian restaurant that offers a
-                  unique dining experience for families and friends with a
-                  dhaba-style theme.
-                </p>
 
-                <div class="d-flex gap-2 flex-wrap mb-3">
-                  <button class="border-0 rounded-1">Indian</button>
-                  <button class="border-0 rounded-1">Chineese</button>
-                  <button class="border-0 rounded-1">Italian</button>
-                </div>
-                <div id="line" class="border-top my-3"></div>
-                <a href="#" class="btn btn-primary w-100 border-0"
-                  >Explore Menu</a
-                >
-              </div>
-            </div>
-          </div>
+            <div id="line" class="border-top my-3"></div>
 
-          <!-- Card 3 -->
-          <div class="col-md-4">
-            <div class="card shadow-lg border-0 position-relative rounded-4">
-              <img
-                src="./images/seatingplaceImg.webp"
-                class="card-img-top rounded-top-4"
-                alt="Countryside Culture"
-                style="height: 210px; object-fit: cover"
-              />
-              <span
-                class="position-absolute top-0 end-0 badge py-2 px-3 fs-6 fw-medium rounded-pill m-3"
-              >
-                ★ 4.1
-              </span>
-              <div class="card-body">
-                <h5 class="card-title">Countryside Culture</h5>
-                <p class="small">
-                  A hidden gem away from the city, offering lush green meadows
-                  and peaceful walking paths for relaxation.
-                </p>
-
-                <div class="d-flex gap-2 flex-wrap mb-3">
-                  <button class="border-0 rounded-1">Indian</button>
-                  <button class="border-0 rounded-1">Chineese</button>
-                </div>
-                <div id="line" class="border-top my-3"></div>
-                <a href="#" class="btn btn-primary w-100 border-0"
-                  >Explore Menu</a
-                >
-              </div>
-            </div>
+            <a href="#" class="btn btn-primary w-100 border-0">
+              Explore Menu
+            </a>
           </div>
         </div>
       </div>
-    </section>
+
+      <!-- Card 2 -->
+      <div class="col-12 col-sm-6 col-lg-4 d-flex">
+        <div class="card shadow-lg border-0 position-relative rounded-4 h-100 w-100">
+          
+          <img src="./images/topViewRestr.avif"
+               class="card-img-top rounded-top-4 img-fluid"
+               alt="Raj Darbar" />
+
+          <span class="position-absolute top-0 end-0 badge py-2 px-3 fs-6 fw-medium rounded-pill m-3">
+            ★ 3.6
+          </span>
+
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Under The Mango Tree</h5>
+            <p class="small flex-grow-1">
+              Enjoy the thrill of grill and barbecue at Under The Mango Tree restaurant at Jehan Numa Palace, Bhopal.
+            </p>
+
+            <div class="d-flex gap-2 flex-wrap mb-3">
+              <button class="border-0 rounded-1">Indian</button>
+              <button class="border-0 rounded-1">Chineese</button>
+              <button class="border-0 rounded-1">Italian</button>
+            </div>
+
+            <div id="line" class="border-top my-3"></div>
+
+            <a href="#" class="btn btn-primary w-100 border-0">
+              Explore Menu
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-12 col-sm-6 col-lg-4 d-flex">
+        <div class="card shadow-lg border-0 position-relative rounded-4 h-100 w-100">
+          
+          <img src="./images/topViewRestr.avif"
+               class="card-img-top rounded-top-4 img-fluid"
+               alt="Raj Darbar" />
+
+          <span class="position-absolute top-0 end-0 badge py-2 px-3 fs-6 fw-medium rounded-pill m-3">
+            ★ 3.6
+          </span>
+
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Under The Mango Tree</h5>
+            <p class="small flex-grow-1">
+              Enjoy the thrill of grill and barbecue at Under The Mango Tree restaurant at Jehan Numa Palace, Bhopal.
+            </p>
+
+            <div class="d-flex gap-2 flex-wrap mb-3">
+              <button class="border-0 rounded-1">Indian</button>
+              <button class="border-0 rounded-1">Chineese</button>
+              <button class="border-0 rounded-1">Italian</button>
+            </div>
+
+            <div id="line" class="border-top my-3"></div>
+
+            <a href="#" class="btn btn-primary w-100 border-0">
+              Explore Menu
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-12 col-sm-6 col-lg-4 d-flex">
+        <div class="card shadow-lg border-0 position-relative rounded-4 h-100 w-100">
+          
+          <img src="./images/topViewRestr.avif"
+               class="card-img-top rounded-top-4 img-fluid"
+               alt="Raj Darbar" />
+
+          <span class="position-absolute top-0 end-0 badge py-2 px-3 fs-6 fw-medium rounded-pill m-3">
+            ★ 3.6
+          </span>
+
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Under The Mango Tree</h5>
+            <p class="small flex-grow-1">
+              Enjoy the thrill of grill and barbecue at Under The Mango Tree restaurant at Jehan Numa Palace, Bhopal.
+            </p>
+
+            <div class="d-flex gap-2 flex-wrap mb-3">
+              <button class="border-0 rounded-1">Indian</button>
+              <button class="border-0 rounded-1">Chineese</button>
+              <button class="border-0 rounded-1">Italian</button>
+            </div>
+
+            <div id="line" class="border-top my-3"></div>
+
+            <a href="#" class="btn btn-primary w-100 border-0">
+              Explore Menu
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-12 col-sm-6 col-lg-4 d-flex">
+        <div class="card shadow-lg border-0 position-relative rounded-4 h-100 w-100">
+          
+          <img src="./images/topViewRestr.avif"
+               class="card-img-top rounded-top-4 img-fluid"
+               alt="Raj Darbar" />
+
+          <span class="position-absolute top-0 end-0 badge py-2 px-3 fs-6 fw-medium rounded-pill m-3">
+            ★ 3.6
+          </span>
+
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Under The Mango Tree</h5>
+            <p class="small flex-grow-1">
+              Enjoy the thrill of grill and barbecue at Under The Mango Tree restaurant at Jehan Numa Palace, Bhopal.
+            </p>
+
+            <div class="d-flex gap-2 flex-wrap mb-3">
+              <button class="border-0 rounded-1">Indian</button>
+              <button class="border-0 rounded-1">Chineese</button>
+              <button class="border-0 rounded-1">Italian</button>
+            </div>
+
+            <div id="line" class="border-top my-3"></div>
+
+            <a href="#" class="btn btn-primary w-100 border-0">
+              Explore Menu
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-12 col-sm-6 col-lg-4 d-flex">
+        <div class="card shadow-lg border-0 position-relative rounded-4 h-100 w-100">
+          
+          <img src="./images/topViewRestr.avif"
+               class="card-img-top rounded-top-4 img-fluid"
+               alt="Raj Darbar" />
+
+          <span class="position-absolute top-0 end-0 badge py-2 px-3 fs-6 fw-medium rounded-pill m-3">
+            ★ 3.6
+          </span>
+
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Under The Mango Tree</h5>
+            <p class="small flex-grow-1">
+              Enjoy the thrill of grill and barbecue at Under The Mango Tree restaurant at Jehan Numa Palace, Bhopal.
+            </p>
+
+            <div class="d-flex gap-2 flex-wrap mb-3">
+              <button class="border-0 rounded-1">Indian</button>
+              <button class="border-0 rounded-1">Chineese</button>
+              <button class="border-0 rounded-1">Italian</button>
+            </div>
+
+            <div id="line" class="border-top my-3"></div>
+
+            <a href="#" class="btn btn-primary w-100 border-0">
+              Explore Menu
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     <!-- visiters section 1 -->
     <section class="section1">
-      <div class="container py-5 rounded-4 w-75">
+      <div class="container py-5 rounded-4 w-100 w-md-75 px-3">
         <h2 class="text-center mb-3 fs-2 fw-bolder">Cravings by the Numbers</h2>
         <p class="text-center mb-5 fs-5">
           See why millions trust us for their daily food delivery needs
@@ -393,7 +495,7 @@
 
         <div class="row g-4 justify-content-center border-0">
           <!-- Card 1 -->
-          <div class="col-md-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="card text-center shadow-sm h-100 bg-white border-0">
               <div class="card-body">
                 <h3 class="card-title1 fs-1 fw-bolder mt-5">2.5M+</h3>
@@ -407,7 +509,7 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="col-md-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="card text-center shadow-sm h-100 bg-white border-0">
               <div class="card-body">
                 <h3 class="coloring fs-1 fw-bolder mt-5">500K+</h3>
@@ -421,7 +523,7 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="col-md-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <div class="card text-center shadow-sm h-100 bg-white border-0">
               <div class="card-body">
                 <h3
@@ -439,8 +541,10 @@
           </div>
 
           <!-- Card 4 -->
-          <div class="col-md-3">
-            <div class="card text-center shadow-sm h-100 bg-white py-5 border-0">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div
+              class="card text-center shadow-sm h-100 bg-white py-5 border-0"
+            >
               <div class="card-body">
                 <h3 class="coloring fs-1 fw-bolder">1K+</h3>
                 <h5 class="card-subtitle mb-2">Active Delivery Partners</h5>
@@ -453,9 +557,10 @@
           </div>
         </div>
       </div>
+
       <!-- section 2 -->
       <section class="section2">
-        <div class="container py-5 w-75 ">
+        <div class="container py-5 px-3">
           <h2 class="text-center mb-3 fs-2 fw-bolder">
             What Our Customers Say
           </h2>
@@ -465,7 +570,7 @@
 
           <div id="startRating" class="row g-4 justify-content-center">
             <!-- Testimonial 1 -->
-            <div class="col-12 col-md-6 col-lg-4 ">
+            <div class="col-12 col-sm-6 col-lg-4">
               <div class="card shadow-sm h-100 p-3 rounded-4 border-0">
                 <div class="card-body text-start">
                   <p class="text-warning fs-3 mb-2">★★★★★</p>
@@ -486,7 +591,7 @@
             </div>
 
             <!-- Testimonial 2 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-sm-6 col-lg-4">
               <div class="card shadow-sm h-100 p-3 rounded-4 border-0">
                 <div class="card-body text-start">
                   <p class="text-warning fs-3 mb-2">★★★★★</p>
@@ -507,7 +612,7 @@
             </div>
 
             <!-- Testimonial 3 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-sm-6 col-lg-4">
               <div class="card shadow-sm h-100 p-3 rounded-4 border-0">
                 <div class="card-body text-start">
                   <p class="text-warning fs-3 mb-2">★★★★★</p>
@@ -533,76 +638,115 @@
     <!-- section 3 -->
     <section id="beforefooter">
       <div
-        class="d-flex justify-content-center h-100 align-items-center flex-column text-center mt-4"
+        class="d-flex justify-content-center h-100 align-items-center flex-column text-center mt-4 px-3 py-4"
       >
         <h2 class="fs-2 fw-bolder">Become a Restaurant Partner</h2>
-        <p class="fs-5">
+        <p class="fs-5 w-100 col-12 col-md-8 col-lg-6">
           Grow your business with Cravings. Join thousands of restaurants
           already delivering with us.
         </p>
-        <button type="submit" class="g-white h-75 mt-4 mb-4" id="withUs">
+        <button type="submit" class="g-white mt-4 mb-4 px-4 py-2" id="withUs">
           Partner With Us
         </button>
       </div>
     </section>
     <footer class="footer text-white py-3">
-      <div class="container">
+      <div class="container px-3">
         <div class="row align-items-center mb-2">
-          <div class="col-md-3 text-center text-md-start">
-            <img src="./images/circleLogo.png" alt="Logo" class="footer-logo" />
+          <div class="col-12 col-md-3 text-center text-md-start mb-3 mb-md-0">
+            <img
+              src="./images/circleLogo.png"
+              alt="Logo"
+              class="footer-logo img-fluid"
+            />
           </div>
-          <div class="col-md-9">
-            <p class="footer-tagline mt-2">
+
+          <div class="col-12 col-md-9">
+            <p class="footer-tagline mt-2 text-center text-md-start">
               --- Your favorite food delivery platform connecting customers with
               restaurants and riders. ---
             </p>
+
             <div class="row mt-1">
               <div class="col-6 col-md-3 mt-3">
                 <h5>Quick Links</h5>
                 <ul class="list-unstyled">
                   <li><a href="index.html" class="footer-link">Home</a></li>
                   <li><a href="about.html" class="footer-link">About</a></li>
-                  <li><a href="order-now.html" class="footer-link">Order Now</a></li>
-                </ul>
-              </div>
-              <div class="col-6 col-md-3 mt-3">
-                <h5>For Restaurants</h5>
-                <ul class="list-unstyled">
-                  <li><a href="partner-with-us.html" class="footer-link">Partner With Us</a></li>
                   <li>
-                    <a href="restaurant-dashboard.html" class="footer-link">Restaurant Dashboard</a>
+                    <a href="order-now.html" class="footer-link">Order Now</a>
                   </li>
                 </ul>
               </div>
+
+              <div class="col-6 col-md-3 mt-3">
+                <h5>For Restaurants</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="partner-with-us.html" class="footer-link"
+                      >Partner With Us</a
+                    >
+                  </li>
+                  <li>
+                    <a href="restaurant-dashboard.html" class="footer-link"
+                      >Restaurant Dashboard</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
               <div class="col-6 col-md-3 mt-3">
                 <h5>For Riders</h5>
                 <ul class="list-unstyled">
-                  <li><a href="become-a-rider.html" class="footer-link">Become a Rider</a></li>
-                  <li><a href="rider-dashboard.html" class="footer-link">Rider Dashboard</a></li>
+                  <li>
+                    <a href="become-a-rider.html" class="footer-link"
+                      >Become a Rider</a
+                    >
+                  </li>
+                  <li>
+                    <a href="rider-dashboard.html" class="footer-link"
+                      >Rider Dashboard</a
+                    >
+                  </li>
                 </ul>
               </div>
+
               <div class="col-6 col-md-3 mt-3">
                 <h5>Feedback & Support</h5>
                 <ul class="list-unstyled">
-                  <li><a href="feedback.html" class="footer-link">Submit Feedback</a></li>
-                  <li><a href="help-center.html" class="footer-link">Help Center</a></li>
-                  <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                  <li>
+                    <a href="feedback.html" class="footer-link"
+                      >Submit Feedback</a
+                    >
+                  </li>
+                  <li>
+                    <a href="help-center.html" class="footer-link"
+                      >Help Center</a
+                    >
+                  </li>
+                  <li>
+                    <a href="contact.html" class="footer-link">Contact Us</a>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- <hr class="border-light"> -->
         <div class="border-bottom w-100 mb-4"></div>
 
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start">
+        <div class="row text-center text-md-start">
+          <div class="col-12 col-md-6 mb-2 mb-md-0">
             <p class="mb-0">© 2026 Cravings. All rights reserved.</p>
           </div>
-          <div class="col-md-6 text-center text-md-end">
-            <a href="privacy-policy.html" class="footer-link me-3">Privacy Policy</a>
-            <a href="terms-of-service.html" class="footer-link me-3">Terms of Service</a>
+
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <a href="privacy-policy.html" class="footer-link me-3"
+              >Privacy Policy</a
+            >
+            <a href="terms-of-service.html" class="footer-link me-3"
+              >Terms of Service</a
+            >
             <a href="sitemap.html" class="footer-link">Site Map</a>
           </div>
         </div>
