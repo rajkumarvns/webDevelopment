@@ -349,6 +349,14 @@ transform: translateX(-50%);
 #clr{
   color: var(--color-primary);
 }
+#clr:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+ /* #clrr{
+  color: var(--color-primary);
+} */
+
 #togglePassword:hover {
   color: var(--color-primary);
 }
