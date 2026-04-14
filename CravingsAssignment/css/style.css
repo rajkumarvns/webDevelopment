@@ -445,6 +445,11 @@ transform: translateX(-50%);
     backdrop-filter: blur(6px);
     h2{
         color: var(--color-primary);
+        i{
+          font-size:25px;
+        }
+        
+        
     }
 }
 
