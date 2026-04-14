@@ -445,22 +445,20 @@ transform: translateX(-50%);
     color: var(--color-neutral-content);
     padding: 30px 20px 0px;
     border-radius: 15px;
+    height: 81vh;
     backdrop-filter: blur(6px);
     h2{
         color: var(--color-primary);
         i{
           font-size:25px;
-        }
-        
-        
+        } 
     }
 }
 .custom-input:focus{
   border-color:var(--color-primary);
   outline: none;
-  box-shadow: 2px solid var(--color-primary);
+  box-shadow:var(--color-primary);
 }
-
 /* FORM */
 /* .form-control, select, textarea {
     background: var(--color-neutral-content) !important;
@@ -478,7 +476,9 @@ textarea {
     height: 7vh;
     border: none;
 }
-
+small i:hover{
+    color:#fdc701;
+}
 
 
 
