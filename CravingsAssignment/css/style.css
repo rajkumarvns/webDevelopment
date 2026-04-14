@@ -104,26 +104,29 @@
 /* Container: 80% width, centered */
 .search-bar-container {
   width: 80%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  height: 7%;
   background-color: var(--color-primary-content);
   border-radius: 8px;
-  padding: 0 12px;
+  /* margin-top: 2px; */
+  padding: 10px 6px;
 }
 
 /* Inner box */
 .search-inner {
   width: 100%;
   display: flex;
+  margin-top: 10px;
   align-items: center;
   border-radius: 8px;
-  padding: 8px 12px;
+  padding: 0px 8px;
 }
 
 /* Input styling */
 .search-inner input {
   flex: 1;
   font-size: 1rem;
-  background: transparent;
+  background: transparent !important;
   outline: none;
 }
 
@@ -368,7 +371,7 @@ transform: translateX(-50%);
 .formss {
   position: absolute;
   top: 50%;
-  right: 5%;
+  right: 8%;
   transform: translateY(-50%);
   width: 100%;
   max-width: 450px;
@@ -452,13 +455,18 @@ transform: translateX(-50%);
         
     }
 }
+.custom-input:focus{
+  border-color:var(--color-primary);
+  outline: none;
+  box-shadow: 2px solid var(--color-primary);
+}
 
 /* FORM */
-.form-control, select, textarea {
+/* .form-control, select, textarea {
     background: var(--color-neutral-content) !important;
     border: none !important;
-    margin-bottom: 20px;
-}
+     margin-bottom: 20px;
+} */
 
 textarea {
     height: 100px;
