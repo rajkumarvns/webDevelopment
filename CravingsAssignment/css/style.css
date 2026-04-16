@@ -542,3 +542,9 @@ small i:hover {
   border-radius: 10px;
 
 }
+#values{
+  background-color: var(--color-base-300)!important;
+}
+.container, #values, span{
+  color: var(--color-primary);
+}
