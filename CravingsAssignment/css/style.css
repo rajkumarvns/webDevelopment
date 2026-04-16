@@ -543,8 +543,9 @@ small i:hover {
 
 }
 #values{
-  background-color: var(--color-base-300)!important;
+  background: var(--color-base-100) !important;
+  width: 100vw;
 }
-.container, #values, span{
+#values, .foods span > i{
   color: var(--color-primary);
 }
