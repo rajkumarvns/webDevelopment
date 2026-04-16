@@ -1,0 +1,207 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+div, h2, h3, button, img {
+  margin: 20px 0;
+}
+
+/* 1. Move Box */
+.move-box {
+  width: 50px;
+  height: 50px;
+  background: red;
+  position: relative;
+  animation: moveRight 3s linear infinite;
+}
+@keyframes moveRight {
+  from { left: 0; }
+  to { left: 300px; }
+}
+
+/* 2. Bouncing Ball */
+.ball {
+  width: 50px;
+  height: 50px;
+  background: blue;
+  border-radius: 50%;
+  position: relative;
+  animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+  from { top: 0; }
+  to { top: 150px; }
+}
+
+/* 3. Rotating Square */
+.square {
+  width: 60px;
+  height: 60px;
+  background: green;
+  animation: rotate360 2s linear infinite;
+}
+@keyframes rotate360 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* 4. Color Circle */
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  animation: colorChange 2s infinite;
+}
+@keyframes colorChange {
+  0% { background: red; }
+  50% { background: yellow; }
+  100% { background: blue; }
+}
+
+/* 5. Fade Text */
+.fade-text {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* 6. Zoom Image */
+.zoom-img {
+  width: 100px;
+  animation: zoomInOut 2s infinite alternate;
+}
+@keyframes zoomInOut {
+  from { transform: scale(1); }
+  to { transform: scale(1.5); }
+}
+
+/* 7. Spinner */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid lightgray;
+  border-top: 5px solid black;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* 8. Size and Color Box */
+.change-box {
+  width: 50px;
+  height: 50px;
+  animation: sizeColor 2s infinite alternate;
+}
+@keyframes sizeColor {
+  from {
+    background: purple;
+    transform: scale(1);
+  }
+  to {
+    background: orange;
+    transform: scale(1.5);
+  }
+}
+
+/* 9. Blinking Text */
+.blink-text {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* 10. Pulse Button */
+.pulse-btn {
+  padding: 10px 20px;
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  50% { transform: scale(1.2); }
+}
+
+/* 11. Traffic Light */
+.traffic-light {
+  width: 60px;
+  background: black;
+  padding: 10px;
+}
+.light {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: gray;
+  margin: 10px auto;
+}
+.red { animation: redLight 3s infinite; }
+.yellow { animation: yellowLight 3s infinite; }
+.green { animation: greenLight 3s infinite; }
+
+@keyframes redLight {
+  0%, 33% { background: red; }
+  34%, 100% { background: gray; }
+}
+@keyframes yellowLight {
+  34%, 66% { background: yellow; }
+  0%, 33%, 67%, 100% { background: gray; }
+}
+@keyframes greenLight {
+  67%, 100% { background: green; }
+  0%, 66% { background: gray; }
+}
+
+/* 12. Flip Card */
+.flip-card {
+  width: 100px;
+  height: 100px;
+  background: teal;
+  animation: flip 2s infinite linear;
+}
+@keyframes flip {
+  to { transform: rotateY(360deg); }
+}
+
+/* 13. Real Bounce Ball */
+.real-ball {
+  width: 50px;
+  height: 50px;
+  background: crimson;
+  border-radius: 50%;
+  position: relative;
+  animation: realBounce 1s infinite alternate ease-in-out;
+}
+@keyframes realBounce {
+  from { top: 0; }
+  to { top: 200px; }
+}
+
+/* 14. Heartbeat */
+.heart {
+  width: 60px;
+  height: 60px;
+  background: pink;
+  animation: heartbeat 1s infinite;
+}
+@keyframes heartbeat {
+  25% { transform: scale(1.2); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.2); }
+}
+
+/* 15. Up Down Movement */
+.up-down {
+  width: 50px;
+  height: 50px;
+  background: brown;
+  position: relative;
+  animation: upMove 1s infinite alternate;
+}
+@keyframes upMove {
+  from { top: 100px; }
+  to { top: 0; }
+}
