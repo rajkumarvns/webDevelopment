@@ -549,12 +549,7 @@ small i:hover {
 #values, .foods span > i{
   color: var(--color-primary);
 }
-
 /* about */
-/* ============================= */
-/* ABOUT PAGE STYLING (NEW) */
-/* ============================= */
-
 /* Hero Section */
 .about-hersection {
   position: relative;
@@ -595,7 +590,7 @@ small i:hover {
   border-bottom: 2px solid var(--color-base-300);
 }
 
-.about-records .core-values {
+.core-values {
   color: var(--color-primary);
 }
 
@@ -608,12 +603,13 @@ small i:hover {
 .our-story {
   background: var(--color-base-100);
   color: var(--color-base-content);
+  
+          h2 {
+              font-weight: bold;
+            }
+           
 }
 
-.our-story h2 {
-  font-weight: bold;
-  color: var(--color-primary);
-}
 
 .our-story-description {
   font-size: 14px;
@@ -677,13 +673,10 @@ small i:hover {
 
 /* PARTNER SECTION */
 .partner {
-  background: linear-gradient(135deg, var(--color-primary), #ff7a3d);
+  background: linear-gradient(135deg, var(--color-primary));
   color: var(--color-primary-content);
 }
 
-.partner h2 {
-  color: var(--color-primary-content);
-}
 
 .partner-para {
   opacity: 0.9;
@@ -698,7 +691,7 @@ small i:hover {
   transition: 0.3s;
 }
 
-#about-get-started:hover {
+.get-started:hover {
   background: var(--color-primary);
   color: var(--color-primary-content);
 }
@@ -709,12 +702,6 @@ small i:hover {
   transition: 0.3s;
 }
 
-/* #about-contact:hover {
-  background: var(--color-primary-content);
-  color: var(--color-primary);
-} */
-
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .about-hersection {
     height: 300px;
