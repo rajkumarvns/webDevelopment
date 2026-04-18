@@ -138,7 +138,7 @@
   opacity: 0.5;
 }
 
-section {
+#imagecard {
   background: linear-gradient(180deg, var(--color-primary), var(--color-primary-content));
 }
 
@@ -552,6 +552,7 @@ small i:hover {
 .foods span>i {
   color: var(--color-primary);
 }
+/* next sections */
 
 /* about */
 /* Hero Section */
@@ -751,6 +752,11 @@ small i:hover {
       color: var(--color-primary);
     }
   }
+  li {
+  background-color: var(--color-primary-content);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
 
   p {
     font-size: 18px;
@@ -766,11 +772,7 @@ small i:hover {
   color: var(--color-neutral-content);
 }
 
-li {
-  background-color: var(--color-primary-content);
-  font-size: 14px;
-  margin-bottom: 10px;
-}
+
 
 .faq-box {
   width: 60%;
@@ -787,18 +789,19 @@ ul li::marker {
 #privacy-policy {
   background-color: var(--color-base-100);
 }
-
 .privacy-bg {
   img {
     height: 45vh;
     width: 100%;
   }
 }
-
 .privacy-herocontent {
   top: 16%;
   left: 25%;
 }
-.policyy{
-  background-color: red !important;
+.privacy-policy{
+  background-color: var(--color-base-100)!important;
+}
+.updated{
+  font-size: 14px !important;
 }
