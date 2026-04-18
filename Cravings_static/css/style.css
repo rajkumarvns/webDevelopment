@@ -485,11 +485,11 @@
 }
 
 /* FORM */
-/* .form-control, select, textarea {
-    background: var(--color-neutral-content) !important;
-    border: none !important;
+.form-control, select, textarea {
+    background: var(--color-neutral-content);
      margin-bottom: 20px;
-} */
+     
+}
 
 textarea {
   height: 100px;
@@ -804,4 +804,7 @@ ul li::marker {
 }
 .updated{
   font-size: 14px !important;
+}
+#q1,#q2,#q3,#q4{
+  color: var(--color-neutral-content);
 }
