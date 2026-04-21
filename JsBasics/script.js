@@ -4,3 +4,17 @@ let x = 10;
 console.log(x);
 const pi = 3.14159265;
 console.log(pi);
+
+var m = 10;
+var n = "10";
+console.log(m==n);
+console.log(m===n);
+var c = "hello JavaScript";
+var d = 'x';
+var e = true;
+console.log(c);
+console.log(typeof m);
+console.log(typeof n);
+console.log(typeof c);
+console.log(typeof d);
+console.log(typeof e);
