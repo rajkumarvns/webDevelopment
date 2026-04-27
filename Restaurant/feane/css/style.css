@@ -28,7 +28,6 @@
     font-weight: bold;
     font-style: italic;
 }
-
 .box {
     background: rgb(34, 40, 49);
     min-height: 220px;
@@ -52,4 +51,10 @@
 .offer-section {
     padding-left: 12%;
     padding-right: 12%;
+}
+#navbarNav,.nav-link:hover{
+   color:#ffbe33 !important;
+   i:hover{
+    color:#ffbe33 !important;
+   }
 }
