@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Number Game</title>
+  </head>
+  <body>
+    <script>
+      let n = 10;
+
+      let randomNumber = Math.floor(Math.random() * n) + 1;
+
+      let guess;
+
+      while (guess !== randomNumber) {
+        guess = Number(prompt("Guess a number between 1 and " + n));
+
+        if (guess === randomNumber) {
+          alert("🎉 Congratulations! You won!");
+        } else {
+          alert("Try again!");
+        }
+      }
+    </script>
+  </body>
+</html>
