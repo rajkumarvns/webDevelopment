@@ -1,0 +1,17 @@
+let a = 10,
+  b = 30;
+function sum(x, y) {
+  let z = x + y;
+  //   console.log(z);
+  return z;
+}
+sum(a, b);
+
+let c = sum(a, b);
+console.log(c);
+
+// non parameterized function
+function welcome() {
+  console.log("welcome to javaScript");
+}
+welcome();
