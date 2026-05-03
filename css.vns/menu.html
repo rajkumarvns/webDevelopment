@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #menu {
+        width: 100%;
+        min-height: 50px;
+        background-color: rgba(199, 70, 215, 0);
+        margin-top: -1%;
+      }
+      #menu ul {
+        list-style: none;
+        padding: 0px;
+      }
+      #menu ul li {
+        width: 120px;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        float: left;
+      }
+      #menu ul li a {
+        float: left;
+        line-height: 50px;
+        padding: 0px 20px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(10, 218, 94);
+      }
+      #menu ul li a:hover {
+        color: red;
+        border-bottom: red;
+      }
+      #menu ul li:hover {
+        border-bottom: solid;
+        background: black;
+      }
+      #menu ul #first_level li {
+        background: yellow;
+      }
+      #menu ul #first_level {
+        visibility: hidden;
+      }
+      #menu ul li:hover #first_level {
+        visibility: visible;
+      }
+      #second_level {
+        margin-left: 120px;
+        margin-top: -50px;
+        visibility: hidden;
+      }
+      #second_level li {
+        background: blue !important;
+      }
+      #first_level li:hover #second_level {
+        visibility: visible;
+      }
+      body {
+        background-image: url("rajdeveloper.jpg");
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <ul>
+        <li>
+          <a href="">HOME</a>
+        </li>
+        <li>
+          <a href="">ABOUT</a>
+        </li>
+        <li><a href="">SERVICES</a></li>
+        <li>
+          <a href="">GALLERY</a>
+        </li>
+        <li>
+          <a href="">CONTECT_US</a>
+        </li>
+        <li>
+          <a href="">FAQ</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="">Services</a>
+          <ul id="first_level">
+            <li>
+              <a href="">Sub Menu</a>
+              <ul id="second_level">
+                <li><a href="">Sub Sub Menu</a></li>
+                <li><a href="">Sub Sub Menu</a></li>
+                <li><a href="">Sub Sub Menu</a></li>
+                <li><a href="">Sub Sub Menu</a></li>
+                <li><a href="">Sub Sub Menu</a></li>
+                <li><a href="">Sub Sub Menu</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="">Sub Menu</a>
+              <ul id="second_level">
+                <li><a href="">Sub Sub Menu</a></li>
+                <li><a href="">Sub Sub Menu</a></li>
+                <li><a href="">Sub Sub Menu</a></li>
+                <li><a href="">Sub Sub Menu</a></li>
+                <li><a href="">Sub Sub Menu</a></li>
+                <li><a href="">Sub Sub Menu</a></li>
+              </ul>
+            </li>
+            <li><a href="">Sub Menu</a></li>
+            <li><a href="">Sub Menu</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Services</a>
+          <ul id="first_level">
+            <li>
+              <a href="">Sub Menu</a>
+              <ul id="second_level">
+                <li><a href="">Sub Sub Menu</a></li>
+                <li><a href="">Sub Sub Menu</a></li>
+                <li><a href="">Sub Sub Menu</a></li>
+                <li><a href="">Sub Sub Menu</a></li>
+                <li><a href="">Sub Sub Menu</a></li>
+                <li><a href="">Sub Sub Menu</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="">Services</a></li>
+        <li>
+          <a href="">Services</a>
+          <ul id="first_level">
+            <li><a href="">Sub Menu</a></li>
+            <li><a href="">Sub Menu</a></li>
+            <li><a href="">Sub Menu</a></li>
+            <li><a href="">Sub Menu</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

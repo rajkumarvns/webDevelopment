@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        width: 80%;
+        height: 300px;
+        background: rgb(8, 247, 28);
+        margin: auto;
+      }
+      #box .d1 {
+        width: 33%;
+        height: 300px;
+        background: darkmagenta;
+        float: left;
+      }
+      #box .d2 {
+        width: 33%;
+        height: 300px;
+        background: pink;
+        float: left;
+      }
+      #box .d3 {
+        width: 34%;
+        height: 300px;
+        background: brown;
+        float: right;
+      }
+
+      #box2 {
+        width: 80%;
+        height: 400px;
+        background: rgb(214, 27, 208);
+        margin: auto;
+      }
+      #box2 .d1 {
+        width: 50%;
+        float: left;
+        height: 400px;
+        background: rgb(28, 166, 26);
+      }
+      #box2 .d2 {
+        width: 50%;
+        float: left;
+        height: 400px;
+        background: rgb(149, 4, 149);
+      }
+
+      #box2 .d2 .top {
+        width: 100%;
+        height: 200px;
+        background: rgb(151, 3, 141);
+      }
+      #box2 .d2 .left {
+        width: 50%;
+        float: left;
+        height: 200px;
+        background: red;
+      }
+      #box2 .d2 .right {
+        width: 50%;
+        float: left;
+        height: 200px;
+        background: rgb(6, 48, 185);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div class="d1"></div>
+      <div class="d2"></div>
+      <div class="d3"></div>
+    </div>
+
+    <div id="box2">
+      <div class="d1"></div>
+      <div class="d2">
+        <div class="top"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
+    </div>
+  </body>
+</html>

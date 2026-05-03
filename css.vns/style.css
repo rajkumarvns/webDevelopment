@@ -1,0 +1,16 @@
+
+h2{
+    color: cyan ;
+}
+p{
+    color: rgb(12, 219, 154);
+    
+}
+marquee{
+    color: rgb(17, 222, 17);
+    
+}
+#header h1{
+    text-decoration: underline;
+    color: aqua;
+}

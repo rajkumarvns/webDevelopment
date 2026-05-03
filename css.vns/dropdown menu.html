@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested</title>
+    <style>
+      #menu {
+        width: 100%;
+        height: 50px;
+        background: rgba(66, 89, 237, 0.1);
+      }
+      #menu ul {
+        list-style: none;
+        padding: 0px;
+      }
+      #menu ul li {
+        width: 120px;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        float: left;
+      }
+      #menu ul li a {
+        text-decoration: none;
+        color: rgba(232, 84, 5, 0.9);
+      }
+      #menu ul #first_level li {
+        background: rgb(232, 219, 233);
+      }
+      #menu ul #first_level {
+        visibility: hidden;
+      }
+      #menu ul li:hover #first_level {
+        visibility: visible;
+      }
+      #second_level {
+        margin-left: 120px;
+        margin-top: -50px;
+        visibility: hidden;
+      }
+      #second_level li {
+        background: yellowgreen !important;
+      }
+      #first_level li:hover #second_level {
+        visibility: visible;
+      }
+      body {
+        background-image: url("rajdeveloper.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <ul>
+        <li>
+          <a href="">HOME</a>
+          <ul id="first_level">
+            <li><a href="">Sub Menu1</a></li>
+            <li><a href="">Sub Menu2</a></li>
+            <li><a href="">Sub Menu3</a></li>
+            <li>
+              <a href="">Sub Menu4</a>
+              <ul id="second_level">
+                <li><a href="">Sub Sub Menu1</a></li>
+                <li><a href="">Sub Sub Menu2</a></li>
+                <li><a href="">Sub Sub Menu3</a></li>
+                <li><a href="">Sub Sub Menu4</a></li>
+                <li><a href="">Sub Sub Menu5</a></li>
+                <li><a href="">Sub Sub Menu6</a></li>
+              </ul>
+            </li>
+            <li><a href="">Sub Menu5</a></li>
+            <li><a href="">Sub Menu6</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">ABOUT</a>
+          <ul id="first_level">
+            <li>
+              <a href="">Sub Menu1</a>
+            </li>
+
+            <li>
+              <a href="">Sub Menu2</a>
+            </li>
+
+            <li>
+              <a href="">Sub Menu3</a>
+            </li>
+
+            <li>
+              <a href="">Sub Menu4</a>
+            </li>
+
+            <li>
+              <a href="">Sub Menu5</a>
+              <ul id="second_level">
+                <li><a href="">Sub Sub Menu1</a></li>
+                <li><a href="">Sub Sub Menu2</a></li>
+                <li><a href="">Sub Sub Menu3</a></li>
+                <li><a href="">Sub Sub Menu4</a></li>
+                <li><a href="">Sub Sub Menu5</a></li>
+                <li><a href="">Sub Sub Menu6</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">SERVICES</a>
+          <ul id="first_level">
+            <li><a href="">Sub Menu1</a></li>
+            <li><a href="">Sub Menu2</a></li>
+            <li><a href="">Sub Menu3</a></li>
+            <li><a href="">Sub Menu4</a></li>
+            <li><a href="">Sub Menu5</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">GALLERY</a>
+          <ul id="first_level">
+            <li><a href="">Sub Menu1</a></li>
+            <li><a href="">Sub Menu2</a></li>
+            <li><a href="">Sub Menu3</a></li>
+            <li><a href="">Sub Menu4</a></li>
+            <li><a href="">Sub Menu5</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">CONTACT</a>
+          <ul id="first_level">
+            <li><a href="">Sub Menu1</a></li>
+            <li><a href="">Sub Menu2</a></li>
+            <li><a href="">Sub Menu3</a></li>
+            <li><a href="">Sub Menu4</a></li>
+            <li><a href="">Sub Menu5</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="">FAQ</a>
+          <ul id="first_level">
+            <li><a href="">Sub Menu</a></li>
+            <li><a href="">Sub Menu</a></li>
+            <li><a href="">Sub Menu</a></li>
+            <li><a href="">Sub Menu</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
