@@ -26,6 +26,31 @@ console.log(users);
 // users.filter("Ashok");
 // console.log(users);
 
+// Q9
+user1 = [];
+user1.push("User1");
+user1.push("User2");
+console.log(user1);
+
+//10 update one user
+user1.splice(1,0,"Raj");
+console.log(user1[1]);
+
+// Q11
+students = ["Raj","Amit","Shivanshu","Prasoon","Anit"];
+students.pop();
+console.log(students);
+
+// Q12 used Q2  users array in there
+student2Marks = [10,20,30,40,50];
+console.log(student2Marks);
+
+student2Marks.push(60);
+console.log(student2Marks);
+
+student2Marks.splice(2,1,35);
+console.log(student2Marks);
+
 
 
 
