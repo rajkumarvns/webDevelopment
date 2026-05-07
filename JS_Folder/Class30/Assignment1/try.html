@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Bulb ON OFF</title>
+  </head>
+  <body>
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <button
+      onclick="
+        document.getElementById('myImage').src =
+          'https://www.w3schools.com/js/pic_bulbon.gif'
+      "
+    >
+      Turn ON
+    </button>
+
+    <img
+      id="myImage"
+      src="https://www.w3schools.com/js/pic_bulboff.gif"
+      width="100"
+    />
+
+    <button
+      onclick="
+        document.getElementById('myImage').src =
+          'https://www.w3schools.com/js/pic_bulboff.gif' 
+      "
+    >
+      Turn OFF
+    </button>
+  </body>
+</html>
