@@ -98,4 +98,23 @@ console.log(str.split(" "));
 // split where hiphen(-) is present
 console.log(str.split("-"));
 
+// string 
+let str = "this is a string";
+console.log(str.charAt(6));
 
+console.log(str.toLowerCase());
+console.log(str.toUpperCase());
+
+let pi = 3.14;
+console.log(pi);
+
+console.log(typeof (pi));
+let b = pi.toString();
+console.log(b);
+
+// after decimal how many digit we want
+let c = 3.143454646557657;
+console.log(c.toFixed(3));
+
+let fullname = "Raj Gupta";
+console.log(`My name is ${fullname}`);
