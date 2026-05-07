@@ -13,8 +13,11 @@
   </head>
   <body>
     <div class="vh-100 w-100 d-flex justify-content-center align-items-center">
-      <div class="d-flex border border-2 w-75 border-primary">
-        <div class="w-75 border border-1 border-primary p-5" id="changeColor">
+      <div class="d-flex border border-2 w-75 border-primary row">
+        <div
+          class="w-75 border border-1 border-primary p-5 col-6"
+          id="changeColor"
+          >
           <h1 id="heading">This is heading</h1>
           <p id="para">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
@@ -26,8 +29,8 @@
           </p>
         </div>
         <div
-          class="border border-1 border-primary w-25 p-4 d-grid align-items-center"
-        >
+          class="col-6 border-1 border-primary w-25 p-4 d-grid align-items-center"
+          >
           <div class="d-flex gap-3">
             <p>Background Color</p>
             <input type="color" id="bgColor" />
@@ -40,7 +43,11 @@
             <p>Paragraph Color</p>
             <input type="color" id="paraColor" />
           </div>
-          <button id="reset" class="text-center bg-success text-white border-0 rounded-5" onclick="reset()">
+          <button
+            id="reset"
+            class="text-center bg-success text-white border-0 rounded-5"
+            onclick="reset()"
+          >
             Reset
           </button>
         </div>
