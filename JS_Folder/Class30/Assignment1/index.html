@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Event Handling - Page 2</title>
+  </head>
+  <body>
+    <!-- 1. Inline event handling -->
+    <button onclick="console.log('Inline button clicked!')">
+      Inline Button
+    </button>
+    <br /><br />
+
+    <!-- 2. DOM property (onclick) -->
+    <button id="domBtn2">DOM Property Button</button>
+    <br /><br />
+
+    <!-- 3. addEventListener -->
+    <button id="listenerBtn2">Listener Button</button>
+    <br /><br />
+
+    <!-- 4. keydown -->
+    <input type="text" id="keydownInput2" placeholder="Type here (keydown)" />
+    <br /><br />
+
+    <!-- 5. keyup -->
+    <input type="text" id="keyupInput2" placeholder="Type here (keyup)" />
+    <br /><br />
+
+    <!-- 6. Form submit -->
+    <form id="form2">
+      <input type="text" placeholder="Enter text" />
+      <button type="submit">Submit</button>
+    </form>
+    <br /><br />
+
+    <!-- 7. Change event -->
+    <input type="text" id="changeInput2" placeholder="Change and blur" />
+    <p id="changeOutput2"></p>
+    <br /><br />
+
+    <!-- 8. Input event -->
+    <input type="text" id="liveInput2" placeholder="Live typing" />
+    <p id="liveOutput2"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
