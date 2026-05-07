@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="vh-100 w-100 d-flex justify-content-center align-items-center">
+      <div class="d-flex border border-2 w-75 border-primary">
+        <div class="w-75 border border-1 border-primary p-5" id="changeColor">
+          <h1 id="heading">This is heading</h1>
+          <p id="para">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+            reprehenderit quibusdam exercitationem cumque eveniet!
+            Necessitatibus minima qui quis expedita ullam ducimus rerum magnam
+            nulla odio, beatae fuga laborum velit delectus vitae atque
+            explicabo, eligendi quam modi consectetur, et magni dolor voluptate.
+            Blanditiis est eveniet atque sequi quaerat esse facilis cum.
+          </p>
+        </div>
+        <div
+          class="border border-1 border-primary w-25 p-4 d-grid align-items-center"
+        >
+          <div class="d-flex gap-3">
+            <p>Background Color</p>
+            <input type="color" id="bgColor" />
+          </div>
+          <div class="d-flex gap-3">
+            <p>Heading Color</p>
+            <input type="color" id="headingColor" />
+          </div>
+          <div class="d-flex gap-3">
+            <p>Paragraph Color</p>
+            <input type="color" id="paraColor" />
+          </div>
+          <button id="reset" class="text-center bg-success text-white border-0 rounded-5" onclick="reset()">
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script1.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

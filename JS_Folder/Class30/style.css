@@ -1,0 +1,21 @@
+#bulb1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.innerbtn{
+    border-radius: 30%;
+    margin-top: 10px;
+    border: none;
+    padding: 10px;
+}
+body{
+    background-color: grey;
+    text-decoration: white;
+   
+}
