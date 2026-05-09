@@ -1,4 +1,7 @@
-document.querySelector("form").addEventListener("submit", (event) => {
+const form = document.querySelector("form");
+
+// Submit Event
+form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const fn = document.getElementById("fullName").value;
@@ -14,29 +17,26 @@ document.querySelector("form").addEventListener("submit", (event) => {
   console.log(dataPacket);
 
   // Clear form fields
-  document.getElementById("fullName").value = "";
-  document.getElementById("email").value = "";
-  document.getElementById("password").value = "";
+  form.reset();
 });
 
 
-// Reset Button
-document.getElementById("form").addEventListener("reset", (event) => {
-  event.preventDefault();
+// Reset Button Event
+form.addEventListener("reset", (event) => {
+  const confirmReset = confirm("Are you sure you want to reset the form?");
 
-  const confirmReset = confirm("Are you sure?");
-
-  if (confirmReset) {
-    window.location.reload();
+  // If user clicks Cancel
+  if (!confirmReset) {
+    event.preventDefault();
   }
 });
 
 
 // Escape Key Reload
 document.addEventListener("keydown", (event) => {
-  let keyPress = event.key;
 
-  if (keyPress === "Escape") {
+  if (event.key === "Escape") {
     window.location.reload();
   }
+
 });
