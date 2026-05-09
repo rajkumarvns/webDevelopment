@@ -4,7 +4,7 @@ const form = document.querySelector("form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const fn = document.getElementById("fullName").value;
+  const fn = document.getElementById("firstName").value;
   const em = document.getElementById("email").value;
   const ps = document.getElementById("password").value;
 
@@ -23,8 +23,8 @@ form.addEventListener("submit", (event) => {
 
 // Reset Button Event
 form.addEventListener("reset", (event) => {
+  
   const confirmReset = confirm("Are you sure you want to reset the form?");
-
   // If user clicks Cancel
   if (!confirmReset) {
     event.preventDefault();
