@@ -16,27 +16,19 @@ form.addEventListener("submit", (event) => {
 
   console.log(dataPacket);
 
-  // Clear form fields
-  form.reset();
+  document.getElementById("firstName").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("password").value = "";
 });
-
 
 // Reset Button Event
 form.addEventListener("reset", (event) => {
-  
-  const confirmReset = confirm("Are you sure you want to reset the form?");
-  // If user clicks Cancel
-  if (!confirmReset) {
-    event.preventDefault();
-  }
+  alert("The form has been reset!");
 });
 
-
-// Escape Key Reload
+// Escape Key Reload (cross-browser safe)
 document.addEventListener("keydown", (event) => {
-
-  if (event.key === "Escape") {
+  if (event.code === "Escape") {
     window.location.reload();
   }
-
 });
