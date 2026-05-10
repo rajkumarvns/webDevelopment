@@ -1,0 +1,15 @@
+.buttons{
+    grid-template-columns: auto auto auto auto;
+}
+input{
+    height: 100px;
+
+}
+.equal{
+    grid-column: span 2;
+    width: 130px !important;
+}
+button{
+    height: 60px;
+    width: 60px;
+}
