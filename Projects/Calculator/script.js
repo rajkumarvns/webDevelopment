@@ -1,28 +1,33 @@
 function Calculate(data){
-    const text1 = document.getElementById("text")
+    const text = document.getElementById("text")
     if(data === "AC")
     {
-        text1.innerText = "0";
+        text.innerText = "0";
         return;
     }
     if(data === "="){
-        const EdgeCase = text1.innerText
-        const EQ = text1.innerText;
+        const EdgeCase = text.innerText
+        const EQ = text.innerText;
         const solution = eval(EQ);
-        text1.innerText = solution;
+        text.innerText = solution;
         return;
     }
     if(data === "C")
     {
         // const eq = equation.innerText;
-        text1.innerText = text1.innerText.slice(0,-1);
+        text.innerText = text.innerText.slice(0,-1);
         return;
     }
-    if(text1.innerText === "0"){
-        text1.innerText + data;
+    if(text.innerText === "0"){
+        text.innerText + data;
     }
     else{
 
-        text1.innerText = text1.innerText + data;
+        text.innerText = text.innerText + data;
     }
+    document
+  .getElementById("keydown")
+  .addEventListener("keydown", function (event) {
+  });
+
 }
