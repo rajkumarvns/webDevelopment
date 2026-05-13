@@ -1,94 +1,52 @@
-const calculateBtn = document.getElementById("submit");
-const resetBtn = document.getElementById("reset");
+const unitsInput = document.getElementById("Units");
+const result = document.getElementById("result");
 
-calculateBtn.addEventListener("click", function () {
-  let units = Number(document.getElementById("Units").value);
+document.getElementById("submit").addEventListener("click", () => {
+  let units = Number(unitsInput.value);
 
   // Validation
-  if (units < 0 || isNaN(units) || units === "") {
-    alert("Please enter valid positive units");
+  if (unitsInput.value === "" || units < 0) {
+    alert("Enter valid units");
     return;
   }
 
-  let remainingUnits = units;
+  let bill = 0;
 
-  // Slab Units
-  let slab1Units = 0;
-  let slab2Units = 0;
-  let slab3Units = 0;
-  let slab4Units = 0;
-
-  // Slab Charges
-  let slab1Charge = 0;
-  let slab2Charge = 0;
-  let slab3Charge = 0;
-  let slab4Charge = 0;
-
-  // First 50 Units
-  if (remainingUnits > 0) {
-    slab1Units = Math.min(remainingUnits, 50);
-    slab1Charge = slab1Units * 0.5;
-    remainingUnits -= slab1Units;
+  // Bill Calculation
+  if (units <= 50) {
+    bill = units * 0.5;
+  } else if (units <= 200) {
+    bill = 50 * 0.5 + (units - 50) * 0.75;
+  } else if (units <= 450) {
+    bill = 50 * 0.5 + 150 * 0.75 + (units - 200) * 1.2;
+  } else {
+    bill = 50 * 0.5 + 150 * 0.75 + 250 * 1.2 + (units - 450) * 1.5;
   }
 
-  // 51 - 200 Units
-  if (remainingUnits > 0) {
-    slab2Units = Math.min(remainingUnits, 150);
-    slab2Charge = slab2Units * 0.75;
-    remainingUnits -= slab2Units;
-  }
+  // Extra Charge
+  let surcharge = bill * 0.2;
 
-  // 201 - 450 Units
-  if (remainingUnits > 0) {
-    slab3Units = Math.min(remainingUnits, 250);
-    slab3Charge = slab3Units * 1.2;
-    remainingUnits -= slab3Units;
-  }
+  // Final Amount
+  let total = bill + surcharge;
 
-  // Above 450 Units
-  if (remainingUnits > 0) {
-    slab4Units = remainingUnits;
-    slab4Charge = slab4Units * 1.5;
-  }
+  // Show Result
+  result.classList.remove("d-none");
 
-  // Subtotal
-  let subtotal = slab1Charge + slab2Charge + slab3Charge + slab4Charge;
-
-  // 20% Surcharge
-  let surcharge = subtotal * 0.2;
-
-  // Grand Total
-  let grandTotal = subtotal + surcharge;
-
-  // Show Result Card
-  document.getElementById("result").classList.remove("d-none");
-
-  // Output
-  document.getElementById("slab1").innerHTML =
-    `First 50 Units: ${slab1Units} × ₹0.50 = ₹${slab1Charge.toFixed(2)}`;
+  document.getElementById("slab1").innerHTML = `Electricity Units : ${units}`;
 
   document.getElementById("slab2").innerHTML =
-    `51 - 200 Units: ${slab2Units} × ₹0.75 = ₹${slab2Charge.toFixed(2)}`;
+    `Bill Amount : ₹${bill.toFixed(2)}`;
 
   document.getElementById("slab3").innerHTML =
-    `201 - 450 Units: ${slab3Units} × ₹1.20 = ₹${slab3Charge.toFixed(2)}`;
+    `20% Surcharge : ₹${surcharge.toFixed(2)}`;
 
   document.getElementById("slab4").innerHTML =
-    `Above 450 Units: ${slab4Units} × ₹1.50 = ₹${slab4Charge.toFixed(2)}`;
-
-  document.getElementById("subtotal").innerHTML =
-    `Subtotal: ₹${subtotal.toFixed(2)}`;
-
-  document.getElementById("surcharge").innerHTML =
-    `20% Surcharge: ₹${surcharge.toFixed(2)}`;
-
-  document.getElementById("grandTotal").innerHTML =
-    `Grand Total: ₹${grandTotal.toFixed(2)}`;
+    `Total Amount : ₹${total.toFixed(2)}`;
 });
 
 // Reset Button
-resetBtn.addEventListener("click", function () {
-  document.getElementById("Units").value = "";
+document.getElementById("reset").addEventListener("click", () => {
+  unitsInput.value = "";
 
-  document.getElementById("result").classList.add("d-none");
+  result.classList.add("d-none");
 });

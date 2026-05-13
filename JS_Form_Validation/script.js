@@ -20,7 +20,7 @@ function submit() {
     // return;
   }
 
-  if (!/^[A-Za-z\d]+@gmail.com$/.test(em)) {
+  if (/^[A-Za-z\d]+@gmail.com$/.test(em)) {
     document.getElementById("emailError").innerText = "Invalid Email";
     // return;
   }
