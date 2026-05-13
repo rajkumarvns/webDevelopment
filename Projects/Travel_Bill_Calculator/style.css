@@ -1,57 +1,36 @@
 body {
-    background: #f4f7fc;
-    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 .main-card {
-    max-width: 600px;
-    margin: 50px auto;
-    border-radius: 20px;
+    width: 400px;
+    border-radius: 15px;
     overflow: hidden;
 }
 
 .card-header {
-    background: linear-gradient(135deg, #0d6efd, #0a58ca);
+    background-color: #0d6efd;
     color: white;
-    text-align: center;
     padding: 20px;
 }
 
-.btn-custom {
-    width: 100%;
-    padding: 12px;
-    font-size: 18px;
-    transition: 0.3s;
+.card-body {
+    padding: 25px;
 }
 
-.btn-custom:hover {
-    transform: scale(1.02);
+#calculateBtn {
+    margin-top: 10px;
 }
 
 .result-box {
-    background: #eef4ff;
-    border-radius: 12px;
+    margin-top: 25px;
     padding: 15px;
-    margin-top: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
 }
 
-.breakdown-item {
-    padding: 8px 0;
-    border-bottom: 1px solid #dcdcdc;
-}
-
-.breakdown-item:last-child {
-    border-bottom: none;
-}
-
-.error-message {
+#error {
     color: red;
-    font-size: 14px;
     margin-top: 5px;
-}
-
-@media (max-width: 576px) {
-    .main-card {
-        margin: 20px;
-    }
+    font-size: 14px;
 }

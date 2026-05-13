@@ -1,89 +1,51 @@
-const kmInput = document.getElementById("kmInput");
-const error = document.getElementById("error");
-const totalBill = document.getElementById("totalBill");
-const breakdown = document.getElementById("breakdown");
-const resultSection = document.getElementById("resultSection");
+// Button select
+let calculateBtn = document.getElementById("calculateBtn");
 
-document
-  .getElementById("calculateBtn")
-  .addEventListener("click", calculateFare);
+// Button click event
+calculateBtn.addEventListener("click", function () {
+  // Input value
+  let km = document.getElementById("kmInput").value;
 
-function calculateFare() {
-  let km = parseFloat(kmInput.value);
-
-  error.textContent = "";
-  breakdown.innerHTML = "";
+  // Elements select
+  let error = document.getElementById("error");
+  let resultSection = document.getElementById("resultSection");
+  let totalBill = document.getElementById("totalBill");
+  let breakdown = document.getElementById("breakdown");
 
   // Validation
-  if (kmInput.value.trim() === "") {
-    error.textContent = "Please enter a non-negative number of kilometres";
-
+  if (km === "" || km <= 0) {
+    error.innerHTML = "Please enter valid kilometers";
     resultSection.classList.add("d-none");
-
     return;
   }
 
-  if (isNaN(km) || km < 0) {
-    error.textContent = "Please enter a non-negative number of kilometres";
+  // Remove error
+  error.innerHTML = "";
 
-    resultSection.classList.add("d-none");
+  // Convert string into number
+  km = Number(km);
 
-    return;
-  }
-
-  let total = 0;
-
-  // Fare Slabs
-  // First 10 km = Rs.11/km
-  // Next 40 km = Rs.10/km
-  // Above 50 km = Rs.8/km
-
-  let firstSlab = 0;
-  let secondSlab = 0;
-  let thirdSlab = 0;
+  // Bill calculation
+  let bill = 0;
 
   if (km <= 10) {
-    firstSlab = km;
-
-    total = firstSlab * 11;
-  } else if (km <= 50) {
-    firstSlab = 10;
-    secondSlab = km - 10;
-
-    total = firstSlab * 11 + secondSlab * 10;
+    bill = km * 11;
+  } else if (km <= 30) {
+    bill = 10 * 11 + (km - 10) * 10;
   } else {
-    firstSlab = 10;
-    secondSlab = 40;
-    thirdSlab = km - 50;
-
-    total = firstSlab * 11 + secondSlab * 10 + thirdSlab * 8;
+    bill = 10 * 11 + 20 * 10 + (km - 30) * 8;
   }
 
-  // Total Bill
-  totalBill.textContent =
-    "Rs. " +
-    total.toLocaleString("en-IN", {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    });
+  // Show result
+  totalBill.innerHTML = "₹ " + bill;
 
-  // Breakdown
+  // Breakdown show
   breakdown.innerHTML = `
-    <div class="breakdown-item">
-      ${firstSlab} km × Rs.11 =
-      Rs. ${(firstSlab * 11).toFixed(2)}
-    </div>
-
-    <div class="breakdown-item">
-      ${secondSlab} km × Rs.10 =
-      Rs. ${(secondSlab * 10).toFixed(2)}
-    </div>
-
-    <div class="breakdown-item">
-      ${thirdSlab} km × Rs.8 =
-      Rs. ${(thirdSlab * 8).toFixed(2)}
-    </div>
+    First 10 KM = ₹11 per KM <br>
+    Next 20 KM = ₹10 per KM <br>
+    Above 30 KM = ₹8 per KM
   `;
 
+  // Show result section
   resultSection.classList.remove("d-none");
-}
+});

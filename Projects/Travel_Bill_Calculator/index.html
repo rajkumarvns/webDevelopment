@@ -12,15 +12,17 @@
       rel="stylesheet"
     />
 
-    <!-- External CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div class="container">
+    <div
+      class="container d-flex justify-content-center align-items-center min-vh-100"
+    >
       <div class="card shadow-lg main-card">
         <!-- Header -->
-        <div class="card-header">
+        <div class="card-header text-center">
           <h2>Travel Bill Calculator</h2>
         </div>
 
@@ -34,23 +36,22 @@
               type="number"
               id="kmInput"
               class="form-control"
-              placeholder="Enter kilometres"
-              step="0.1"
+              placeholder="Enter kilometers"
             />
 
-            <div id="error" class="error-message"></div>
+            <!-- Error Message -->
+            <div id="error"></div>
           </div>
 
           <!-- Button -->
-          <button class="btn btn-primary btn-custom" id="calculateBtn">
+          <button id="calculateBtn" class="btn btn-primary w-100">
             Calculate Bill
           </button>
 
           <!-- Result -->
           <div id="resultSection" class="result-box d-none">
-            <h4 class="text-primary">
-              Total Bill =
-              <span id="totalBill"></span>
+            <h4 class="mt-4 text-primary">
+              Total Bill = <span id="totalBill"></span>
             </h4>
 
             <hr />
@@ -63,7 +64,7 @@
       </div>
     </div>
 
-    <!-- External JS -->
+    <!-- JS -->
     <script src="script.js"></script>
   </body>
 </html>
