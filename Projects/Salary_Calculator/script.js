@@ -1,120 +1,63 @@
-const basicSalaryInput = document.getElementById("basicSalary");
-const calculateBtn = document.getElementById("calculateBtn");
-const resetBtn = document.getElementById("resetBtn");
+let salaryInput = document.getElementById("basicSalary");
 
-const errorMessage = document.getElementById("errorMessage");
-const successMessage = document.getElementById("successMessage");
+let calculateBtn = document.getElementById("calculateBtn");
 
-const spinner = document.getElementById("spinner");
-const btnText = document.getElementById("btnText");
+let resetBtn = document.getElementById("resetBtn");
 
-const resultCard = document.getElementById("resultCard");
+let errorMessage = document.getElementById("errorMessage");
 
-const resultBasic = document.getElementById("resultBasic");
-const resultHra = document.getElementById("resultHra");
-const resultDa = document.getElementById("resultDa");
-const resultGross = document.getElementById("resultGross");
+let successMessage = document.getElementById("successMessage");
 
-/*
-  Salary Rules:
-  HRA = 20% of Basic
-  DA  = 10% of Basic
-  Gross Salary = Basic + HRA + DA
-*/
+let resultCard = document.getElementById("resultCard");
 
-// Standalone Function
-function calculateGrossSalary(basic) {
-  const hra = basic * 0.2;
+let resultBasic = document.getElementById("resultBasic");
 
-  const da = basic * 0.1;
+let resultHra = document.getElementById("resultHra");
 
-  const gross = basic + hra + da;
+let resultDa = document.getElementById("resultDa");
 
-  return {
-    basic,
-    hra,
-    da,
-    gross,
-  };
-}
+let resultGross = document.getElementById("resultGross");
 
-// Format Currency in Indian Rupees
-function formatCurrency(amount) {
-  return new Intl.NumberFormat("en-IN", {
-    style: "currency",
-    currency: "INR",
-  }).format(amount);
-}
+calculateBtn.addEventListener("click", function () {
+  let salary = salaryInput.value;
 
-// Validate Input
-function validateInput(value) {
-  if (value === "") {
-    return "Basic salary is required.";
-  }
-
-  if (isNaN(value)) {
-    return "Please enter a valid number.";
-  }
-
-  if (Number(value) < 0) {
-    return "Salary cannot be negative.";
-  }
-
-  return "";
-}
-
-// Calculate Button
-calculateBtn.addEventListener("click", () => {
-  const basic = basicSalaryInput.value.trim();
-
-  errorMessage.textContent = "";
+  errorMessage.innerHTML = "";
 
   successMessage.classList.add("d-none");
 
-  const validationError = validateInput(basic);
+  if (salary === "" || salary < 0) {
+    errorMessage.innerHTML = "Please enter valid salary";
 
-  if (validationError) {
     resultCard.classList.add("d-none");
-
-    errorMessage.textContent = validationError;
 
     return;
   }
 
-  // Disable Button
-  calculateBtn.disabled = true;
+  salary = Number(salary);
 
-  spinner.classList.remove("d-none");
+  // Salary Calculation
+  let hra = salary * 0.2;
 
-  // Simulate Processing
-  setTimeout(() => {
-    const salaryData = calculateGrossSalary(Number(basic));
+  let da = salary * 0.1;
 
-    // Show Results
-    resultBasic.textContent = formatCurrency(salaryData.basic);
+  let gross = salary + hra + da;
 
-    resultHra.textContent = formatCurrency(salaryData.hra);
+  resultBasic.innerHTML = "₹ " + salary;
 
-    resultDa.textContent = formatCurrency(salaryData.da);
+  resultHra.innerHTML = "₹ " + hra;
 
-    resultGross.textContent = formatCurrency(salaryData.gross);
+  resultDa.innerHTML = "₹ " + da;
 
-    resultCard.classList.remove("d-none");
+  resultGross.innerHTML = "₹ " + gross;
 
-    successMessage.classList.remove("d-none");
+  resultCard.classList.remove("d-none");
 
-    // Enable Button
-    calculateBtn.disabled = false;
-
-    spinner.classList.add("d-none");
-  }, 500);
+  successMessage.classList.remove("d-none");
 });
+resetBtn.addEventListener("click", function () {
+  salaryInput.value = "";
 
-// Reset Button
-resetBtn.addEventListener("click", () => {
-  basicSalaryInput.value = "";
-
-  errorMessage.textContent = "";
+  errorMessage.innerHTML = "";
 
   successMessage.classList.add("d-none");
 
