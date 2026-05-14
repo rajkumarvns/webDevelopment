@@ -58,3 +58,25 @@ console.log(textt);
 
 let txts = name.trim();
 console.log(txts);
+
+let newTxt = "Please locate where 'locate'occurs!";
+
+console.log(newTxt.indexOf("locate"));
+console.log(newTxt.lastIndexOf("locate"));
+console.log(newTxt.indexOf("locate",15));
+console.log(newTxt.lastIndexOf("locate",15));
+console.log(newTxt.search("locate"));
+console.log(newTxt.search(/locate/));
+console.log(newTxt.includes("Please",10));
+
+console.log(newTxt.startsWith("Please"));
+console.log(newTxt.endsWith("Please"));
+console.log(newTxt.toLocaleUpperCase());
+console.log(newTxt.toUpperCase());
+
+console.log(newTxt.valueOf());
+
+var BlinkText = "Hello JavaScript";
+document.body.innerHTML = BlinkText.blink();
+
+
