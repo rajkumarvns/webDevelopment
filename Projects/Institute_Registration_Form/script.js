@@ -1,140 +1,72 @@
-document.getElementById("registrationFrom").addEventListener("submit", (e) => {
+const patterns = {
+  name: /^[A-Za-z\s]+$/,
+  email: /^[A-Za-z\d]+@gmail\.com$/,
+  phone: /^[6-9]\d{9}$/,
+  pin: /^\d{6}$/
+};
+
+const fields = [
+  { id: "fullName", errorId: "fullNameError", pattern: patterns.name, message: "Enter valid full name" },
+
+  { id: "email", errorId: "emailError", pattern: patterns.email, message: "Enter valid gmail" },
+
+  { id: "phone", errorId: "phoneError", pattern: patterns.phone, message: "Enter valid mobile number" },
+
+  { id: "dob", errorId: "dobError", message: "Select date of birth", checkEmpty: true },
+
+  { id: "qualification", errorId: "qualificationError", message: "Select qualification", checkEmpty: true },
+
+  { id: "marks", errorId: "marksError", message: "Enter marks", checkEmpty: true },
+
+  { id: "course", errorId: "courseError", message: "Select course", checkEmpty: true },
+
+  { id: "address", errorId: "addressError", message: "Enter address", checkEmpty: true },
+
+  { id: "city", errorId: "cityError", pattern: patterns.name, message: "Enter valid city" },
+
+  { id: "pin", errorId: "pinError", pattern: patterns.pin, message: "Enter valid pin code" },
+
+  { id: "guardianName", errorId: "guardianError", pattern: patterns.name, message: "Enter valid guardian name" },
+  
+  { id: "guardianNumber", errorId: "guardianNumberError", pattern: patterns.phone, message: "Enter valid guardian number" }
+];
+
+const validateField = (field, value) => {
+  if (field.checkEmpty && !value) return field.message;
+  if (field.pattern && !field.pattern.test(value)) return field.message;
+  return "";
+};
+
+const updateError = (id, msg) => document.getElementById(id).innerText = msg;
+
+// Real-time validation
+fields.forEach(f => {
+  const el = document.getElementById(f.id);
+  el.addEventListener("input", () => updateError(f.errorId, validateField(f, el.value.trim())));
+});
+
+// Timings validation
+const validateTimings = () => {
+  const checked = document.querySelectorAll("input[name='timings']:checked").length;
+  updateError("timingsError", checked ? "" : "Select at least one timing");
+};
+
+// Attach timings listener
+document.querySelectorAll("input[name='timings']").forEach(cb => cb.addEventListener("change", validateTimings));
+
+// Form submission
+document.getElementById("registrationFrom").addEventListener("submit", e => {
   e.preventDefault();
-
-  // Inputs
-  const fullName = document.getElementById("fullName").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const dob = document.getElementById("dob").value;
-  const qualification = document.getElementById("qualification").value;
-  const marks = document.getElementById("marks").value.trim();
-  const course = document.getElementById("course").value;
-  const address = document.getElementById("address").value.trim();
-  const city = document.getElementById("city").value.trim();
-  const pin = document.getElementById("pin").value.trim();
-  const guardianName = document.getElementById("guardianName").value.trim();
-  const guardianNumber = document.getElementById("guardianNumber").value.trim();
-
-  // Error spans
-  const fullNameError = document.getElementById("fullNameError");
-  const emailError = document.getElementById("emailError");
-  const phoneError = document.getElementById("phoneError");
-  const dobError = document.getElementById("dobError");
-  const qualificationError = document.getElementById("qualificationError");
-  const marksError = document.getElementById("marksError");
-  const courseError = document.getElementById("courseError");
-  const timingsError = document.getElementById("timingsError");
-  const addressError = document.getElementById("addressError");
-  const cityError = document.getElementById("cityError");
-  const pinError = document.getElementById("pinError");
-  const guardianError = document.getElementById("guardianError");
-  const guardianNumberError = document.getElementById("guardianNumberError");
-
-  // Clear previous errors
-  fullNameError.innerText = "";
-  emailError.innerText = "";
-  phoneError.innerText = "";
-  dobError.innerText = "";
-  qualificationError.innerText = "";
-  marksError.innerText = "";
-  courseError.innerText = "";
-  timingsError.innerText = "";
-  addressError.innerText = "";
-  cityError.innerText = "";
-  pinError.innerText = "";
-  guardianError.innerText = "";
-  guardianNumberError.innerText = "";
-
-  // Patterns
-  const namePattern = /^[A-Za-z\s]+$/;
-  const emailPattern = /^[A-Za-z\d]+@gmail\.com$/;
-  const phonePattern = /^[6-9]\d{9}$/;
-  const pinPattern = /^\d{6}$/;
-
   let isValid = true;
 
-  // Full Name
-  if (!namePattern.test(fullName)) {
-    fullNameError.innerText = "Enter valid full name";
-    isValid = false;
-  }
+  fields.forEach(f => {
+    const error = validateField(f, document.getElementById(f.id).value.trim());
+    updateError(f.errorId, error);
+    if (error) isValid = false;
+  });
 
-  // Email
-  if (!emailPattern.test(email)) {
-    emailError.innerText = "Enter valid gmail";
-    isValid = false;
-  }
+  validateTimings();
+  if (document.getElementById("timingsError").innerText) isValid = false;
 
-  // Phone
-  if (!phonePattern.test(phone)) {
-    phoneError.innerText = "Enter valid mobile number";
-    isValid = false;
-  }
-
-  // DOB
-  if (dob === "") {
-    dobError.innerText = "Select date of birth";
-    isValid = false;
-  }
-
-  // Qualification
-  if (qualification === "") {
-    qualificationError.innerText = "Select qualification";
-    isValid = false;
-  }
-
-  // Marks
-  if (marks === "") {
-    marksError.innerText = "Enter marks";
-    isValid = false;
-  }
-
-  // Course
-  if (course === "") {
-    courseError.innerText = "Select course";
-    isValid = false;
-  }
-
-  // Timings
-  const timings = document.querySelectorAll("input[name='timings']:checked");
-
-  if (timings.length === 0) {
-    timingsError.innerText = "Select at least one timing";
-    isValid = false;
-  }
-
-  // Address
-  if (address === "") {
-    addressError.innerText = "Enter address";
-    isValid = false;
-  }
-
-  // City
-  if (!namePattern.test(city)) {
-    cityError.innerText = "Enter valid city";
-    isValid = false;
-  }
-
-  // Pin
-  if (!pinPattern.test(pin)) {
-    pinError.innerText = "Enter valid pin code";
-    isValid = false;
-  }
-
-  // Guardian Name
-  if (!namePattern.test(guardianName)) {
-    guardianError.innerText = "Enter valid guardian name";
-    isValid = false;
-  }
-
-  // Guardian Number
-  if (!phonePattern.test(guardianNumber)) {
-    guardianNumberError.innerText = "Enter valid guardian number";
-    isValid = false;
-  }
-
-  // Final Submit
-  if (isValid) {
-    alert("Form Submitted Successfully");
-  }
+  if (isValid) alert("Form Submitted Successfully");
 });
