@@ -1,21 +1,36 @@
-const passwordInput = document.getElementById("password");
+document.getElementById("passFrom").addEventListener("submit", (event) => {
+  event.preventDefault();
 
-const togglePassword = document.getElementById("togglePassword");
+  const webSiteName = document.getElementById("siteName").value.trim();
+  const userName = document.getElementById("userName").value.trim();
+  const password = document.getElementById("password").value;
 
-const eyeIcon = document.getElementById("eyeIcon");
+  const packet = {
+    WebsiteName: webSiteName,
+    UserName: userName,
+    Password: password,
+  };
 
-togglePassword.addEventListener("click", () => {
-  if (passwordInput.type === "password") {
-    passwordInput.type = "text";
+  saveToLocalStorage(packet);
 
-    eyeIcon.classList.remove("bi-eye-slash");
-
-    eyeIcon.classList.add("bi-eye");
-  } else {
-    passwordInput.type = "password";
-
-    eyeIcon.classList.remove("bi-eye");
-
-    eyeIcon.classList.add("bi-eye-slash");
-  }
+  document.getElementById("siteName").value = "";
+  document.getElementById("userName").value = "";
+  document.getElementById("password").value = "";
 });
+
+document.getElementById("passFrom").addEventListener("reset", (event) => {
+  event.preventDefault();
+  document.getElementById("siteName").value = "";
+  document.getElementById("userName").value = "";
+  document.getElementById("password").value = "";
+});
+
+function saveToLocalStorage(packet) {
+  const oldData = JSON.parse(localStorage.getItem("Passwords")) || [];
+
+  oldData.push(packet);
+
+  const packetInString = JSON.stringify(oldData);
+
+  localStorage.setItem("Passwords", packetInString);
+}
