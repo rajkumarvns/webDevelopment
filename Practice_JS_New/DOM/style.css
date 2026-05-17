@@ -1,0 +1,24 @@
+.heading-class{
+    color: blue;
+    background-color: yellow;
+}
+body{
+    background-color: pink;
+}
+button{
+    background-color: blue;
+    color: white;
+}h1{
+    visibility: hidden;
+}
+.box{
+    height: 100px;
+    width: 100px;
+   border: 2px solid black;
+   margin: 5px;
+   text-align: center;
+   background-color:aqua;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
