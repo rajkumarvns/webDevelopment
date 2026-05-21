@@ -53,7 +53,7 @@
   padding: 8px;
 }
 
-#remember-me{
+#remember-me {
   border: 6px solid black;
 }
 
@@ -66,7 +66,7 @@ input {
   padding: 10px 10px 8px;
 }
 
-.pass-login{
+.pass-login {
   display: flex;
   padding-top: 2px;
 }
@@ -76,11 +76,11 @@ input {
   justify-content: space-between;
 }
 
-.rem-forget div{
+.rem-forget div {
   display: flex;
 }
 
-.rem-forget div input{
+.rem-forget div input {
   width: 20px;
   margin-right: 8px;
 }
@@ -114,11 +114,30 @@ button {
   font-size: medium;
   font-weight: 550;
   box-shadow: 3px 3px 5px 4px rgb(23, 40, 129);
-  
+
 }
-button:active{
-  transform: translate(3px , 3px);
+
+button:focus {
+  transform: scale(-5px);
   box-shadow: none;
+}
+
+button:hover {
+  background-color: deeppink;
+  transform: scale(0.92);
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: scale(-20px);
+  }
+
+  50% {
+    transform: scale(0);
+  }
+
 }
 
 .login-to-signup {
@@ -132,12 +151,12 @@ a {
   padding: 2px;
 }
 
-.pass-login input{
+.pass-login input {
   width: 250px;
   margin-left: 5px
 }
 
-a{
+a {
   text-decoration: none;
   color: #4070f3;
 }
