@@ -97,3 +97,15 @@ console.log(companies);
 
 companies.push("Amazon");
 console.log(companies);
+
+function getStack() {
+  const obj = {};
+  if ("captureStackTrace" in Error) {
+    Error.captureStackTrace(obj, getStack);
+  }
+  return obj.getStack;
+}
+function foo() {
+  console.log(getStack());
+}
+foo();
