@@ -1,0 +1,49 @@
+.weather-card {
+
+    width: 380px;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    backdrop-filter: blur(10px);
+
+}
+
+.weather-icon {
+
+    animation: float 2s ease-in-out infinite;
+
+}
+
+button {
+
+    transition: 0.3s;
+
+}
+
+button:hover {
+
+    transform: scale(1.05);
+
+}
+
+@keyframes float {
+
+    0% {
+
+        transform: translateY(0px);
+
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+
+    }
+
+    100% {
+
+        transform: translateY(0px);
+
+    }
+
+}
