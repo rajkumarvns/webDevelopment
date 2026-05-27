@@ -1,33 +1,38 @@
 [
   {
-    "Country": "India",
-    "Currency_Code": "inr",
-    "Country_Code": "IN"
+    "Country": "Afghanistan",
+    "Currency_Code": "afn",
+    "Country_Code": "AF"
   },
   {
-    "Country": "United States",
-    "Currency_Code": "usd",
-    "Country_Code": "US"
+    "Country": "Albania",
+    "Currency_Code": "all",
+    "Country_Code": "AL"
   },
   {
-    "Country": "United Kingdom",
-    "Currency_Code": "gbp",
-    "Country_Code": "GB"
+    "Country": "Algeria",
+    "Currency_Code": "dzd",
+    "Country_Code": "DZ"
   },
   {
-    "Country": "Japan",
-    "Currency_Code": "jpy",
-    "Country_Code": "JP"
+    "Country": "Andorra",
+    "Currency_Code": "eur",
+    "Country_Code": "AD"
   },
   {
-    "Country": "United Arab Emirates",
-    "Currency_Code": "aed",
-    "Country_Code": "AE"
+    "Country": "Angola",
+    "Currency_Code": "aoa",
+    "Country_Code": "AO"
   },
   {
-    "Country": "Canada",
-    "Currency_Code": "cad",
-    "Country_Code": "CA"
+    "Country": "Argentina",
+    "Currency_Code": "ars",
+    "Country_Code": "AR"
+  },
+  {
+    "Country": "Armenia",
+    "Currency_Code": "amd",
+    "Country_Code": "AM"
   },
   {
     "Country": "Australia",
@@ -35,34 +40,44 @@
     "Country_Code": "AU"
   },
   {
-    "Country": "Germany",
+    "Country": "Austria",
     "Currency_Code": "eur",
-    "Country_Code": "DE"
+    "Country_Code": "AT"
   },
   {
-    "Country": "France",
+    "Country": "Azerbaijan",
+    "Currency_Code": "azn",
+    "Country_Code": "AZ"
+  },
+  {
+    "Country": "Bahrain",
+    "Currency_Code": "bhd",
+    "Country_Code": "BH"
+  },
+  {
+    "Country": "Bangladesh",
+    "Currency_Code": "bdt",
+    "Country_Code": "BD"
+  },
+  {
+    "Country": "Belarus",
+    "Currency_Code": "byn",
+    "Country_Code": "BY"
+  },
+  {
+    "Country": "Belgium",
     "Currency_Code": "eur",
-    "Country_Code": "FR"
+    "Country_Code": "BE"
   },
   {
-    "Country": "Italy",
-    "Currency_Code": "eur",
-    "Country_Code": "IT"
+    "Country": "Bhutan",
+    "Currency_Code": "btn",
+    "Country_Code": "BT"
   },
   {
-    "Country": "Spain",
-    "Currency_Code": "eur",
-    "Country_Code": "ES"
-  },
-  {
-    "Country": "China",
-    "Currency_Code": "cny",
-    "Country_Code": "CN"
-  },
-  {
-    "Country": "Russia",
-    "Currency_Code": "rub",
-    "Country_Code": "RU"
+    "Country": "Bolivia",
+    "Currency_Code": "bob",
+    "Country_Code": "BO"
   },
   {
     "Country": "Brazil",
@@ -70,14 +85,264 @@
     "Country_Code": "BR"
   },
   {
-    "Country": "South Africa",
-    "Currency_Code": "zar",
-    "Country_Code": "ZA"
+    "Country": "Bulgaria",
+    "Currency_Code": "bgn",
+    "Country_Code": "BG"
+  },
+  {
+    "Country": "Cambodia",
+    "Currency_Code": "khr",
+    "Country_Code": "KH"
+  },
+  {
+    "Country": "Cameroon",
+    "Currency_Code": "xaf",
+    "Country_Code": "CM"
+  },
+  {
+    "Country": "Canada",
+    "Currency_Code": "cad",
+    "Country_Code": "CA"
+  },
+  {
+    "Country": "Chile",
+    "Currency_Code": "clp",
+    "Country_Code": "CL"
+  },
+  {
+    "Country": "China",
+    "Currency_Code": "cny",
+    "Country_Code": "CN"
+  },
+  {
+    "Country": "Colombia",
+    "Currency_Code": "cop",
+    "Country_Code": "CO"
+  },
+  {
+    "Country": "Costa Rica",
+    "Currency_Code": "crc",
+    "Country_Code": "CR"
+  },
+  {
+    "Country": "Croatia",
+    "Currency_Code": "eur",
+    "Country_Code": "HR"
+  },
+  {
+    "Country": "Cuba",
+    "Currency_Code": "cup",
+    "Country_Code": "CU"
+  },
+  {
+    "Country": "Cyprus",
+    "Currency_Code": "eur",
+    "Country_Code": "CY"
+  },
+  {
+    "Country": "Czech Republic",
+    "Currency_Code": "czk",
+    "Country_Code": "CZ"
+  },
+  {
+    "Country": "Denmark",
+    "Currency_Code": "dkk",
+    "Country_Code": "DK"
+  },
+  {
+    "Country": "Egypt",
+    "Currency_Code": "egp",
+    "Country_Code": "EG"
+  },
+  {
+    "Country": "Estonia",
+    "Currency_Code": "eur",
+    "Country_Code": "EE"
+  },
+  {
+    "Country": "Ethiopia",
+    "Currency_Code": "etb",
+    "Country_Code": "ET"
+  },
+  {
+    "Country": "Finland",
+    "Currency_Code": "eur",
+    "Country_Code": "FI"
+  },
+  {
+    "Country": "France",
+    "Currency_Code": "eur",
+    "Country_Code": "FR"
+  },
+  {
+    "Country": "Germany",
+    "Currency_Code": "eur",
+    "Country_Code": "DE"
+  },
+  {
+    "Country": "Ghana",
+    "Currency_Code": "ghs",
+    "Country_Code": "GH"
+  },
+  {
+    "Country": "Greece",
+    "Currency_Code": "eur",
+    "Country_Code": "GR"
+  },
+  {
+    "Country": "Hong Kong",
+    "Currency_Code": "hkd",
+    "Country_Code": "HK"
+  },
+  {
+    "Country": "Hungary",
+    "Currency_Code": "huf",
+    "Country_Code": "HU"
+  },
+  {
+    "Country": "Iceland",
+    "Currency_Code": "isk",
+    "Country_Code": "IS"
+  },
+  {
+    "Country": "India",
+    "Currency_Code": "inr",
+    "Country_Code": "IN"
+  },
+  {
+    "Country": "Indonesia",
+    "Currency_Code": "idr",
+    "Country_Code": "ID"
+  },
+  {
+    "Country": "Iran",
+    "Currency_Code": "irr",
+    "Country_Code": "IR"
+  },
+  {
+    "Country": "Iraq",
+    "Currency_Code": "iqd",
+    "Country_Code": "IQ"
+  },
+  {
+    "Country": "Ireland",
+    "Currency_Code": "eur",
+    "Country_Code": "IE"
+  },
+  {
+    "Country": "Israel",
+    "Currency_Code": "ils",
+    "Country_Code": "IL"
+  },
+  {
+    "Country": "Italy",
+    "Currency_Code": "eur",
+    "Country_Code": "IT"
+  },
+  {
+    "Country": "Japan",
+    "Currency_Code": "jpy",
+    "Country_Code": "JP"
+  },
+  {
+    "Country": "Jordan",
+    "Currency_Code": "jod",
+    "Country_Code": "JO"
+  },
+  {
+    "Country": "Kazakhstan",
+    "Currency_Code": "kzt",
+    "Country_Code": "KZ"
+  },
+  {
+    "Country": "Kenya",
+    "Currency_Code": "kes",
+    "Country_Code": "KE"
+  },
+  {
+    "Country": "Kuwait",
+    "Currency_Code": "kwd",
+    "Country_Code": "KW"
+  },
+  {
+    "Country": "Lebanon",
+    "Currency_Code": "lbp",
+    "Country_Code": "LB"
+  },
+  {
+    "Country": "Malaysia",
+    "Currency_Code": "myr",
+    "Country_Code": "MY"
   },
   {
     "Country": "Mexico",
     "Currency_Code": "mxn",
     "Country_Code": "MX"
+  },
+  {
+    "Country": "Morocco",
+    "Currency_Code": "mad",
+    "Country_Code": "MA"
+  },
+  {
+    "Country": "Nepal",
+    "Currency_Code": "npr",
+    "Country_Code": "NP"
+  },
+  {
+    "Country": "Netherlands",
+    "Currency_Code": "eur",
+    "Country_Code": "NL"
+  },
+  {
+    "Country": "New Zealand",
+    "Currency_Code": "nzd",
+    "Country_Code": "NZ"
+  },
+  {
+    "Country": "Nigeria",
+    "Currency_Code": "ngn",
+    "Country_Code": "NG"
+  },
+  {
+    "Country": "Norway",
+    "Currency_Code": "nok",
+    "Country_Code": "NO"
+  },
+  {
+    "Country": "Pakistan",
+    "Currency_Code": "pkr",
+    "Country_Code": "PK"
+  },
+  {
+    "Country": "Philippines",
+    "Currency_Code": "php",
+    "Country_Code": "PH"
+  },
+  {
+    "Country": "Poland",
+    "Currency_Code": "pln",
+    "Country_Code": "PL"
+  },
+  {
+    "Country": "Portugal",
+    "Currency_Code": "eur",
+    "Country_Code": "PT"
+  },
+  {
+    "Country": "Qatar",
+    "Currency_Code": "qar",
+    "Country_Code": "QA"
+  },
+  {
+    "Country": "Romania",
+    "Currency_Code": "ron",
+    "Country_Code": "RO"
+  },
+  {
+    "Country": "Russia",
+    "Currency_Code": "rub",
+    "Country_Code": "RU"
   },
   {
     "Country": "Saudi Arabia",
@@ -90,13 +355,68 @@
     "Country_Code": "SG"
   },
   {
-    "Country": "Switzerland",
-    "Currency_Code": "chf",
-    "Country_Code": "CH"
+    "Country": "South Africa",
+    "Currency_Code": "zar",
+    "Country_Code": "ZA"
   },
   {
     "Country": "South Korea",
     "Currency_Code": "krw",
     "Country_Code": "KR"
+  },
+  {
+    "Country": "Spain",
+    "Currency_Code": "eur",
+    "Country_Code": "ES"
+  },
+  {
+    "Country": "Sri Lanka",
+    "Currency_Code": "lkr",
+    "Country_Code": "LK"
+  },
+  {
+    "Country": "Sweden",
+    "Currency_Code": "sek",
+    "Country_Code": "SE"
+  },
+  {
+    "Country": "Switzerland",
+    "Currency_Code": "chf",
+    "Country_Code": "CH"
+  },
+  {
+    "Country": "Thailand",
+    "Currency_Code": "thb",
+    "Country_Code": "TH"
+  },
+  {
+    "Country": "Turkey",
+    "Currency_Code": "try",
+    "Country_Code": "TR"
+  },
+  {
+    "Country": "Ukraine",
+    "Currency_Code": "uah",
+    "Country_Code": "UA"
+  },
+  {
+    "Country": "United Arab Emirates",
+    "Currency_Code": "aed",
+    "Country_Code": "AE"
+  },
+  {
+    "Country": "United Kingdom",
+    "Currency_Code": "gbp",
+    "Country_Code": "GB"
+  },
+  {
+    "Country": "United States",
+    "Currency_Code": "usd",
+    "Country_Code": "US"
+  },
+  {
+    "Country": "Vietnam",
+    "Currency_Code": "vnd",
+    "Country_Code": "VN"
   }
 ]
