@@ -181,3 +181,89 @@ function mno(val) {
 mno(function () {
   console.log("Hello RICR");
 });
+
+// convert this normal function into IIFE
+(function init() {
+  console.log("Initialized");
+})();
+
+function bmi(weight, height) {
+  return weight / (height * height);
+}
+console.log(bmi(65, 5.1).toFixed(2));
+
+function discountCalculator(discount) {
+  return function (price) {
+    return price - price * (discount / 100);
+  };
+}
+let discounter = discountCalculator(10);
+console.log(discounter(200));
+
+function double(val) {
+  return val * 2;
+}
+console.log(double(10));
+
+// (function () {
+//   const pass = "secret Password";
+// })();
+// console.log(pass);
+
+let marks = [10, 23, 42, 45, 88];
+marks[0] = 55;
+console.log(marks);
+
+let arr1 = [1, 2, 3, 4, 5];
+arr1.push(1000);
+console.log(arr1);
+arr1.pop();
+console.log(arr1);
+
+arr1.shift();
+console.log(arr1);
+
+arr1.unshift(8);
+console.log(arr1);
+
+arr1.splice(2, 1);
+console.log(arr1);
+
+let newarr = arr1.slice(1, 4);
+
+console.log(newarr);
+
+arr1.reverse();
+console.log(arr1);
+
+let arr2 = [5, 3, 6, 2, 8, 1, 1];
+let sr = arr2.sort(function (a, b) {
+  return a + b;
+});
+console.log(sr);
+
+arr2.forEach(function (valu) {
+  console.log(valu + 15);
+});
+console.log(arr2);
+
+let ans = arr2.map(function (value) {
+  return 15;
+});
+console.log(ans);
+
+let newar = arr2.filter(function (v) {
+  if (v >= 4) return true;
+});
+console.log(newar);
+
+let answ = arr2.reduce(function (accumulator, va) {
+  return accumulator + va;
+}, 0);
+
+console.log(answ);
+
+let v2 = arr2.find(function (val1) {
+  return val1 === 1;
+});
+console.log(v2);
