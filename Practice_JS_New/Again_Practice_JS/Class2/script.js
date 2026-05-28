@@ -93,3 +93,84 @@ if (count-- === 5) {
 } else {
   console.log("Not Matched");
 }
+
+let arr = [10, 20, 50, 89];
+let any = arr.some(function (val) {
+  return val > 85;
+});
+console.log(any);
+
+let eve = arr.every(function (v) {
+  return v > 10;
+});
+console.log(eve);
+// de structuring
+let [a3, b3, , d] = arr;
+console.log(d);
+
+let arr2 = [...arr];
+console.log(arr);
+
+console.log(arr2);
+
+let fruits = ["Apple", "Mango", "Banana", "Litchi"];
+
+console.log(fruits[1]);
+
+fruits.push("Grapes");
+fruits.unshift("Pineapple");
+console.log(fruits);
+
+fruits.splice(3, 1, "Kiwi");
+console.log(fruits);
+
+fruits.pop();
+console.log(fruits);
+
+let colors = ["Green", "Yellow"];
+colors.splice(1, 0, "Red", "Blue");
+console.log(colors);
+
+let items = [1, 2, 3, 4, 5, 6];
+let newarr = items.slice(3, 5);
+console.log(newarr);
+let names = ["Raj", "Ayush", "Vaibhav", "Chandu"];
+names.sort();
+console.log(names);
+
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let newNum = num.map(function (val1) {
+  return val1 * val1;
+});
+console.log(newNum);
+
+let filt = num.filter(function (v) {
+  return v > 5;
+});
+console.log(filt);
+
+let redu = num.reduce((acc, valu1) => {
+  return acc + valu1;
+});
+console.log(redu);
+
+let finding = num.find((valu) => {
+  return valu < 5;
+});
+console.log(finding);
+
+let fullName = ["Raj", "Gupta"];
+let [firstName, lastName] = fullName;
+console.log(firstName);
+console.log(lastName);
+
+let merge = [...items, ...num];
+console.log(merge);
+
+let countries = ["USA", "UK"];
+countries = ["India", ...countries];
+console.log(countries);
+
+let items2 = [...items];
+console.log(items);
+console.log(items2);
