@@ -93,3 +93,48 @@ let objNe = {
   [key]: "Student",
 };
 console.log(objNe);
+
+let li = document.querySelectorAll("ul li:nth-child(2n)");
+console.log(li);
+li.forEach((elem) => {
+  elem.classList.add("highlight");
+});
+
+let p = document.querySelectorAll("p");
+p.forEach((e) => {
+  e.style.fontSize = "18px";
+});
+let p1 = document.querySelector("p");
+p1.addEventListener("click", () => {
+  p1.style.color = "red";
+});
+function dblclick() {
+  p1.style.color = "blue";
+}
+p1.addEventListener("dblclick", dblclick);
+p1.removeEventListener("dblclick", dblclick);
+
+let inp = document.querySelector("input");
+inp.addEventListener("input", (details) => {
+  if (details.data !== null) {
+    console.log(details.data);
+  }
+});
+let sel = document.querySelector("select");
+sel.addEventListener("change", (dets) => {
+  console.log(dets.target.value);
+});
+let selec = document.querySelector("select");
+let devi = document.getElementById("deviceChange");
+selec.addEventListener("change", (dets) => {
+  devi.textContent = `${dets.target.value} Selected Device`;
+});
+
+let sty = document.querySelector("h1");
+window.addEventListener("keydown", (det) => {
+  if (det.key === " ") {
+    sty.textContent = "SPC";
+  } else {
+    sty.textContent = det.key;
+  }
+});
