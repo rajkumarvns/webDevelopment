@@ -114,12 +114,12 @@ function dblclick() {
 p1.addEventListener("dblclick", dblclick);
 p1.removeEventListener("dblclick", dblclick);
 
-let inp = document.querySelector("input");
-inp.addEventListener("input", (details) => {
-  if (details.data !== null) {
-    console.log(details.data);
-  }
-});
+// let inp = document.querySelector("input");
+// inp.addEventListener("input", (details) => {
+//   if (details.data !== null) {
+//     console.log(details.data);
+//   }
+// });
 let sel = document.querySelector("select");
 sel.addEventListener("change", (dets) => {
   console.log(dets.target.value);
@@ -130,11 +130,38 @@ selec.addEventListener("change", (dets) => {
   devi.textContent = `${dets.target.value} Selected Device`;
 });
 
-let sty = document.querySelector("h1");
-window.addEventListener("keydown", (det) => {
-  if (det.key === " ") {
-    sty.textContent = "SPC";
-  } else {
-    sty.textContent = det.key;
+// let sty = document.querySelector("h1");
+// window.addEventListener("keydown", (det) => {
+//   if (det.key === " ") {
+//     sty.textContent = "SPC";
+//   } else {
+//     sty.textContent = det.key;
+//   }
+// });
+let btn = document.querySelector("#btn");
+let fileinp = document.querySelector("#fileinp");
+btn.addEventListener("click", () => {
+  fileinp.click();
+});
+
+fileinp.addEventListener("change", (deta) => {
+  const file = deta.target.files[0];
+  if (file) {
+    btn.textContent = file.name;
   }
+  // console.log(fileinp.files[0].name);
+  btn.textContent = deta.target.files[0].name;
+});
+
+let form = document.querySelector("form");
+let inputs = document.querySelectorAll("input");
+form.addEventListener("submit", function (evt) {
+  evt.preventDefault();
+  console.log(
+    inputs[0].value,
+    inputs[1].value,
+    inputs[2].value,
+    inputs[3].value,
+    inputs[4].value,
+  );
 });
