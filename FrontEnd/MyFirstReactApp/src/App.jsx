@@ -5,11 +5,12 @@ function App() {
   return (
     <>
       <Header />
-      <div id="div1">My First React App</div>
-      <p className="fw-bold">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, deleniti
-      </p>
+      <div id="div1">Welcome to Student Portal</div>
+      <p className="fw-bold">name : Raj Gupta</p>
+      <p>Course : B-Tech</p>
+      <p>City : Bhopal</p>
       <button>Click Me!</button>
+      <p>Thank You</p>
       <Footer />
     </>
   );
