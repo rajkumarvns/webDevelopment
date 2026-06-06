@@ -1,7 +1,9 @@
 function ContactUs() {
   return (
     <>
-      <div>ContactUs</div>
+      <div className="text-dark d-flex align-items-center justify-content-center">
+        ContactUs
+      </div>
     </>
   );
 }
