@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom";
+
 function Home() {
   const navigate = useNavigate();
   return (
     <>
+  
       <div className=" d-flex justify-content-center align-items-center">
         <div className="border p-3 w-50 mt-5 bg-info shadow rounded">
           <h1 className="text-center">Welcome to Home Page!!!</h1>
