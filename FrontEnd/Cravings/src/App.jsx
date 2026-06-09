@@ -1,29 +1,29 @@
 import logo from "./assets/logo.png";
+import GridExample from "./components/GridExample";
 const App = () => {
   return (
     <>
+      <GridExample/>
       <div className=" flex flex-col bg-[url('commonBG.avif')] h-screen w-full">
         <div className="bg-red-500 text-white p-3  flex justify-between">
-          <div className="w-20 ">
+          <div className="w-15 ">
             <img src={logo} alt="logo cravings" />
           </div>
 
           <div className="flex gap-5 ">
-            <div className="border-2 rounded-2xl flex items-center  px-2">
-              Login
-            </div>
-            <div className="border-2 rounded-lg flex items-center p-2">
+            <div className=" flex items-center  px-2">Login</div>
+            <div className=" rounded-lg flex items-center px-5 bg-white text-red-500">
               Register
             </div>
           </div>
         </div>
         <div className="flex justify-center ">
-          <button className="hover:bg-amber-700 active:bg-blue-500 w-2xl my-3 p-3 text-white bg-amber-600  rounded-3xl">
+          <button className="hover:bg-amber-700 hover:text-blue-500 active:bg-blue-500 w-xl my-3 p-3 text-white bg-amber-600  rounded-3xl">
             submit
           </button>
         </div>
-        <div className=" flex content-center items-center  my-40 border-2 p-15 bg-white/20 rounded-3xl ">
-          <p className=" flex content-center items-center text-green-400">
+        <div className=" flex content-center items-center  my-40 border-2 p-15 bg-white/20 mx-30 rounded-3xl ">
+          <p className=" flex content-center items-center text-yellow-400">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
             natus vero sint impedit dicta, aspernatur architecto fuga cumque,
             debitis molestiae labore! Ipsum esse dicta sed deserunt eveniet vero
