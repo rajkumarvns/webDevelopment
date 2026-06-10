@@ -6,14 +6,34 @@ const Header = () => {
     <>
       <div className="bg-blue-500 flex justify-between p-3">
         <div className="flex items-center">
-          <span>Fake Store App</span>
-          <FaStore />
+          <span className="text-red-600">Fake Store App</span>
+          <FaStore className="ms-5 size-7 text-yellow-500" />
         </div>
         <div className="flex gap-3">
-          <Link to={"/"}>Home</Link>
-          <Link to={"/about"}>About</Link>
-          <Link to={"/contactUs"}>ContactUs</Link>
-          <Link to={"/products"}>Products</Link>
+          <Link
+            to={"/"}
+            className=" text-pink-500 hover:underline focus:text-yellow-500"
+          >
+            Home
+          </Link>
+          <Link
+            to={"/about"}
+            className=" text-pink-500 hover:underline focus:text-yellow-500"
+          >
+            About
+          </Link>
+          <Link
+            to={"/contactUs"}
+            className=" text-pink-500 hover:underline focus:text-yellow-500"
+          >
+            ContactUs
+          </Link>
+          <Link
+            to={"/products"}
+            className="  text-pink-500 hover:underline focus:text-yellow-500"
+          >
+            Products
+          </Link>
         </div>
       </div>
     </>
