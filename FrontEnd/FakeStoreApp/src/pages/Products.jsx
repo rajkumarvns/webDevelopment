@@ -56,7 +56,7 @@ const Products = () => {
                 />
               </div>
 
-              <div className="flex flex-col justify-between min-h-[200px] mt-3">
+              <div className="flex flex-col justify-between min-h-50 mt-3">
                 <div>
                   <p className="text-lg font-semibold">
                     {product.title}
