@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  block-size: border-box;
-  font-family: hevetica neue;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 html,
