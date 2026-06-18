@@ -3,34 +3,43 @@ import { Bookmark } from "lucide-react";
 function JobCard() {
   return (
     <div className="parent">
-      <div className="card rounded-4">
+      <div className="card">
         <div className="top">
           <img
             src="https://thumbs.dreamstime.com/b/icons-sample-psost-setting-428651108.jpg"
-            alt="amazon logo"
+            alt="Company Logo"
           />
 
           <button>
-            Save <Bookmark size={15} />
+            <Bookmark size={16} />
+            Save
           </button>
         </div>
 
         <div className="center">
           <h3>
-            Amazon <span>5 days ago</span>
+            Amazon
+            <span> • 5 days ago</span>
           </h3>
 
-          <h2>UI/UX Design</h2>
+          <h2>UI/UX Designer</h2>
 
-          <div>
+          <div className="details">
             <h4>Part Time</h4>
-            <h4>Beginner Level</h4>
+
+            <h4>Beginner</h4>
           </div>
+
+          <p>
+            Create attractive user interfaces and improve user experience for
+            web applications.
+          </p>
         </div>
 
         <div className="bottom">
           <div>
             <h3>$120/hr</h3>
+
             <p>Mumbai, India</p>
           </div>
 

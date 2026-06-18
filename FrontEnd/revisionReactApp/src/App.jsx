@@ -6,10 +6,10 @@ import Header from "./components/Header";
 function App() {
   return (
     <>
-    <Header/>
+      <Header />
       {/* <DigitalClock /> */}
-      {/* <JobCard /> */}
-      <Button/>
+      <JobCard />
+      {/* <Button/> */}
     </>
   );
 }
