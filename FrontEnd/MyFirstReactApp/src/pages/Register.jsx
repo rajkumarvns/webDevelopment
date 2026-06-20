@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import foodTable from "../assets/foodTable.webp";
 
 function Register() {
   const [userName, setUserName] = useState("");
@@ -11,46 +12,60 @@ function Register() {
   };
 
   return (
-    <>
-      <div className="d-flex justify-content-center">
-        <div className="border p-3 w-50 mt-5 bg-info shadow rounded">
-          <h1 className="text-center">Register Here</h1>
+    <div
+      className="auth-page d-flex justify-content-center align-items-start"
+      style={{ backgroundImage: `url(${foodTable})` }}
+    >
+      <div className="auth-card shadow rounded-4 p-4 mt-5">
+        <h1 className="text-center mb-4">Register Here</h1>
 
-          <form onSubmit={handleSubmit}>
-            <label>Username</label>
-            <input
-              type="text"
-              className="form-control"
-              value={userName}
-              onChange={(e) => setUserName(e.target.value)}
-            />
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="username" className="form-label">
+            Username
+          </label>
+          <input
+            id="username"
+            type="text"
+            className="form-control"
+            placeholder="Choose a username"
+            value={userName}
+            onChange={(e) => setUserName(e.target.value)}
+            required
+          />
 
-            <br />
+          <br />
 
-            <label>Password</label>
-            <input
-              type="password"
-              className="form-control"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
+          <label htmlFor="new-password" className="form-label">
+            Password
+          </label>
+          <input
+            id="new-password"
+            type="password"
+            className="form-control"
+            placeholder="Create a password"
+            autoComplete="new-password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
 
-            <br />
+          <br />
 
-            <div className="text-end">
-              <button type="submit" className="btn btn-primary">
-                Register
-              </button>
-            </div>
-          </form>
+          <div className="text-end">
+            <button type="submit" className="btn btn-primary w-100">
+              Register
+            </button>
+          </div>
+        </form>
 
-          <p>
-            Already have an Account?
-            <Link to="/login"> Login Here</Link>
-          </p>
-        </div>
+        <p className="mt-3 text-center mb-0">
+          Already have an Account?
+          <Link to="/login" className="ms-1">
+            Login Here
+          </Link>
+        </p>
       </div>
-    </>
+    </div>
   );
 }
 

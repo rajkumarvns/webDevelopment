@@ -13,6 +13,7 @@ function App() {
       <Header />
 
       <Routes>
+        <Route path="/" element={<Login1 />} />
         {/* <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/product" element={<Product />} /> */}
