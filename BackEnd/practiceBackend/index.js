@@ -17,15 +17,6 @@ app.get("/", (req, res) => {
     message: "welcome once again first",
   });
 });
-
-// app.post("/", (req, res) => {
-//   console.log("default get API Hit");
-
-//   res.json({
-//     message: "welcome once again",
-//   });
-// });
-
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
