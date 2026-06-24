@@ -1,4 +1,4 @@
-import User from "../models/user.Schema";
+import User from "../models/user.Schema.js";
 export const loginUser = (req, res) => {
   res.json({ message: "login successfull from controller" });
 };
