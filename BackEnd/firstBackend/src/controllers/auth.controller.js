@@ -23,7 +23,7 @@ export const RegisterUser = async (req, res) => {
 
     //Add Dummy Photo Placeholder
 
-    const photoUrl = `https://placehold.co/600x400?text=${fullName.charAt(0)}`;
+    const photoUrl = `https://placehold.co/600x400?text=${fullName.charAt(0).toUpperCase()}`;
 
     const photo = {
       url: photoUrl,
@@ -40,8 +40,8 @@ export const RegisterUser = async (req, res) => {
       photo,
     });
 
-    res.status(200).json({ message: "USer created Successfully" });
+    res.status(201).json({ message: "User created Successfully" });
   } catch (error) {
-    console.log({ message: "Something wrong it's catch error" });
+    res.status(500).json({ message: "Something wrong it's catch error" });
   }
 };
