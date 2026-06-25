@@ -20,6 +20,27 @@ export const RegisterUser = async (req, res) => {
       res.status(409).json({ message: "Email already Registered" });
       return;
     }
+
+    //Add Dummy Photo Placeholder
+
+    const photoUrl = `https://placehold.co/600x400?text=${fullName.charAt(0)}`;
+
+    const photo = {
+      url: photoUrl,
+      publicId: null,
+    };
+
+    const newUser = await User.create({
+      fullName,
+      email,
+      password,
+      phone,
+      gender,
+      dob,
+      photo,
+    });
+
+    res.status(200).json({ message: "USer created Successfully" });
   } catch (error) {
     console.log({ message: "Something wrong it's catch error" });
   }
