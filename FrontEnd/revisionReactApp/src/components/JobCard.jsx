@@ -47,6 +47,81 @@ function JobCard() {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
     },
+
+    {
+      id: 4,
+      company: "Apple",
+      days: "3 days ago",
+      role: "iOS Developer",
+      type: "Full Time",
+      level: "Intermediate",
+      description:
+        "Develop high-performance mobile applications for Apple ecosystem.",
+      salary: "$160/hr",
+      location: "Cupertino, USA",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+    },
+
+    {
+      id: 5,
+      company: "Netflix",
+      days: "4 days ago",
+      role: "Full Stack Developer",
+      type: "Full Time",
+      level: "Experienced",
+      description:
+        "Build scalable streaming solutions with cutting-edge technologies.",
+      salary: "$200/hr",
+      location: "Los Gatos, USA",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+    },
+
+    {
+      id: 6,
+      company: "Tesla",
+      days: "2 days ago",
+      role: "Software Engineer",
+      type: "Full Time",
+      level: "Experienced",
+      description:
+        "Work on autonomous driving and vehicle software infrastructure.",
+      salary: "$190/hr",
+      location: "Palo Alto, USA",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/3/34/Tesla_T_symbol.svg",
+    },
+
+    {
+      id: 7,
+      company: "Meta",
+      days: "1 day ago",
+      role: "React Developer",
+      type: "Full Time",
+      level: "Intermediate",
+      description:
+        "Build next-generation social platforms using React and GraphQL.",
+      salary: "$170/hr",
+      location: "Menlo Park, USA",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/7/7f/Meta_Platforms_Inc._logo.svg",
+    },
+
+    {
+      id: 8,
+      company: "Adobe",
+      days: "6 days ago",
+      role: "Creative Technologist",
+      type: "Part Time",
+      level: "Beginner",
+      description:
+        "Design and implement interactive experiences using web technologies.",
+      salary: "$130/hr",
+      location: "San Jose, USA",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/7/7e/Adobe_Corporate_Logo.svg",
+    },
   ];
 
   return (
