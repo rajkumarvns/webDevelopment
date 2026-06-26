@@ -16,26 +16,12 @@ app.get("/", (req, res) => {
   console.log("Default Get API Hit");
   res.json({ message: "welcome to my first backend project" });
 });
-// app.get("/login", (req, res) => {
-//   // console.log("default login");
-//   res.json({ message: "welcome to my second backend project" });
-// });
-// app.post("/logout", (req, res) => {
-//   // console.log("default login");
-//   res.json({ message: "logout successfull" });
-// });
-// app.put("/register", (req, res) => {
-//   // console.log("default login");
-//   res.json({ message: "register successfull" });
-// });
-// app.update("/update", (req, res) => {
-//   // console.log("default login");
-//   res.json({ message: "update successfull" });
-// });
-// app.delete("/delete", (req, res) => {
-//   // console.log("default login");
-//   res.json({ message: "delete successfull" });
-// });
+// Default error message
+app.use((err, req, res, next) => {
+  const ErrMessage = err.message || "Internal server error";
+  const ErrstatusCode = err.statusCode || 500;
+  res.status(ErrstatusCode).json({ message: ErrMessage });
+});
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log("server started on port", port);
